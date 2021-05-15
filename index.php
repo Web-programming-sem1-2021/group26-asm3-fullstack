@@ -1,9 +1,3 @@
-<?php
-
-include('inc/header.php');
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,28 +19,12 @@ include('inc/header.php');
 
 <body>
   <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
-  <div class="nav" id="navbar">
-    <a href="./index.html" class="homeIcon">
-      <img src="./icons/ICONIC MALL.svg" /></a>
 
-    <a class="nav-section" href="homepage/about-us.html">About Us</a>
-    <a class="nav-section" href="homepage/fees.html">Fees</a>
-    <a class="nav-section" href="homepage/myAccount/login.html" id="nav-bar-account">Account</a>
+  <?php
 
-    <details class="dropdown">
-      <summary class="dropbtn">
-        Browse<i class="fa fa-caret-down"></i>
-      </summary>
-      <div onclick="" class="dropdown-content">
-        <a href="./homepage/browse/browse-stores-by-name.html">Browse Store <br />
-          by name</a>
-        <a href="./homepage/browse/browse-stores-by-categories.html">Browse Store <br />by Categories</a>
-      </div>
-    </details>
-    <a class="nav-section" href="homepage/faqs.html">FAQs</a>
-    <a class="nav-section" href="homepage/contact.html">Contact</a>
-    <a href="javascript:void(0);" style="font-size: 15px" class="icon" onclick="handleResponsiveNavBar()">&#9776;</a>
-  </div>
+  include('inc/header.php');
+
+  ?>
 
   <section class="home">
     <div class="main-slider">
