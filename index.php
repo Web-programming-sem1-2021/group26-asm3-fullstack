@@ -1,3 +1,9 @@
+<?php
+
+include('inc/header.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -75,7 +81,8 @@
 
     <!-- controls  -->
     <div class="controls">
-      <div class="prev"> < </div>
+      <div class="prev">
+        < </div>
           <div class="next">></div>
       </div>
 
@@ -398,7 +405,7 @@
           </div>
         </div>
 
-      
+
       </section>
       <div id="slide-right-2" class="slide-button" src="images/arrow-right.png"></div>
     </div>
@@ -468,6 +475,8 @@
 
   </main>
 
+  <?php include('inc/footer.php'); ?>
+
   <footer>
     <div class="footer">
       <div class="footer-content">
@@ -489,11 +498,9 @@
         </div>
         <div class="footer-section">
           <h3>Application Information</h3>
-          <a href="https://github.com/Web-programming-sem1-2021/Group26_Asm2_Javascript"><img class="footer-icon"
-              src="./icons/github-character.svg" />
+          <a href="https://github.com/Web-programming-sem1-2021/Group26_Asm2_Javascript"><img class="footer-icon" src="./icons/github-character.svg" />
             Source Code</a>
-          <a href="https://web-programming-sem1-2021.github.io/Group26_Asm2_Javascript/"><img class="footer-icon"
-              src="./icons/footerIcons/globe.svg" />
+          <a href="https://web-programming-sem1-2021.github.io/Group26_Asm2_Javascript/"><img class="footer-icon" src="./icons/footerIcons/globe.svg" />
             Website</a>
         </div>
       </div>
