@@ -14,11 +14,9 @@
 <body>
   <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
   <?php
-
   include('inc/header.php');
-
   ?>
-
+  
   <div class="form">
     <form class="login-form">
       <h3 style="text-transform: uppercase; color: darkslategray">
