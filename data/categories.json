@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "name": "Department stores"
+  },
+  {
+    "id": 2,
+    "name": "Grocery stores"
+  },
+  {
+    "id": 3,
+    "name": "Restaurants"
+  },
+  {
+    "id": 4,
+    "name": "Clothing stores"
+  },
+  {
+    "id": 5,
+    "name": "Accessory stores"
+  },
+  {
+    "id": 6,
+    "name": "Pharmacies"
+  },
+  {
+    "id": 7,
+    "name": "Technology stores"
+  },
+  {
+    "id": 8,
+    "name": "Pet stores"
+  },
+  {
+    "id": 9,
+    "name": "Toy stores"
+  },
+  {
+    "id": 10,
+    "name": "Specialty stores"
+  },
+  {
+    "id": 11,
+    "name": "Thrift stores"
+  },
+  {
+    "id": 12,
+    "name": "Services"
+  },
+  {
+    "id": 13,
+    "name": "Kiosks"
+  }
+]

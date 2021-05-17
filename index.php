@@ -26,6 +26,23 @@
 
   ?>
 
+  <?php
+  // php function to convert csv to json format
+  function csvToJson($fname)
+  {
+    if (!($fp = fopen($fname, 'r'))) {
+      die("Can't open file...");
+    }
+    $key = fgetcsv($fp, "1024", ",");
+    $json = array();
+    while ($row = fgetcsv($fp, "1024", ",")) {
+      $json[] = array_combine($key, $row);
+    }
+    fclose($fp);
+    return json_encode($json, JSON_PRETTY_PRINT);
+  }
+
+  ?>
   <section class="home">
     <div class="main-slider">
       <div class="slide active" style="background-image: url('images/homeImages/home-slider1.png')">

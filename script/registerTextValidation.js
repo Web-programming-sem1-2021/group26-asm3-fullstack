@@ -20,7 +20,6 @@ const city = document.getElementById("city");
 const zipCode = document.getElementById("zip");
 const storeOwnerRadio = document.getElementById("store-owners");
 const shopperRadio = document.getElementById("shoppers");
-
 const storeOwnerForm = document.getElementById("store-owner-form");
 
 const {
@@ -112,7 +111,6 @@ registerSubmitButton.addEventListener("click", (e) => {
       e.preventDefault());
 
   //first-name
-
   namePattern.test(firstName.value)
     ? ((firstNameErrorMessage.textContent = ""),
       (firstName.style.boxShadow = okBorderStyle),
