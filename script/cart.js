@@ -1,6 +1,3 @@
-//TODO: Jeong-hyoen
-
-//TODO: Jeong-hyeon
 var inc = document.getElementsByClassName("stepper");
 for (i = 0; i < inc.length; i++) {
   var incI = inc[i].querySelector("input"),
