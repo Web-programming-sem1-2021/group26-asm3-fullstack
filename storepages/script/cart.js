@@ -26,9 +26,9 @@ window.onclick = function (event) {
 
 // xóa cart
 const remove_cart = document.getElementsByClassName("btn-danger");
-for (const i = 0; i < remove_cart.length; i++) {
+for (let i = 0; i < remove_cart.length; i++) {
   const button = remove_cart[i];
-  button.addEventListener("click", function () {
+  button.addEventListener("click", () => {
     const button_remove = event.target;
     button_remove.parentElement.parentElement.remove();
   });
@@ -38,8 +38,8 @@ for (const i = 0; i < remove_cart.length; i++) {
 function updatecart() {
   const cart_item = document.getElementsByClassName("cart-items")[0];
   const cart_rows = cart_item.getElementsByClassName("cart-row");
-  const total = 0;
-  for (const i = 0; i < cart_rows.length; i++) {
+  let total = 0;
+  for (let i = 0; i < cart_rows.length; i++) {
     const cart_row = cart_rows[i];
     const price_item = cart_row.getElementsByClassName("cart-price ")[0];
     const quantity_item = cart_row.getElementsByClassName(
@@ -56,7 +56,7 @@ function updatecart() {
 
 // thay đổi số lượng sản phẩm
 const quantity_input = document.getElementsByClassName("cart-quantity-input");
-for (const i = 0; i < quantity_input.length; i++) {
+for (let i = 0; i < quantity_input.length; i++) {
   const input = quantity_input[i];
   input.addEventListener("change", function (event) {
     const input = event.target;
@@ -69,7 +69,7 @@ for (const i = 0; i < quantity_input.length; i++) {
 
 // Thêm vào giỏ
 const add_cart = document.getElementsByClassName("btn-cart");
-for (const i = 0; i < add_cart.length; i++) {
+for (let i = 0; i < add_cart.length; i++) {
   const add = add_cart[i];
   add.addEventListener("click", function (event) {
     const button = event.target;
@@ -92,7 +92,7 @@ function addItemToCart(title, price, img) {
   const cartItems = document.getElementsByClassName("cart-items")[0];
   const cart_title = cartItems.getElementsByClassName("cart-item-title");
   //   Nếu title của sản phẩm bằng với title mà bạn thêm vao giỏ hàng thì sẽ thông cho user.
-  for (const i = 0; i < cart_title.length; i++) {
+  for (let i = 0; i < cart_title.length; i++) {
     if (cart_title[i].innerText == title) {
       alert("Sản Phẩm Đã Có Trong Giỏ Hàng");
       return;
