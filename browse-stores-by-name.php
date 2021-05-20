@@ -322,37 +322,7 @@
   </div>
 
   <footer>
-    <div class="footer">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>Other Authorities</h3>
-          <h3>
-            <a href="/homepage/footer/copyright.html"> Copyright</a>
-          </h3>
-          <h3><a href="/homepage/footer/privacy.html">Privacy Policy</a></h3>
-          <h3><a href="/homepage/footer/terms.html">Terms of Service</a></h3>
-        </div>
-        <div class="footer-section">
-          <h3>Student contributors</h3>
-          <ol>
-            <li>Nguyen Thi Quynh Giang <b>[s3866617]</b></li>
-            <br />
-            <li>Joo Jeong-hyeon<b>[s3865746]</b></li>
-            <br />
-            <li>Vo Khai Minh<b>[s3879953]</b></li>
-            <br />
-            <li>Ramanaharan Ramcharan<b>[s3775271]</b></li>
-          </ol>
-        </div>
-        <div class="footer-section">
-          <h3>Application Information</h3>
-          <a href="https://github.com/Web-programming-sem1-2021/Group26_Asm2_Javascript"><img class="footer-icon" src="../../icons/github-character.svg" />
-            Source Code</a>
-          <a href="https://web-programming-sem1-2021.github.io/Group26_Asm2_Javascript/"><img class="footer-icon" src="../../icons/footerIcons/globe.svg" />
-            Website</a>
-        </div>
-      </div>
-    </div>
+  <?php include('inc/footer.php'); ?>
   </footer>
 </body>
 
