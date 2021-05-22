@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "name": "21st Century Fox 3",
+    "category_id": 1,
+    "created_time": "2018-06-03 11:01:54Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 2,
+    "name": "21st Century Fox 5",
+    "category_id": 1,
+    "created_time": "2021-05-02 11:22:04Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 3,
+    "name": "Carrefour 3",
+    "category_id": 1,
+    "created_time": "2018-10-20 22:28:48Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 4,
+    "name": "Coca-Cola Company 2",
+    "category_id": 1,
+    "created_time": "2020-09-19 19:14:29Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 5,
+    "name": "Erickson",
+    "category_id": 1,
+    "created_time": "2021-01-23 00:58:07Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 6,
+    "name": "Boeing 1",
+    "category_id": 2,
+    "created_time": "2019-11-26 11:17:17Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 7,
+    "name": "Boeing 5",
+    "category_id": 2,
+    "created_time": "2019-03-13 02:02:24Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 8,
+    "name": "Comodo 4",
+    "category_id": 2,
+    "created_time": "2020-10-22 22:28:06Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 9,
+    "name": "Danone 4",
+    "category_id": 2,
+    "created_time": "2018-09-11 00:34:05Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 10,
+    "name": "Demaco 3",
+    "category_id": 2,
+    "created_time": "2020-08-09 20:10:51Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 11,
+    "name": "21st Century Fox 4",
+    "category_id": 3,
+    "created_time": "2019-07-12 03:45:03Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 12,
+    "name": "AECOM 1",
+    "category_id": 3,
+    "created_time": "2020-12-29 12:57:25Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 13,
+    "name": "CarMax 4",
+    "category_id": 3,
+    "created_time": "2018-08-29 21:46:37Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 14,
+    "name": "Comcast 3",
+    "category_id": 3,
+    "created_time": "2020-11-25 19:52:53Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 15,
+    "name": "Comodo 6",
+    "category_id": 3,
+    "created_time": "2020-02-04 00:10:01Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 16,
+    "name": "DynCorp",
+    "category_id": 3,
+    "created_time": "2018-10-21 13:34:53Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 17,
+    "name": "ENEL 2",
+    "category_id": 3,
+    "created_time": "2021-03-04 01:12:00Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 18,
+    "name": "ExxonMobil 2",
+    "category_id": 3,
+    "created_time": "2018-07-13 13:53:56Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 19,
+    "name": "Zepter 1",
+    "category_id": 3,
+    "created_time": "2020-05-21 13:14:42Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 20,
+    "name": "Areon Impex 1",
+    "category_id": 3,
+    "created_time": "2019-11-09 22:43:32Z",
+    "featured": "TRUE"
+  },
+  {
+    "id": 21,
+    "name": "Amazon.com 2",
+    "category_id": 4,
+    "created_time": "2019-10-19 21:30:39Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 22,
+    "name": "Biolife Grup 1",
+    "category_id": 4,
+    "created_time": "2021-05-10 14:32:35Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 23,
+    "name": "Coca-Cola Company 1",
+    "category_id": 4,
+    "created_time": "2021-01-25 15:16:54Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 24,
+    "name": "Facebook 4",
+    "category_id": 4,
+    "created_time": "2019-07-19 17:46:10Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 25,
+    "name": "Leadertech Consulting 3",
+    "category_id": 4,
+    "created_time": "2018-10-13 02:55:19Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 26,
+    "name": "Telekom",
+    "category_id": 4,
+    "created_time": "2018-12-26 05:16:01Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 27,
+    "name": "Comcast 1",
+    "category_id": 5,
+    "created_time": "2018-07-08 15:51:09Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 28,
+    "name": "Comcast 2",
+    "category_id": 5,
+    "created_time": "2020-12-31 10:17:22Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 29,
+    "name": "Comodo 2",
+    "category_id": 5,
+    "created_time": "2020-02-10 00:57:12Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 30,
+    "name": "Demaco 1",
+    "category_id": 5,
+    "created_time": "2019-02-05 12:05:51Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 31,
+    "name": "ENEL 3",
+    "category_id": 5,
+    "created_time": "2020-10-11 00:04:36Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 32,
+    "name": "It Smart Group 1",
+    "category_id": 5,
+    "created_time": "2019-04-26 15:19:53Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 33,
+    "name": "Metro Cash&Carry 3",
+    "category_id": 5,
+    "created_time": "2019-11-19 12:11:35Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 34,
+    "name": "21st Century Fox 1",
+    "category_id": 6,
+    "created_time": "2021-04-18 16:05:52Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 35,
+    "name": "AECOM 4",
+    "category_id": 6,
+    "created_time": "2019-09-16 02:15:26Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 36,
+    "name": "Areon Impex 3",
+    "category_id": 6,
+    "created_time": "2019-08-19 11:33:23Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 37,
+    "name": "Biolife Grup 3",
+    "category_id": 6,
+    "created_time": "2019-02-13 22:02:43Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 38,
+    "name": "Boeing 4",
+    "category_id": 6,
+    "created_time": "2019-03-17 20:53:45Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 39,
+    "name": "BuzzFeed 3",
+    "category_id": 6,
+    "created_time": "2020-01-17 18:43:50Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 40,
+    "name": "CarMax 3",
+    "category_id": 6,
+    "created_time": "2020-07-05 15:10:39Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 41,
+    "name": "Carrefour 2",
+    "category_id": 6,
+    "created_time": "2018-09-03 05:28:14Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 42,
+    "name": "Comodo 7",
+    "category_id": 6,
+    "created_time": "2021-05-19 13:55:42Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 43,
+    "name": "ExxonMobil 1",
+    "category_id": 6,
+    "created_time": "2019-11-27 00:23:15Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 44,
+    "name": "Global Print 1",
+    "category_id": 6,
+    "created_time": "2020-08-28 09:29:07Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 45,
+    "name": "UPC 3",
+    "category_id": 6,
+    "created_time": "2019-05-01 06:47:28Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 46,
+    "name": "Zepter 2",
+    "category_id": 6,
+    "created_time": "2018-06-26 09:01:08Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 47,
+    "name": "Zepter 5",
+    "category_id": 6,
+    "created_time": "2018-06-26 22:10:57Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 48,
+    "name": "Leadertech Consulting 1",
+    "category_id": 6,
+    "created_time": "2019-09-30 10:44:03Z",
+    "featured": "TRUE"
+  },
+  {
+    "id": 49,
+    "name": "Boeing 2",
+    "category_id": 7,
+    "created_time": "2019-03-17 02:30:41Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 50,
+    "name": "BuzzFeed 2",
+    "category_id": 7,
+    "created_time": "2019-01-28 01:16:05Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 51,
+    "name": "Mars 3",
+    "category_id": 7,
+    "created_time": "2020-03-30 22:28:42Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 52,
+    "name": "Team Guard SRL 3",
+    "category_id": 7,
+    "created_time": "2018-09-22 15:17:33Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 53,
+    "name": "UPC 5",
+    "category_id": 7,
+    "created_time": "2020-04-05 02:25:49Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 54,
+    "name": "Danone 2",
+    "category_id": 7,
+    "created_time": "2019-10-12 21:46:23Z",
+    "featured": "TRUE"
+  },
+  {
+    "id": 55,
+    "name": "ENEL 1",
+    "category_id": 7,
+    "created_time": "2020-07-25 14:09:05Z",
+    "featured": "TRUE"
+  },
+  {
+    "id": 56,
+    "name": "21st Century Fox 2",
+    "category_id": 8,
+    "created_time": "2020-08-05 08:01:29Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 57,
+    "name": "Apple Inc.",
+    "category_id": 8,
+    "created_time": "2020-10-23 16:27:01Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 58,
+    "name": "Biolife Grup 2",
+    "category_id": 8,
+    "created_time": "2020-11-12 00:40:57Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 59,
+    "name": "Boeing 3",
+    "category_id": 8,
+    "created_time": "2018-10-07 05:54:05Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 60,
+    "name": "Carrefour 1",
+    "category_id": 8,
+    "created_time": "2019-08-17 11:20:12Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 61,
+    "name": "Comodo 1",
+    "category_id": 8,
+    "created_time": "2018-08-22 17:10:27Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 62,
+    "name": "Danone 3",
+    "category_id": 8,
+    "created_time": "2018-08-08 02:11:08Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 63,
+    "name": "Demaco 2",
+    "category_id": 8,
+    "created_time": "2021-04-16 06:13:38Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 64,
+    "name": "ENEL 4",
+    "category_id": 8,
+    "created_time": "2020-03-31 12:22:48Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 65,
+    "name": "Mars 2",
+    "category_id": 8,
+    "created_time": "2020-06-15 15:40:29Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 66,
+    "name": "Metro Cash&Carry 2",
+    "category_id": 8,
+    "created_time": "2018-07-21 14:56:29Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 67,
+    "name": "UPC 4",
+    "category_id": 8,
+    "created_time": "2020-08-12 13:00:55Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 68,
+    "name": "BuzzFeed 1",
+    "category_id": 8,
+    "created_time": "2019-02-10 03:05:26Z",
+    "featured": "TRUE"
+  },
+  {
+    "id": 69,
+    "name": "CarMax 1",
+    "category_id": 8,
+    "created_time": "2019-07-23 19:03:27Z",
+    "featured": "TRUE"
+  },
+  {
+    "id": 70,
+    "name": "Mars 1",
+    "category_id": 8,
+    "created_time": "2020-02-10 02:38:47Z",
+    "featured": "TRUE"
+  },
+  {
+    "id": 71,
+    "name": "Areon Impex 2",
+    "category_id": 9,
+    "created_time": "2019-12-22 17:53:51Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 72,
+    "name": "It Smart Group 4",
+    "category_id": 9,
+    "created_time": "2018-07-17 17:45:39Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 73,
+    "name": "Vodafone 2",
+    "category_id": 9,
+    "created_time": "2019-05-07 03:00:43Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 74,
+    "name": "Zepter 3",
+    "category_id": 9,
+    "created_time": "2019-09-11 15:19:26Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 75,
+    "name": "Coca-Cola Company 3",
+    "category_id": 10,
+    "created_time": "2018-08-01 06:12:30Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 76,
+    "name": "Comodo 5",
+    "category_id": 10,
+    "created_time": "2018-11-13 02:29:13Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 77,
+    "name": "Facebook 2",
+    "category_id": 10,
+    "created_time": "2020-07-21 00:15:20Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 78,
+    "name": "Global Print 2",
+    "category_id": 10,
+    "created_time": "2020-05-07 17:31:08Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 79,
+    "name": "It Smart Group 2",
+    "category_id": 10,
+    "created_time": "2020-02-23 15:49:22Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 80,
+    "name": "Danone 1",
+    "category_id": 10,
+    "created_time": "2018-08-09 01:45:38Z",
+    "featured": "TRUE"
+  },
+  {
+    "id": 81,
+    "name": "Amazon.com 3",
+    "category_id": 11,
+    "created_time": "2018-06-07 16:46:48Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 82,
+    "name": "CarMax 2",
+    "category_id": 11,
+    "created_time": "2020-08-08 06:55:47Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 83,
+    "name": "Facebook 1",
+    "category_id": 11,
+    "created_time": "2019-06-18 03:26:13Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 84,
+    "name": "Facebook 3",
+    "category_id": 11,
+    "created_time": "2020-10-15 01:01:06Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 85,
+    "name": "Metro Cash&Carry 4",
+    "category_id": 11,
+    "created_time": "2020-03-10 10:52:45Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 86,
+    "name": "Vodafone 1",
+    "category_id": 11,
+    "created_time": "2019-09-30 08:58:06Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 87,
+    "name": "Team Guard SRL 1",
+    "category_id": 11,
+    "created_time": "2021-03-11 15:12:53Z",
+    "featured": "TRUE"
+  },
+  {
+    "id": 88,
+    "name": "UPC 1",
+    "category_id": 11,
+    "created_time": "2020-01-08 17:56:04Z",
+    "featured": "TRUE"
+  },
+  {
+    "id": 89,
+    "name": "AECOM 2",
+    "category_id": 12,
+    "created_time": "2018-12-04 16:49:42Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 90,
+    "name": "AECOM 3",
+    "category_id": 12,
+    "created_time": "2019-01-04 06:02:39Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 91,
+    "name": "AECOM 5",
+    "category_id": 12,
+    "created_time": "2018-10-30 06:10:37Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 92,
+    "name": "Amazon.com 1",
+    "category_id": 12,
+    "created_time": "2021-05-06 05:14:57Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 93,
+    "name": "Comodo 3",
+    "category_id": 12,
+    "created_time": "2021-01-19 17:56:39Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 94,
+    "name": "Comodo 8",
+    "category_id": 12,
+    "created_time": "2020-06-24 09:09:58Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 95,
+    "name": "It Smart Group 3",
+    "category_id": 13,
+    "created_time": "2018-08-11 20:34:36Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 96,
+    "name": "Leadertech Consulting 2",
+    "category_id": 13,
+    "created_time": "2020-06-06 19:03:12Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 97,
+    "name": "Metro Cash&Carry 1",
+    "category_id": 13,
+    "created_time": "2021-03-02 13:40:36Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 98,
+    "name": "Team Guard SRL 2",
+    "category_id": 13,
+    "created_time": "2019-10-14 00:10:41Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 99,
+    "name": "UPC 2",
+    "category_id": 13,
+    "created_time": "2018-09-11 21:15:18Z",
+    "featured": "FALSE"
+  },
+  {
+    "id": 100,
+    "name": "Zepter 4",
+    "category_id": 13,
+    "created_time": "2021-04-08 18:50:22Z",
+    "featured": "FALSE"
+  }
+]

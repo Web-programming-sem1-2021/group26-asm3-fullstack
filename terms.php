@@ -356,35 +356,7 @@
       </ul>
     </div>
     <footer>
-      <div class="footer">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h3>
-              <a href="/homepage/footer/copyright.html">Copyright</a>
-            </h3>
-            <h3>
-              <a href="/homepage/footer/privacy.html">Privacy Policy</a>
-            </h3>
-            <h3>
-              <a href="/homepage/footer/terms.html">Terms of Service</a>
-            </h3>
-          </div>
-          <div class="footer-section">
-            <h3>Student contributors</h3>
-            <ol>
-              <li>Nguyen Thi Quynh Giang <b>[s3866617]</b></li>
-              <br />
-              <li>Joo Jeong-hyeon<b>[sid]</b></li>
-              <br />
-              <li>Vo Khai Minh<b>[s3866617]</b></li>
-            </ol>
-          </div>
-          <div class="footer-section">
-            <h3>Source Code</h3>
-            <ul></ul>
-          </div>
-        </div>
-      </div>
+    <?php include('inc/footer.php'); ?>
     </footer>
   </body>
 
