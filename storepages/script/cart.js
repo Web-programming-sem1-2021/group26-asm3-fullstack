@@ -75,8 +75,8 @@ for (let i = 0; i < add_cart.length; i++) {
     const button = event.target;
     const product = button.parentElement.parentElement;
     const img = product.parentElement.getElementsByClassName("img-prd")[0].src;
-    const title = product.getElementsByClassName("content-product-h3")[0]
-      .innerText;
+    const title =
+      product.getElementsByClassName("content-product-h3")[0].innerText;
     const price = product.getElementsByClassName("price")[0].innerText;
     addItemToCart(title, price, img);
     // Khi thêm sản phẩm vào giỏ hàng thì sẽ hiển thị modal

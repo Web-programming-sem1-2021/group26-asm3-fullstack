@@ -24,7 +24,8 @@ img.small2 {
   margin-left: 24px;
 }
 
-img.small2:hover, img.small1:hover{
+img.small2:hover,
+img.small1:hover {
   background: gray;
 }
 @media screen and (max-width: 426px) {

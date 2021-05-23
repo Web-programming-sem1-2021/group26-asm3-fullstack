@@ -17,11 +17,7 @@
 
 <body>
   <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
-  <?php
-
-  include('inc/header.php');
-
-  ?>
+  <?php include "inc/header.php"; ?>
 
   <section class="contact">
     <div class="form-box">
@@ -106,7 +102,7 @@
     </div>
   </section>
   <footer>
-  <?php include('inc/footer.php'); ?>
+  <?php include "inc/footer.php"; ?>
   </footer>
 </body>
 

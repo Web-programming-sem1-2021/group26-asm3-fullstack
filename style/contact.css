@@ -232,12 +232,10 @@ textarea {
   transform: scale(1);
 }
 
-
-
-#store-owner-form{
+#store-owner-form {
   width: 80%;
   border: var(--theme-color) solid;
   padding: 30px;
   margin: 30px;
-  display: none
+  display: none;
 }

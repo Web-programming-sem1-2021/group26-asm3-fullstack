@@ -8,5 +8,3 @@ btn_menu.addEventListener("click", function () {
     item_menu.style.display = "block";
   }
 });
-
-

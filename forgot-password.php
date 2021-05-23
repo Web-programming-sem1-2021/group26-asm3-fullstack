@@ -13,9 +13,7 @@
 
 <body>
   <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
-  <?php
-  include('inc/header.php');
-  ?>
+  <?php include "inc/header.php"; ?>
   
   <div class="form">
     <form class="login-form">
@@ -30,7 +28,7 @@
     </form>
   </div>
   <footer>
-  <?php include('inc/footer.php'); ?>
+  <?php include "inc/footer.php"; ?>
   </footer>
 
   <script src="../../jsFunctions.js"></script>

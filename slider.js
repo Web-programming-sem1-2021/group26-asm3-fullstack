@@ -95,10 +95,8 @@ let play = setInterval(autoPlay, 20);
 
 // PAUSE THE SLIDE ON HOVER
 const stop = () =>
-
   thumbnails.forEach(
     (thumbnail) => (
-    
       thumbnail.addEventListener("mouseover", () => clearInterval(play)),
       thumbnail.addEventListener(
         "mouseout",
@@ -107,4 +105,4 @@ const stop = () =>
     )
   );
 
- stop();
+stop();

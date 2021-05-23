@@ -61,11 +61,7 @@
     </head>
 
     <body>
-        <?php
-
-    include('inc/header.php');
-
-    ?>
+        <?php include "inc/header.php"; ?>
 
         <head>
             <title>Terms of service</title>
@@ -362,7 +358,7 @@
       </ul>
     </div>
     <footer>
-    <?php include('inc/footer.php'); ?>
+    <?php include "inc/footer.php"; ?>
     </footer>
   </body>
 
