@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php 
+<?php
 ?>
 
 <head>
@@ -19,8 +19,8 @@
 <body>
     <!-- header -->
     <?php
-    include('include/store3-header.php')
-    ?>
+include 'include/store3-header.php'
+?>
     <!-- content -->
     <section class="wrapper">
         < <div class="products">
@@ -212,7 +212,7 @@
     </div>
     <!-- footer -->
     <?php
-    include('include/store3-footer.php')
-    ?>< /body>
+include 'include/store3-footer.php'
+?>< /body>
 
 </html>

@@ -15,7 +15,7 @@
 
 <body>
     <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
-    <?php include "inc/header.php"; ?>
+    <?php include "inc/header.php";?>
 
     <h1 style="margin: 20px; color: gray; font-size: 50px">
         Browse Stores by Name
@@ -23,38 +23,37 @@
     <aside>
 
         <?php
-        function csvToJson($fname)
-        {
-            if (!($fp = fopen($fname, "r"))) {
-                die("Can't open file...");
-            }
-            $key = fgetcsv($fp, "1024", ",");
-            $json = [];
-            while ($row = fgetcsv($fp, "1024", ",")) {
-                $json[] = array_combine($key, $row);
-            }
-            fclose($fp);
-            return json_encode($json, true);
-        }
+function csvToJson($fname)
+{
+    if (!($fp = fopen($fname, "r"))) {
+        die("Can't open file...");
+    }
+    $key = fgetcsv($fp, "1024", ",");
+    $json = [];
+    while ($row = fgetcsv($fp, "1024", ",")) {
+        $json[] = array_combine($key, $row);
+    }
+    fclose($fp);
+    return json_encode($json, true);
+}
 
-        $stores = "./data/stores.csv";
-
-        $jsonStores = json_decode(csvToJson($stores));
-        ?>
+$stores = "./data/stores.csv";
+$jsonStores = json_decode(csvToJson($stores));
+?>
         <section>
-            <?php foreach (range("A", "Z") as $element) { ?>
+            <?php foreach (range("A", "Z") as $element) {?>
             <a href="/browse-stores-by-name.php?element=<?php echo $element; ?>"><?php echo $element; ?></a><br />
             <br />
-            <?php } ?>
+            <?php }?>
         </section>
         </section>
     </aside>
     <div class="store-cards">
         <?php for ($i = 0; $i < count($jsonStores); $i++) {
-            if (
-                !empty($_GET["element"]) &&
-                $jsonStores[$i]->name[0] === $_GET["element"]
-            ) { ?>
+    if (
+        !empty($_GET["element"]) &&
+        $jsonStores[$i]->name[0] === $_GET["element"]
+    ) {?>
         <div class="store-card">
             <a href="../../storepages/store-2.html">
                 <h2>
@@ -72,7 +71,7 @@
                 should play the basslines.
             </p>
         </div>
-        <?php } elseif (empty($_GET["element"])) { ?>
+        <?php } elseif (empty($_GET["element"])) {?>
         <div class="store-card">
             <a href="../../storepages/store-2.html">
                 <h2>
@@ -91,13 +90,13 @@
             </p>
         </div>
         <?php }
-        } ?>
+}?>
 
     </div>
     <?php echo $jsonStores[1]->name[0]; ?>
 
     <footer>
-        <?php include "inc/footer.php"; ?>
+        <?php include "inc/footer.php";?>
     </footer>
 </body>
 
