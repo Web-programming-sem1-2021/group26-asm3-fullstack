@@ -15,11 +15,7 @@
 
 <body>
   <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
-  <?php
-
-  include('inc/header.php');
-
-  ?>
+  <?php include "inc/header.php"; ?>
   <div class="container">
     <h1 style="font-size: 5em; color: palevioletred; padding-top: 24px">
       Store owners
@@ -103,7 +99,7 @@
     </table>
   </div>
   <footer>
-  <?php include('inc/footer.php'); ?>
+  <?php include "inc/footer.php"; ?>
   </footer>
 </body>
 

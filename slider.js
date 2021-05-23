@@ -100,9 +100,9 @@ const stop = () =>
       thumbnail.addEventListener("mouseover", () => clearInterval(play)),
       thumbnail.addEventListener(
         "mouseout",
-        () => (play = setInterval(autoPlay, 20))
+        () => (play = setInterval(autoPlay, play))
       )
     )
   );
 
-window.onload = () => stop();
+stop();

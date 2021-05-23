@@ -16,11 +16,7 @@
 
 <body>
   <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
-  <?php
-
-  include('inc/header.php');
-
-  ?>
+  <?php include "inc/header.php"; ?>
   <div class="hidden_box">
     <input type="checkbox" id="label1" />
     <label for="label1">How can I order?</label>
@@ -109,7 +105,7 @@
     </div>
   </div>
   <footer>
-  <?php include('inc/footer.php'); ?>
+  <?php include "inc/footer.php"; ?>
   </footer>
 </body>
 

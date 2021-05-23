@@ -3,9 +3,9 @@
           <div class="footer-content">
               <div class="footer-section">
                   <h3>Other Authorities</h3>
-                  <a href="copyright.html"><em>Copyright</em> </a>
-                  <a href="privacy.html"><em>Privacy Policy</em> </a>
-                  <a href="terms.html"><em> Terms of Service</em></a>
+                  <a href="copyright.php"><em>Copyright</em> </a>
+                  <a href="privacy.php"><em>Privacy Policy</em> </a>
+                  <a href="terms.php"><em> Terms of Service</em></a>
               </div>
               <div class="footer-section">
                   <h3>Student contributors</h3>
@@ -19,9 +19,11 @@
               </div>
               <div class="footer-section">
                   <h3>Application Information</h3>
-                  <a href="https://github.com/Web-programming-sem1-2021/Group26_Asm2_Javascript"><img class="footer-icon" src="./icons/github-character.svg" />
+                  <a href="https://github.com/Web-programming-sem1-2021/Group26_Asm2_Javascript"><img
+                          class="footer-icon" src="./icons/github-character.svg" />
                       Source Code</a>
-                  <a href="https://web-programming-sem1-2021.github.io/Group26_Asm2_Javascript/"><img class="footer-icon" src="./icons/footerIcons/globe.svg" />
+                  <a href="https://web-programming-sem1-2021.github.io/Group26_Asm2_Javascript/"><img
+                          class="footer-icon" src="./icons/footerIcons/globe.svg" />
                       Website</a>
               </div>
           </div>

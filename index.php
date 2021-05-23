@@ -20,29 +20,9 @@
 <body>
   <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
 
-  <?php
+  <?php include "inc/header.php";?>
 
-  include('inc/header.php');
 
-  ?>
-
-  <?php
-  // php function to convert csv to json format
-  function csvToJson($fname)
-  {
-    if (!($fp = fopen($fname, 'r'))) {
-      die("Can't open file...");
-    }
-    $key = fgetcsv($fp, "1024", ",");
-    $json = array();
-    while ($row = fgetcsv($fp, "1024", ",")) {
-      $json[] = array_combine($key, $row);
-    }
-    fclose($fp);
-    return json_encode($json, JSON_PRETTY_PRINT);
-  }
-
-  ?>
   <section class="home">
     <div class="main-slider">
       <div class="slide active" style="background-image: url('images/homeImages/home-slider1.png')">
@@ -202,156 +182,10 @@
     <div class="slide-container1">
       <div class="slide-button" id="slide-left-1" src="images/arrow-left.png"></div>
       <section class="slider">
-        <div class="thumbnail">
-          <a href="./storepages/product-1.html">
-            <img src="./images/homeImages/6.png" alt="jacket" /></a>
-          <div class="product-details">
-            <h2>Yellow Jacket</h2>
-            <p><span>$39.99</span> $29.99</p>
-            <p><a href="./storepages/store-2.html">Store: 26 St.ore</a></p>
-            <a href="./storepages/product-1.html">View More</a>
-          </div>
-        </div>
-        <div class="thumbnail">
-          <a href="./storepages/product-1.html">
-            <img src="./images/homeImages/7.png" alt="jacket" /></a>
-          <div class="product-details">
-            <h2>Jacket</h2>
-            <p><span>$39.99</span> $29.99</p>
-            <p><a href="./storepages/store-2.html">Store: 26 St.ore</a></p>
-            <a href="./storepages/product-1.html">View More</a>
-          </div>
-        </div>
-        <div class="thumbnail">
-          <a href="./storepages/product-1.html">
-            <img src="./images/homeImages/8.png" alt="jacket" /></a>
-          <div class="product-details">
-            <h2>Jacket</h2>
-            <p><span>$39.99</span> $29.99</p>
-            <p><a href="./storepages/store-2.html">Store: 26 St.ore</a></p>
-            <a href="./storepages/product-1.html">View More</a>
-          </div>
-        </div>
-        <div class="thumbnail">
-          <a href="./storepages/product-1.html">
-            <img src="./images/homeImages/9.png" alt="jacket" /></a>
-          <div class="product-details">
-            <h2>Jacket</h2>
-            <p><span>$39.99</span> $29.99</p>
-            <p><a href="./storepages/store-2.html">Store: 26 St.ore</a></p>
-            <a href="./storepages/product-1.html">View More</a>
-          </div>
-        </div>
-        <div class="thumbnail">
-          <a href="./storepages/product-1.html">
-            <img src="./images/homeImages/laptop.png" alt="laptop" /></a>
-          <div class="product-details">
-            <h2>Laptop</h2>
-            <p><span>$39.99</span> $29.99</p>
-            <p><a href="./storepages/store-1.html">Store: PLUSE</a></p>
-            <a href="./storepages/product-1.html">View More</a>
-          </div>
-        </div>
-        <div class="thumbnail">
-          <a href="./storepages/product-1.html">
-            <img src="./images/homeImages/1.png" alt="laptop" /></a>
-          <div class="product-details">
-            <h2>Camera</h2>
-            <p><span>$939.99</span> $829.99</p>
-            <p><a href="./storepages/store-1.html">Store: PLUSE</a></p>
-            <a href="./storepages/product-1.html">View More</a>
-          </div>
-        </div>
-        <div class="thumbnail">
-          <a href="./storepages/product-1.html">
-            <img src="./images/homeImages/2.png" alt="laptop" /></a>
-          <div class="product-details">
-            <h2>iPhone</h2>
-            <p><span>$939.99</span> $829.99</p>
-            <p><a href="./storepages/store-1.html">Store: PLUSE</a></p>
-            <a href="./storepages/product-1.html">View More</a>
-          </div>
-        </div>
-        <div class="thumbnail">
-          <a href="./storepages/product-1.html">
-            <img src="./images/homeImages/3.png" alt="ipad" /></a>
-          <div class="product-details">
-            <h2>ipad</h2>
-            <p><span>$939.99</span> $829.99</p>
-            <p><a href="./storepages/store-1.html">Store: PLUSE</a></p>
-            <a href="./storepages/product-1.html">View More</a>
-          </div>
-        </div>
-        <div class="thumbnail">
-          <a href="./storepages/product-1.html">
-            <img src="./images/homeImages/4.png" alt="macbook" /></a>
-          <div class="product-details">
-            <h2>ipad</h2>
-            <p><span>$1240.99</span> $829.99</p>
-            <p><a href="./storepages/store-1.html">Store: PLUSE</a></p>
-            <a href="./storepages/product-1.html">View More</a>
-          </div>
-        </div>
-        <div class="thumbnail">
-          <a href="./storepages/product-1.html">
-            <img src="./images/homeImages/5.png" alt="watch" /></a>
-          <div class="product-details">
-            <h2>ipad</h2>
-            <p><span>$556.99</span> $345.99</p>
-            <p><a href="./storepages/store-1.html">Store: PLUSE</a></p>
-            <a href="./storepages/product-1.html">View More</a>
-          </div>
-        </div>
-        <div class="thumbnail">
-          <a href="./storepages/product-1.html">
-            <img src="./images/homeImages/1.png" alt="laptop" /></a>
-          <div class="product-details">
-            <h2>Camera</h2>
-            <p><span>$939.99</span> $829.99</p>
-            <p><a href="./storepages/store-1.html">Store: PLUSE</a></p>
-            <a href="./storepages/product-1.html">View More</a>
-          </div>
-        </div>
-        <div class="thumbnail">
-          <a href="./storepages/product-1.html">
-            <img src="./images/homeImages/2.png" alt="laptop" /></a>
-          <div class="product-details">
-            <h2>iPhone</h2>
-            <p><span>$939.99</span> $829.99</p>
-            <p><a href="./storepages/store-1.html">Store: PLUSE</a></p>
-            <a href="./storepages/product-1.html">View More</a>
-          </div>
-        </div>
-        <div class="thumbnail">
-          <a href="./storepages/product-1.html">
-            <img src="./images/homeImages/3.png" alt="ipad" /></a>
-          <div class="product-details">
-            <h2>ipad</h2>
-            <p><span>$939.99</span> $829.99</p>
-            <p><a href="./storepages/store-1.html">Store: PLUSE</a></p>
-            <a href="./storepages/product-1.html">View More</a>
-          </div>
-        </div>
-        <div class="thumbnail">
-          <a href="./storepages/product-1.html">
-            <img src="./images/homeImages/4.png" alt="macbook" /></a>
-          <div class="product-details">
-            <h2>ipad</h2>
-            <p><span>$1240.99</span> $829.99</p>
-            <p><a href="./storepages/store-1.html">Store: PLUSE</a></p>
-            <a href="./storepages/product-1.html">View More</a>
-          </div>
-        </div>
-        <div class="thumbnail">
-          <a href="./storepages/product-1.html">
-            <img src="./images/homeImages/5.png" alt="watch" /></a>
-          <div class="product-details">
-            <h2>ipad</h2>
-            <p><span>$556.99</span> $345.99</p>
-            <p><a href="./storepages/store-1.html">Store: PLUSE</a></p>
-            <a href="./storepages/product-1.html">View More</a>
-          </div>
-        </div>
+
+        <?php include "./index_inc/slider.php";?>
+
+
       </section>
 
       <div id="slide-right-2" class="slide-button" src="images/arrow-right.png"></div>
@@ -471,9 +305,8 @@
 
   </main>
 
-  <?php include('inc/footer.php'); ?>
+  <?php include "inc/footer.php";?>
 
-  
 </body>
 
 </html>
