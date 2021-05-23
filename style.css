@@ -478,6 +478,8 @@ details {
 .footer-icon {
   width: 24px;
   height: 24px;
+  border: none !important;
+  border-radius: 0px !important;
 }
 
 .footer-section:hover a {

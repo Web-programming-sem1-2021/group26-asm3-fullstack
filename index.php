@@ -20,7 +20,7 @@
 <body>
   <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
 
-  <?php include "inc/header.php";?>
+  <?php include "inc/header.php"; ?>
 
 
   <section class="home">
@@ -183,7 +183,7 @@
       <div class="slide-button" id="slide-left-1" src="images/arrow-left.png"></div>
       <section class="slider">
 
-        <?php include "./index_inc/slider.php";?>
+        <?php include "./index_inc/slider.php"; ?>
 
 
       </section>
@@ -305,7 +305,7 @@
 
   </main>
 
-  <?php include "inc/footer.php";?>
+  <?php include "inc/footer.php"; ?>
 
 </body>
 
