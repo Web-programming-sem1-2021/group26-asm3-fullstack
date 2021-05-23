@@ -49,7 +49,7 @@ function updatecart() {
     const quantity = quantity_item.value; // lấy giá trị trong thẻ input
     total = total + price * quantity;
   }
-  document.getElementsByClassName("cart-total-price")[0].innerText =
+  document.getElementsByClassName("cart-total-price")[0].textContent =
     total + "VNĐ";
   // Thay đổi text = total trong .cart-total-price. Chỉ có một .cart-total-price nên mình sử dụng [0].
 }
