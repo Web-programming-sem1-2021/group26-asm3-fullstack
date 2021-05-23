@@ -187,12 +187,10 @@ p.thumbnail-description {
   position: relative;
   display: flex;
   align-items: center;
+  font-style: oblique;
 }
 
 .category-link > img {
   margin: 0.3em;
 }
 
-.category-link > a {
-  text-decoration: none !important;
-}
