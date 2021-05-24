@@ -151,7 +151,6 @@ var myChart = new Chart(document.getElementById('myChart'), {
 	}
 })
 
-// The line chart
 var chart = new Chart(document.getElementById('myChart2'), {
 	type: 'line',
 	data: {
