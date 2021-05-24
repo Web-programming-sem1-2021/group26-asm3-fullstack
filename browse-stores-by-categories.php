@@ -53,16 +53,16 @@
                 $index < count($jsonCategories);
                 $index++
             ) { ?>
-            <div class='category-link'>
-                <img class="footer-icon" src="./icons/<?php echo $icons[$index] ?>" />
-                <a href="/browse-stores-by-categories.php?id=<?php echo $jsonCategories[$index]->id; ?>">
-                    <?php
+                <div class='category-link'>
+                    <img class="footer-icon" src="./icons/<?php echo $icons[$index] ?>" />
+                    <a href="/browse-stores-by-categories.php?id=<?php echo $jsonCategories[$index]->id; ?>">
+                        <?php
                         echo $jsonCategories[$index]
                             ->name; ?></a>
 
 
-                <br />
-            </div>
+                    <br />
+                </div>
             <?php } ?>
 
         </section>
@@ -74,41 +74,41 @@
                 !empty($_GET["id"]) &&
                 $jsonStores[$i]->category_id === $_GET["id"]
             ) { ?>
-        <div class="store-card">
-            <a href="../../storepages/store-2.html">
-                <h2>
-                    <?php echo $jsonStores[$i]->name; ?>
-                </h2>
-            </a>
-            <p>
-                <a href="../../storepages/store-2.html">
-                    <img class="store-image" src="../../storepages/images/Jacket/jacket5.jpg" alt="Picture of Helen" />
-                </a>
-            </p>
-            <p class="thumbnail-description">
-                Helen has fourth grade piano but in secret prefers to play electronic
-                keyboards. She loves synthesizer sounds and arguing with Jean over who
-                should play the basslines.
-            </p>
-        </div>
-        <?php } elseif (empty($_GET["id"])) { ?>
-        <div class="store-card">
-            <a href="../../storepages/store-2.html">
-                <h2>
-                    <?php echo $jsonStores[$i]->name; ?>
-                </h2>
-            </a>
-            <p>
-                <a href="../../storepages/store-2.html">
-                    <img class="store-image" src="../../storepages/images/Jacket/jacket5.jpg" alt="Picture of Helen" />
-                </a>
-            </p>
-            <p class="thumbnail-description">
-                Helen has fourth grade piano but in secret prefers to play electronic
-                keyboards. She loves synthesizer sounds and arguing with Jean over who
-                should play the basslines.
-            </p>
-        </div>
+                <div class="store-card">
+                    <a href="../../storepages/store-2.html">
+                        <h2>
+                            <?php echo $jsonStores[$i]->name; ?>
+                        </h2>
+                    </a>
+                    <p>
+                        <a href="../../storepages/store-2.html">
+                            <img class="store-image" src="../../storepages/images/Jacket/jacket5.jpg" alt="Picture of Helen" />
+                        </a>
+                    </p>
+                    <p class="thumbnail-description">
+                        Helen has fourth grade piano but in secret prefers to play electronic
+                        keyboards. She loves synthesizer sounds and arguing with Jean over who
+                        should play the basslines.
+                    </p>
+                </div>
+            <?php } elseif (empty($_GET["id"])) { ?>
+                <div class="store-card">
+                    <a href="../../storepages/store-2.html">
+                        <h2>
+                            <?php echo $jsonStores[$i]->name; ?>
+                        </h2>
+                    </a>
+                    <p>
+                        <a href="../../storepages/store-2.html">
+                            <img class="store-image" src="../../storepages/images/Jacket/jacket5.jpg" alt="Picture of Helen" />
+                        </a>
+                    </p>
+                    <p class="thumbnail-description">
+                        Helen has fourth grade piano but in secret prefers to play electronic
+                        keyboards. She loves synthesizer sounds and arguing with Jean over who
+                        should play the basslines.
+                    </p>
+                </div>
         <?php }
         } ?>
 

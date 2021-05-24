@@ -42,8 +42,8 @@
         ?>
         <section>
             <?php foreach (range("A", "Z") as $element) { ?>
-            <a href="/browse-stores-by-name.php?element=<?php echo $element; ?>"><?php echo $element; ?></a><br />
-            <br />
+                <a href="/browse-stores-by-name.php?element=<?php echo $element; ?>"><?php echo $element; ?></a><br />
+                <br />
             <?php } ?>
         </section>
         </section>
@@ -54,41 +54,41 @@
                 !empty($_GET["element"]) &&
                 $jsonStores[$i]->name[0] === $_GET["element"]
             ) { ?>
-        <div class="store-card">
-            <a href="../../storepages/store-2.html">
-                <h2>
-                    <?php echo $jsonStores[$i]->name; ?>
-                </h2>
-            </a>
-            <p>
-                <a href="../../storepages/store-2.html">
-                    <img class="store-image" src="../../storepages/images/Jacket/jacket5.jpg" alt="Picture of Helen" />
-                </a>
-            </p>
-            <p class="thumbnail-description">
-                Helen has fourth grade piano but in secret prefers to play electronic
-                keyboards. She loves synthesizer sounds and arguing with Jean over who
-                should play the basslines.
-            </p>
-        </div>
-        <?php } elseif (empty($_GET["element"])) { ?>
-        <div class="store-card">
-            <a href="../../storepages/store-2.html">
-                <h2>
-                    <?php echo $jsonStores[$i]->name; ?>
-                </h2>
-            </a>
-            <p>
-                <a href="../../storepages/store-2.html">
-                    <img class="store-image" src="../../storepages/images/Jacket/jacket5.jpg" alt="Picture of Helen" />
-                </a>
-            </p>
-            <p class="thumbnail-description">
-                Helen has fourth grade piano but in secret prefers to play electronic
-                keyboards. She loves synthesizer sounds and arguing with Jean over who
-                should play the basslines.
-            </p>
-        </div>
+                <div class="store-card">
+                    <a href="../../storepages/store-2.html">
+                        <h2>
+                            <?php echo $jsonStores[$i]->name; ?>
+                        </h2>
+                    </a>
+                    <p>
+                        <a href="../../storepages/store-2.html">
+                            <img class="store-image" src="../../storepages/images/Jacket/jacket5.jpg" alt="Picture of Helen" />
+                        </a>
+                    </p>
+                    <p class="thumbnail-description">
+                        Helen has fourth grade piano but in secret prefers to play electronic
+                        keyboards. She loves synthesizer sounds and arguing with Jean over who
+                        should play the basslines.
+                    </p>
+                </div>
+            <?php } elseif (empty($_GET["element"])) { ?>
+                <div class="store-card">
+                    <a href="../../storepages/store-2.html">
+                        <h2>
+                            <?php echo $jsonStores[$i]->name; ?>
+                        </h2>
+                    </a>
+                    <p>
+                        <a href="../../storepages/store-2.html">
+                            <img class="store-image" src="../../storepages/images/Jacket/jacket5.jpg" alt="Picture of Helen" />
+                        </a>
+                    </p>
+                    <p class="thumbnail-description">
+                        Helen has fourth grade piano but in secret prefers to play electronic
+                        keyboards. She loves synthesizer sounds and arguing with Jean over who
+                        should play the basslines.
+                    </p>
+                </div>
         <?php }
         } ?>
 
