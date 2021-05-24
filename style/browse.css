@@ -15,10 +15,7 @@ body {
 aside section {
   width: 6.5cm;
   background-color: var(--theme-color);
-  margin-bottom: 24px;
-  margin-top: 30px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 1em;
 }
 
 /* small images are set to 200px in height */
@@ -184,3 +181,16 @@ p.thumbnail-description {
   text-decoration: none;
   cursor: pointer;
 }
+
+.category-link {
+  margin: 0.5em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-style: oblique;
+}
+
+.category-link > img {
+  margin: 0.3em;
+}
+

@@ -15,7 +15,7 @@
 
 <body>
     <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
-    <?php include "inc/header.php";?>
+    <?php include "inc/header.php"; ?>
 
     <h1 style="margin: 20px; color: gray; font-size: 50px">
         Browse Stores by categories
@@ -24,46 +24,56 @@
     <aside>
 
         <?php
-function csvToJson($fname)
-{
-    if (!($fp = fopen($fname, "r"))) {
-        die("Can't open file...");
-    }
-    $key = fgetcsv($fp, "1024", ",");
-    $json = [];
-    while ($row = fgetcsv($fp, "1024", ",")) {
-        $json[] = array_combine($key, $row);
-    }
-    fclose($fp);
-    return json_encode($json, true);
-}
+        function csvToJson($fname)
+        {
+            if (!($fp = fopen($fname, "r"))) {
+                die("Can't open file...");
+            }
+            $key = fgetcsv($fp, "1024", ",");
+            $json = [];
+            while ($row = fgetcsv($fp, "1024", ",")) {
+                $json[] = array_combine($key, $row);
+            }
+            fclose($fp);
+            return json_encode($json, true);
+        }
 
-$categories = "./data/categories.csv";
-$stores = "./data/stores.csv";
+        $icons = ['department.svg', 'groceries.svg', 'hamburger.svg', 'clothing.svg', 'accessories.svg', 'medicine.svg', 'technology.svg', 'pets.svg', 'toys.svg', 'special.svg',  'thrift.svg', 'service.svg', 'kiosk.svg'];
 
-$jsonCategories = json_decode(csvToJson($categories));
+        $categories = "./data/categories.csv";
+        $stores = "./data/stores.csv";
 
-$jsonStores = json_decode(csvToJson($stores));
-?>
+        $jsonCategories = json_decode(csvToJson($categories));
+
+        $jsonStores = json_decode(csvToJson($stores));
+        ?>
         <section>
             <?php for (
-    $index = 0;
-    $index < count($jsonCategories);
-    $index++
-) {?>
-            <a
-                href="/browse-stores-by-categories.php?id=<?php echo $jsonCategories[$index]->id; ?>"><?php echo $jsonCategories[$index]->name; ?></a><br />
-            <br />
-            <?php }?>
+                $index = 0;
+                $index < count($jsonCategories);
+                $index++
+            ) { ?>
+            <div class='category-link'>
+                <img class="footer-icon" src="./icons/<?php echo $icons[$index] ?>" />
+                <a href="/browse-stores-by-categories.php?id=<?php echo $jsonCategories[$index]->id; ?>">
+                    <?php
+                        echo $jsonCategories[$index]
+                            ->name; ?></a>
+
+
+                <br />
+            </div>
+            <?php } ?>
+
         </section>
-        </section>
+
     </aside>
-    <div class="store-cards">
+    <div class=" store-cards">
         <?php for ($i = 0; $i < count($jsonStores); $i++) {
-    if (
-        !empty($_GET["id"]) &&
-        $jsonStores[$i]->category_id === $_GET["id"]
-    ) {?>
+            if (
+                !empty($_GET["id"]) &&
+                $jsonStores[$i]->category_id === $_GET["id"]
+            ) { ?>
         <div class="store-card">
             <a href="../../storepages/store-2.html">
                 <h2>
@@ -81,7 +91,7 @@ $jsonStores = json_decode(csvToJson($stores));
                 should play the basslines.
             </p>
         </div>
-        <?php } elseif (empty($_GET["id"])) {?>
+        <?php } elseif (empty($_GET["id"])) { ?>
         <div class="store-card">
             <a href="../../storepages/store-2.html">
                 <h2>
@@ -100,11 +110,11 @@ $jsonStores = json_decode(csvToJson($stores));
             </p>
         </div>
         <?php }
-}?>
+        } ?>
 
     </div>
     <footer>
-        <?php include "inc/footer.php";?>
+        <?php include "inc/footer.php"; ?>
     </footer>
 
     <script src="../../jsFunctions.js"></script>
