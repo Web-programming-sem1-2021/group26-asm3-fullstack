@@ -38,7 +38,21 @@
             return json_encode($json, true);
         }
 
-        $icons = ['department.svg', 'groceries.svg', 'hamburger.svg', 'clothing.svg', 'accessories.svg', 'medicine.svg', 'technology.svg', 'pets.svg', 'toys.svg', 'special.svg',  'thrift.svg', 'service.svg', 'kiosk.svg'];
+        $icons = [
+            "department.svg",
+            "groceries.svg",
+            "hamburger.svg",
+            "clothing.svg",
+            "accessories.svg",
+            "medicine.svg",
+            "technology.svg",
+            "pets.svg",
+            "toys.svg",
+            "special.svg",
+            "thrift.svg",
+            "service.svg",
+            "kiosk.svg",
+        ];
 
         $categories = "./data/categories.csv";
         $stores = "./data/stores.csv";
@@ -54,13 +68,13 @@
                 $index++
             ) { ?>
             <div class='category-link'>
-                <img class="footer-icon" src="./icons/<?php echo $icons[$index] ?>" />
-                <a href="/browse-stores-by-categories.php?id=<?php echo $jsonCategories[$index]->id; ?>">
-                    <?php
-                        echo $jsonCategories[$index]
-                            ->name; ?></a>
-
-
+                <img class="footer-icon" src="./icons/<?php echo $icons[
+                    $index
+                ]; ?>" />
+                <a href="/browse-stores-by-categories.php?id=<?php echo $jsonCategories[
+                    $index
+                ]->id; ?>">
+                    <?php echo $jsonCategories[$index]->name; ?></a>
                 <br />
             </div>
             <?php } ?>
