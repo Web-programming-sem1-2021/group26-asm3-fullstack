@@ -68,12 +68,8 @@
                 $index++
             ) { ?>
             <div class='category-link'>
-                <img class="footer-icon" src="./icons/<?php echo $icons[
-                    $index
-                ]; ?>" />
-                <a href="/browse-stores-by-categories.php?id=<?php echo $jsonCategories[
-                    $index
-                ]->id; ?>">
+                <img class="footer-icon" src="./icons/<?php echo $icons[$index]; ?>" />
+                <a href="/browse-stores-by-categories.php?id=<?php echo $jsonCategories[$index]->id; ?>">
                     <?php echo $jsonCategories[$index]->name; ?></a>
                 <br />
             </div>

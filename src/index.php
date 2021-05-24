@@ -183,7 +183,6 @@
             <div class="slide-button" id="slide-left-1" src="images/arrow-left.png"></div>
             <section class="slider">
 
-                <?php include "./index_inc/newProductSlider.php"; ?>
 
 
             </section>
@@ -245,56 +244,7 @@
         <div class="slide-container1">
             <div class="slide-button" id="slide-left-1" src="images/arrow-left.png"></div>
             <section class="slider" style="max-width: fit-content;">
-                <div class="thumbnail">
-                    <a href="./storepages/product-1.html">
-                        <img src="./images/homeImages/1.png" alt="laptop" /></a>
-                    <div class="product-details">
-                        <h2>Camera</h2>
-                        <p><span>$939.99</span> $829.99</p>
-                        <p><a href="./storepages/store-1.html">Store: PLUSE</a></p>
-                        <a href="./storepages/product-1.html">View More</a>
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <a href="./storepages/product-1.html">
-                        <img src="./images/homeImages/2.png" alt="laptop" /></a>
-                    <div class="product-details">
-                        <h2>iPhone</h2>
-                        <p><span>$939.99</span> $829.99</p>
-                        <p><a href="./storepages/store-1.html">Store: PLUSE</a></p>
-                        <a href="./storepages/product-1.html">View More</a>
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <a href="./storepages/product-1.html">
-                        <img src="./images/homeImages/3.png" alt="ipad" /></a>
-                    <div class="product-details">
-                        <h2>ipad</h2>
-                        <p><span>$939.99</span> $829.99</p>
-                        <p><a href="./storepages/store-1.html">Store: PLUSE</a></p>
-                        <a href="./storepages/product-1.html">View More</a>
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <a href="./storepages/product-1.html">
-                        <img src="./images/homeImages/4.png" alt="macbook" /></a>
-                    <div class="product-details">
-                        <h2>ipad</h2>
-                        <p><span>$1240.99</span> $829.99</p>
-                        <p><a href="./storepages/store-1.html">Store: PLUSE</a></p>
-                        <a href="./storepages/product-1.html">View More</a>
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <a href="./storepages/product-1.html">
-                        <img src="./images/homeImages/5.png" alt="watch" /></a>
-                    <div class="product-details">
-                        <h2>ipad</h2>
-                        <p><span>$556.99</span> $345.99</p>
-                        <p><a href="./storepages/store-1.html">Store: PLUSE</a></p>
-                        <a href="./storepages/product-1.html">View More</a>
-                    </div>
-                </div>
+                <?php include "./index_inc/featuredProductSlider.php"; ?>
 
             </section>
             <div id="slide-right-2" class="slide-button" src="images/arrow-right.png"></div>

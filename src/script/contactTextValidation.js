@@ -15,8 +15,12 @@ const form = document.querySelector("#sectionForm");
 const scheduleCheckboxes = form.querySelectorAll("input[type=checkbox]");
 const firstScheduleCheckbox = document.getElementById("day1");
 
-const { errorTextColor, errorBorderStyle, okTextColor, okBorderStyle } =
-  ERROR_STYLING_OBJECT;
+const {
+  errorTextColor,
+  errorBorderStyle,
+  okTextColor,
+  okBorderStyle,
+} = ERROR_STYLING_OBJECT;
 
 const validateCheckboxes = () => {
   let checkNumber = 0;
@@ -38,10 +42,8 @@ const validate = () =>
 //Contact
 contactSubmitButton.addEventListener("click", (e) => {
   const namePattern = /[A-Za-z]{3,}/;
-  const phoneNumberPattern =
-    /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,6}$/im;
-  const emailPattern =
-    /^([a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-])+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  const phoneNumberPattern = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,6}$/im;
+  const emailPattern = /^([a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-])+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
   //Name
   const nameErrorMessage = document.getElementById("name-error-message");
