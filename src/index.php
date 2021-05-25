@@ -70,7 +70,6 @@
             <div class="slide-button" id="slide-left-1" src="images/arrow-left.png"></div>
             <section class="slider">
                 <?php include "./index_inc/newStoreSlider.php"; ?>
-
             </section>
             <div id="slide-right-1" class="slide-button" src="images/arrow-right.png"></div>
         </div>
@@ -92,46 +91,7 @@
         <div class="slide-container1" style="max-width: fit-content;">
             <div class="slide-button" id="slide-left-1" src="images/arrow-left.png"></div>
             <section class="slider">
-                <div class="thumbnail">
-                    <img src="./images/homeImages/store1.png" alt="" />
-                    <div class="product-details">
-                        <h2>PLUSE</h2>
-                        <a href="./storepages/store-1.html">View</a>
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <img src="./images/homeImages/Store2.png" alt="" />
-                    <div class="product-details">
-                        <h2>26 St.ore</h2>
-                        <a href="./storepages/store-2.html">View</a>
-                    </div>
-                </div>
-
-                <div class="thumbnail">
-                    <img src="./images/homeImages/store1.png" alt="" />
-                    <div class="product-details">
-                        <h2>PLUSE</h2>
-                        <a href="./storepages/store-1.html">View</a>
-                    </div>
-                </div>
-
-                <div class="thumbnail">
-                    <img src="./images/homeImages/Store2.png" alt="" />
-                    <div class="product-details">
-                        <h2>26 St.ore</h2>
-                        <a href="./storepages/store-2.html">View</a>
-                    </div>
-                </div>
-
-                <div class="thumbnail">
-                    <img src="./images/homeImages/store1.png" alt="" />
-                    <div class="product-details">
-                        <h2>PLUSE</h2>
-                        <a href="./storepages/store-1.html">View</a>
-                    </div>
-                </div>
-
-
+                <?php include "./index_inc/featuredStoreSlider.php"; ?>
             </section>
             <div id="slide-right-2" class="slide-button" src="images/arrow-right.png"></div>
         </div>

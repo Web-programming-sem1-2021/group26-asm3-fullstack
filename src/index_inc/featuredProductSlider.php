@@ -1,6 +1,6 @@
 <?php
 
-function csvToJson($fname)
+function productcsvToJson($fname)
 {
     if (!($fp = fopen($fname, "r"))) {
         die("Can't open file...");
@@ -16,7 +16,7 @@ function csvToJson($fname)
 
 $fname = "./data/products.csv";
 
-$productJson = json_decode(csvToJson($fname));
+$productJson = json_decode(productcsvToJson($fname));
 
 function filterFeaturedProduct($productArray)
 {

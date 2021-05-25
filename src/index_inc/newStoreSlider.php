@@ -1,6 +1,6 @@
 <?php
 
-function csvToJson($fname)
+function newStoreCsvToJson($fname)
 {
     if (!($fp = fopen($fname, "r"))) {
         die("Can't open file...");
@@ -16,20 +16,10 @@ function csvToJson($fname)
 
 $fname = "./data/stores.csv";
 
-$storeJson = json_decode(csvToJson($fname));
+$storeJson = json_decode(newStoreCsvToJson($fname));
 
-
-function dateSorting($a, $b)
-{
-    echo strtotime($a['created_time']) - strtotime($b['created_time']);
-};
-
-
-uasort($storeJson, 'dateSorting');
-
-
-
-
+$dates = array_map('strtotime', array_column($storeJson, 'created_time'));
+array_multisort($dates,  SORT_DESC, SORT_NUMERIC, $storeJson);
 
 for ($i = 0; $i <= 10; $i++) { ?>
 <div class="thumbnail">
