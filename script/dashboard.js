@@ -154,7 +154,7 @@ var myChart = new Chart(document.getElementById('myChart'), {
 var chart = new Chart(document.getElementById('myChart2'), {
 	type: 'line',
 	data: {
-		labels: ["January", "February", "March", "April", 'May', 'June', 'August', 'September'],
+		labels: ["January", "February", "March", "April", 'My', 'June', 'August', 'September'],
 		datasets: [{
 			label: "My First dataset",
 			data: [4, 20, 5, 20, 5, 25, 9, 18],
