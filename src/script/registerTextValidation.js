@@ -22,8 +22,12 @@ const storeOwnerRadio = document.getElementById("store-owners");
 const shopperRadio = document.getElementById("shoppers");
 const storeOwnerForm = document.getElementById("store-owner-form");
 
-const { errorTextColor, errorBorderStyle, okTextColor, okBorderStyle } =
-  ERROR_STYLING_OBJECT;
+const {
+  errorTextColor,
+  errorBorderStyle,
+  okTextColor,
+  okBorderStyle,
+} = ERROR_STYLING_OBJECT;
 
 storeOwnerRadio.addEventListener(
   "input",
@@ -36,12 +40,9 @@ shopperRadio.addEventListener(
 );
 
 registerSubmitButton.addEventListener("click", (e) => {
-  const emailPattern =
-    /^([a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-])+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-  const phoneNumberPattern =
-    /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,6}$/im;
-  const passwordPattern =
-    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$/;
+  const emailPattern = /^([a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-])+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  const phoneNumberPattern = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,6}$/im;
+  const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$/;
   const namePattern = /[A-Za-z]{3,}/;
   const adddressPattern = /[A-Za-z]{3,}/;
   const cityPattern = /[A-Za-z]{3,}/;
