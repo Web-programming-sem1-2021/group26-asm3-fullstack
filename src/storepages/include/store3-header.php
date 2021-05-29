@@ -28,50 +28,37 @@
         <div class="img-nav">
             <!-- <img src="img/logo.png" alt="" /> -->
         </div>
-        <div class="content-nav">
-            <ul>
-                <li><a href="#">Trang Chủ</a></li>
-                <li><a href="#">Sản Phẩm</a></li>
-                <li><a href="#">Liên Hệ</a></li>
-                <li><a href="#">Giới Thiệu</a></li>
-            </ul>
-            <form>
-                <input type="text" name="search" placeholder="Tìm kiếm sản phẩm..." />
-                <button type="submit">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-            </form>
-        </div>
+
         <!-- The Modal -->
         <button id="cart">
             <i class="fa fa-shopping-basket" aria-hidden="true"></i>
-            Giỏ Hàng
+            My Basket
         </button>
         <div id="myModal" class="modal">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Giỏ Hàng</h5>
+                    <h5 class="modal-title">My Basket</h5>
                     <span class="close">&times;</span>
                 </div>
                 <div class="modal-body">
                     <div class="cart-row">
-                        <span class="cart-item cart-header cart-column">Sản Phẩm</span>
-                        <span class="cart-price cart-header cart-column">Giá</span>
-                        <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        <span class="cart-item cart-header cart-column">Product</span>
+                        <span class="cart-price cart-header cart-column">Price</span>
+                        <span class="cart-quantity cart-header cart-column">Quantity</span>
                     </div>
                     <div class="cart-items"></div>
                     <div class="cart-total">
-                        <strong class="cart-total-title">Tổng Cộng:</strong>
-                        <span class="cart-total-price">0VNĐ</span>
+                        <strong class="cart-total-title">Total:</strong>
+                        <span class="cart-total-price">0$</span>
                     </div>
                 </div>
 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary close-footer">
-                        Đóng
+                        Close
                     </button>
                     <button type="button" class="btn btn-primary order">
-                        Thanh Toán
+                        Total
                     </button>
                 </div>
             </div>

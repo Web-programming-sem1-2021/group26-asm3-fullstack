@@ -8,20 +8,18 @@
     <link rel="stylesheet" href="store-2-style.css" />
     <link rel="stylesheet" href="layout-product.js" />
     <link rel="stylesheet" href="/style/cookie.css" />
+    <script src="./script/store3-main.js" defer></script>
+    <script src="./script/cart.js" defer async></script>
     <script src="/script/cookie.js" defer></script>
   </head>
   <body>
+        <!-- header -->
+        <?php include "include/store3-header.php"; ?>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
         ><img src="./images/close.png" width="20px"
       /></a>
-      <!-- <div class="selected">
-            <a href="../storepages/category-1.html">Jacket</a>
-            </div>
-            <a href="#">Dresses</a>
-            <a href="#">Jeans</a>
-            <a href="#">T-shirt</a>
-            <a href="#">Shoes</a> -->
+ 
       <div class="dropdown">
         <button class="dropbtn">UNISEX</button>
         <div class="dropdown-content">

@@ -223,6 +223,7 @@ body {
 
 .product-detail {
   align-items: center;
+  text-align: center;
   width: 280px;
   padding: 0;
   font-size: small;
