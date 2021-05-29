@@ -5,11 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Browse</title>
-    <link rel="stylesheet" href="../../style.css" />
-    <link rel="stylesheet" href="../../style/browse.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style/browse.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
     <script src="../../jsFunctions.js" defer></script>
-    <link rel="stylesheet" href="/style/cookie.css">
+    <link rel="stylesheet" href="style/cookie.css">
     <script src="/script/cookie.js" defer></script>
 </head>
 
@@ -55,7 +55,7 @@
         ];
 
         $categories = "./data/categories.csv";
-        $stores = "./data/stores.csv";
+        $stores = "./data/stores.csv"; 
 
         $jsonCategories = json_decode(csvToJson($categories));
 
@@ -69,7 +69,7 @@
             ) { ?>
             <div class='category-link'>
                 <img class="footer-icon" src="./icons/<?php echo $icons[$index]; ?>" />
-                <a href="/browse-stores-by-categories.php?id=<?php echo $jsonCategories[$index]->id; ?>">
+                <a href="./browse-stores-by-categories.php?id=<?php echo $jsonCategories[$index]->id; ?>">
                     <?php echo $jsonCategories[$index]->name; ?></a>
                 <br />
             </div>
@@ -85,14 +85,14 @@
                 $jsonStores[$i]->category_id === $_GET["id"]
             ) { ?>
         <div class="store-card">
-            <a href="../../storepages/store-2.html">
+            <a href="./storepages/store-2.html">
                 <h2>
                     <?php echo $jsonStores[$i]->name; ?>
                 </h2>
             </a>
             <p>
-                <a href="../../storepages/store-2.html">
-                    <img class="store-image" src="../../storepages/images/Jacket/jacket5.jpg" alt="Picture of Helen" />
+                <a href="./storepages/store-2.html">
+                    <img class="store-image" src="./storepages/images/iphone12.png" alt="Picture of Helen" />
                 </a>
             </p>
             <p class="thumbnail-description">
@@ -103,14 +103,14 @@
         </div>
         <?php } elseif (empty($_GET["id"])) { ?>
         <div class="store-card">
-            <a href="../../storepages/store-2.html">
+            <a href="./storepages/store-2.html">
                 <h2>
                     <?php echo $jsonStores[$i]->name; ?>
                 </h2>
             </a>
             <p>
-                <a href="../../storepages/store-2.html">
-                    <img class="store-image" src="../../storepages/images/Jacket/jacket5.jpg" alt="Picture of Helen" />
+                <a href="./storepages/store-2.html">
+                    <img class="store-image" src="./storepages/images/iphone12.png" alt="Picture of Helen" />
                 </a>
             </p>
             <p class="thumbnail-description">
