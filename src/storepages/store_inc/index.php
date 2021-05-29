@@ -54,14 +54,12 @@ $filteredProducts = filterFeaturedProduct($productMatchedStore);
 
 // var_dump($filteredProducts);
 for ($index = 0; $index < count($filteredProducts); $index++) { ?>
-    <div class="item">
-        <img src="../storepages/images/ipad.png" alt="Avatar" style="width: 100%; padding: 0px" />
-        <div class="card-container">
-            <h4><b><?php echo $filteredProducts[$index]->name ?></b></h4>
-            <p>Price:<?php echo $filteredProducts[$index]->price ?></p>
-            <button><a href="./product-4.html">Add to basket</a></button>
-        </div>
+<div class="item">
+    <img src="../images/ipad.png" alt="Avatar" style="width: 100%; padding: 0px" />
+    <div class="card-container">
+        <h4><b><?php echo $filteredProducts[$index]->name ?></b></h4>
+        <p>Price:<?php echo $filteredProducts[$index]->price ?></p>
+        <button><a href="./product-4.html">Add to basket</a></button>
     </div>
+</div>
 <?php }
-?>
-?>
