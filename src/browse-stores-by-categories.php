@@ -55,7 +55,7 @@
         ];
 
         $categories = "./data/categories.csv";
-        $stores = "./data/stores.csv"; 
+        $stores = "./data/stores.csv";
 
         $jsonCategories = json_decode(csvToJson($categories));
 
@@ -85,13 +85,13 @@
                 $jsonStores[$i]->category_id === $_GET["id"]
             ) { ?>
         <div class="store-card">
-            <a href="./storepages/store-2.html">
+            <a href="./storepages/store-2.html/store_id=<?php echo $jsonStores[$i]->id ?>">
                 <h2>
                     <?php echo $jsonStores[$i]->name; ?>
                 </h2>
             </a>
             <p>
-                <a href="./storepages/store-2.html">
+                <a href="./storepages/store-2.html/store_id=<?php echo $jsonStores[$i]->id ?>">
                     <img class="store-image" src="./storepages/images/iphone12.png" alt="Picture of Helen" />
                 </a>
             </p>
@@ -103,13 +103,13 @@
         </div>
         <?php } elseif (empty($_GET["id"])) { ?>
         <div class="store-card">
-            <a href="./storepages/store-2.html">
+            <a href="./storepages/store-2.html/store_id=<?php echo $jsonStores[$i]->id ?>">
                 <h2>
                     <?php echo $jsonStores[$i]->name; ?>
                 </h2>
             </a>
             <p>
-                <a href="./storepages/store-2.html">
+                <a href="./storepages/store-2.html/store_id=<?php echo $jsonStores[$i]->id ?>">
                     <img class="store-image" src="./storepages/images/iphone12.png" alt="Picture of Helen" />
                 </a>
             </p>
