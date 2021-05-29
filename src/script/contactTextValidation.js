@@ -84,7 +84,7 @@ const input = document.querySelector("textarea");
 input.addEventListener("input", updateValue);
 function updateValue(e) {
   let currentCharacters = e.target.value.length + 1;
-  let wordLeft50 = 50 - currentCharacters; //0 - 50
+  let wordLeft50 =  50- currentCharacters; //0 - 50
   let wordLeft500 = 500 - currentCharacters; // 50 - 500
   let wordOver = currentCharacters - 500; //500 -
   if (!currentCharacters == 0) {
