@@ -1,4 +1,7 @@
+console.log(`slides`, document.querySelector(".main-slider")?.children);
+
 const slides = Array.from(document.querySelector(".main-slider")?.children);
+
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const indicator = document.querySelector(".indicator");

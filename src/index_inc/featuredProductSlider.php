@@ -14,7 +14,7 @@ function productcsvToJson($fname)
     return json_encode($json, true);
 }
 
-$fname = "./data/products.csv";
+$fname = "data/products.csv";
 
 $productJson = json_decode(productcsvToJson($fname));
 
@@ -34,22 +34,20 @@ $filteredProducts = filterFeaturedProduct($productJson);
 
 
 for ($index = 0; $index < 10; $index++) { ?>
-<div class="thumbnail">
-    <a href="./storepages/product-1.html">
-        <img src="./images/homeImages/6.png" alt="jacket" /></a>
-    <div class="product-details">
-        <h2>
+    <div class="thumbnail">
+        <a href="./storepages/product-1.html">
+            <img src="./images/homeImages/6.png" alt="jacket" /></a>
+        <div class="product-details">
+            <h2>
 
-        </h2>
-        <p><span>$39.99</span> $29.99</p>
-        <p><a href="./storepages/store-2.html">
-                <em><?php echo $filteredProducts[$index]
+            </h2>
+            <p><span>$39.99</span> $29.99</p>
+            <p><a href="./storepages/store-2.html">
+                    <em><?php echo $filteredProducts[$index]
                             ->name; ?></em> </a>
-        </p>
-
-
-        <a href=" ./storepages/product-1.html">View More</a>
+            </p>
+            <a href=" ./storepages/product-1.html">View More</a>
+        </div>
     </div>
-</div>
 <?php }
 ?>
