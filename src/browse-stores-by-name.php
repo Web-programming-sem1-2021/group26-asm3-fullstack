@@ -55,13 +55,13 @@
                 $jsonStores[$i]->name[0] === $_GET["element"]
             ) { ?>
         <div class="store-card">
-            <a href="./storepages/store-2.html/store_id=<?php echo $jsonStores[$i]->id ?>">
+            <a href="./storepages/store-1.php?store_id=<?php echo $jsonStores[$i]->id ?>">
                 <h2>
                     <?php echo $jsonStores[$i]->name; ?>
                 </h2>
             </a>
             <p>
-                <a href="./storepages/store-2.html/store_id=<?php echo $jsonStores[$i]->id ?>">
+                <a href="./storepages/store-1.php?store_id=<?php echo $jsonStores[$i]->id ?>">
                     <img class="store-image" src="./storepages/images/jacket1.png" alt="Picture of Helen" />
                 </a>
             </p>
@@ -73,13 +73,13 @@
         </div>
         <?php } elseif (empty($_GET["element"])) { ?>
         <div class=" store-card">
-            <a href="./storepages/store-2.html/store_id=<?php echo $jsonStores[$i]->id ?>">
+            <a href="./storepages/store-1.php?store_id=<?php echo $jsonStores[$i]->id ?>">
                 <h2>
                     <?php echo $jsonStores[$i]->name; ?>
                 </h2>
             </a>
             <p>
-                <a href="./storepages/store-2.html/store_id=<?php echo $jsonStores[$i]->id ?>">
+                <a href="./storepages/store-1.php?store_id=<?php echo $jsonStores[$i]->id ?>">
                     <img class="store-image" src="./storepages/images/Jacket/jacket5.jpg" alt="Picture of Helen" />
                 </a>
             </p>

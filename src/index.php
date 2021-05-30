@@ -58,7 +58,7 @@
         <div class="controls">
             <div class="prev">
                 < </div>
-                    <div class="next">></div>
+                    <div class="next"> ></div>
             </div>
 
             <!-- indicators -->
