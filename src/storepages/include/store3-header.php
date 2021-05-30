@@ -55,10 +55,10 @@
 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary close-footer">
-                        Close
+                        Keep Shopping
                     </button>
                     <button type="button" class="btn btn-primary order">
-                        Total
+                        Buy Now
                     </button>
                 </div>
             </div>

@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Shopping-cart</title>
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
     <link rel="stylesheet" href="style/store3.css" />
     <link rel="stylesheet" href="style/reponsive.css" />
     <link rel="stylesheet" type="text/css" href="layout-category.css" />
@@ -74,114 +75,213 @@
                 <br /><br /><br />
                 <h1 class="store-title2">Featured Products</h1>
                 <div class="featured">
-                    <div class="item">
-                        <li class="main-product">
-                            <a href="./product-1.html">
+
+
+                    <li class="main-product">
+                        <div class="item">
+                            <a href="../storepages/product-1.html" class=product_detail>
                                 <div class="img-product">
-                                    <img src="./images/Jacket/jacket1.jpeg" class="img-prd" />
+                                    <img class="img-prd" src="./images/Jacket/jacket1.jpeg" alt="" />
                                 </div>
                                 <div class="product-detail">
-                                    <h4 class="content-product-h3"><b>LINNEN BOMBER JACKET</b></h4>
+                                    <h4 class="content-product-h3">
+                                        LINNEN BOMBER JACKET
+                                    </h4>
                                     <div class="content-product-deltals">
                                         <div class="price">
-                                            <span class="money">100.99$</span>
+                                            <p class="money">100.99 $</p>
                                         </div>
+
+                                    </div>
                             </a>
-                            <button type="button" class="btn btn-cart">Add to cart</button>
-                    </div>
+                            <button type="button" class="btn btn-cart">
+                                Add to cart
+                            </button>
+                        </div>
+
                 </div>
+                </li>
+
+                <li class="main-product">
+                    <div class="item">
+                        <a href="../storepages/product-1.html" class=product_detail>
+                            <div class="img-product">
+                                <img class="img-prd" src="./images/Jacket/jacket2.jpeg" alt="" />
+                            </div>
+                            <div class="product-detail">
+                                <h4 class="content-product-h3">
+                                    BEIGE LINEN JACKET
+                                </h4>
+                                <div class="content-product-deltals">
+                                    <div class="price">
+                                        <p class="money">129.99 $</p>
+                                    </div>
+
+                                </div>
+                        </a>
+                        <button type="button" class="btn btn-cart">
+                            Add to cart
+                        </button>
+                    </div>
+
+        </div>
+        </li>
+
+
+        <li class="main-product">
+            <div class="item">
+                <a href="../storepages/product-1.html" class=product_detail>
+                    <div class="img-product">
+                        <img class="img-prd" src="./images/Jacket/jacket3.jpeg" alt="" />
+                    </div>
+                    <div class="product-detail">
+                        <h4 class="content-product-h3">
+                            BLACK RIDER JACKET
+                        </h4>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <p class="money">250.99 $</p>
+                            </div>
+
+                        </div>
+                </a>
+                <button type="button" class="btn btn-cart">
+                    Add to cart
+                </button>
+            </div>
 
             </div>
-            </li>
-        </div>
+        </li>
 
-        <div class="item">
-            <a href="./product-2.html" style="display: block; width: 100%; height: 100%">
-                <img src="./images/Jacket/jacket2.jpeg" class="product_image" />
-                <div class="product-detail" style="text-align: center">
-                    <h4><b>BEIGE LINEN JACKET</b></h4>
-                    <p>129.99 $</p>
-                </div>
-            </a>
-        </div>
-        <div class="item">
-            <a href="./product-3.html" style="display: block; width: 100%; height: 100%">
-                <img src="./images/Jacket/jacket3.jpeg" class="product_image" />
-                <div class="product-detail" style="text-align: center">
-                    <h4><b>BLACK RIDER JACKET</b></h4>
-                    <p>250.99 $</p>
-                </div>
-            </a>
-        </div>
-        <div class="item">
-            <a href="./product-4.html" style="display: block; width: 100%; height: 100%">
-                <img src="./images/Jacket/jacket4.jpeg" class="product_image" />
-                <div class="product-detail" style="text-align: center">
-                    <h4><b>BLACK WORKER JACKET</b></h4>
-                    <p>129.99 $</p>
-                </div>
-            </a>
-        </div>
+        <li class="main-product">
+            <div class="item">
+                <a href="../storepages/product-1.html" class=product_detail>
+                    <div class="img-product">
+                        <img class="img-prd" src="./images/Jacket/jacket4.jpeg" alt="" />
+                    </div>
+                    <div class="product-detail">
+                        <h4 class="content-product-h3">
+                            BLACK WORKER JACKET
+                        </h4>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <p class="money">129.99 $</p>
+                            </div>
+
+                        </div>
+                </a>
+                <button type="button" class="btn btn-cart">
+                    Add to cart
+                </button>
+            </div>
+
+            </div>
+        </li>
+
+
         </div>
         </div>
         <br /><br /><br />
         <h1 class="store-title2" style="width: 200px">New Products</h1>
         </div>
         <div class="carousel2">
-            <div class="item2">
-                <a href="./product-1.html" style="display: block; width: 100%; height: 100%">
-                    <img src="./images/product/j1.jpeg" class="product_image" />
-                    <div class="product-detail" style="text-align: center">
-                        <h4><b>NAVY WORKER JACKET</b></h4>
-                        <p>99.99 $</p>
-                    </div>
-                </a>
-            </div>
-            <div class="item2">
-                <a href="./product-1.html" style="display: block; width: 100%; height: 100%">
-                    <img src="./images/product/j6.png" class="product_image" />
-                    <div class="product-detail" style="text-align: center">
-                        <h4><b>STRAIGHT JEANS</b></h4>
-                        <p>59.99 $</p>
-                    </div>
-                </a>
-            </div>
-            <div class="item2">
-                <a href="./product-1.html" style="display: block; width: 100%; height: 100%">
-                    <img src="./images/product/3.png" class="product_image" />
-                    <div class="product-detail" style="text-align: center">
-                        <h4><b>LEATHER SANDALS</b></h4>
-                        <p>39.99 $</p>
-                    </div>
-                </a>
-            </div>
-            <div class="item2">
-                <a href="./product-1.html" style="display: block; width: 100%; height: 100%">
-                    <img src="./images/product/j7.png" class="product_image" />
-                    <div class="product-detail" style="text-align: center">
-                        <h4><b>SNOW PANTS</b></h4>
-                        <p>79.99 $</p>
-                    </div>
-                </a>
-            </div>
-            <div class="item2">
-                <a href="./product-1.html" style="display: block; width: 100%; height: 100%">
-                    <img src="./images/product/j3.jpeg" class="product_image" />
-                    <div class="product-detail" style="text-align: center">
-                        <h4><b>BLACK WORKER JACKET</b></h4>
-                        <p>79.99 $</p>
-                    </div>
-                </a>
-            </div>
-            <div class="item2">
-                <a href="./product-1.html" style="display: block; width: 100%; height: 100%">
-                    <img src="./images/product/1.png" class="product_image" />
-                    <div class="product-detail" style="text-align: center">
-                        <h4><b>PATTERNED SANDALS</b></h4>
-                        <p>80.99 $</p>
-                    </div>
-                </a>
-            </div>
+            
+            <li class="main-product">
+                <div class="item">
+                    <a href="../storepages/product-1.html" class=product_detail>
+                        <div class="img-product">
+                            <img class="img-prd" src="./images/product/j1.jpeg" alt="" />
+                        </div>
+                        <div class="product-detail">
+                            <h4 class="content-product-h3">
+                                NAVY WORKER JACKET
+                            </h4>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <p class="money">99.99 $</p>
+                                </div>
+
+                            </div>
+                    </a>
+                    <button type="button" class="btn btn-cart">
+                        Add to cart
+                    </button>
+                </div>
+
+        </div>
+        </li>
+
+        <li class="main-product">
+                <div class="item">
+                    <a href="../storepages/product-1.html" class=product_detail>
+                        <div class="img-product">
+                            <img class="img-prd" src="./images/product/j6.png" alt="" />
+                        </div>
+                        <div class="product-detail">
+                            <h4 class="content-product-h3">
+                            STRAIGHT JEANS
+                            </h4>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <p class="money">59.99 $</p>
+                                </div>
+
+                            </div>
+                    </a>
+                    <button type="button" class="btn btn-cart">
+                        Add to cart
+                    </button>
+                </div>
+
+        </div>
+        </li>
+
+
+        <div class="item2">
+            <a href="./product-1.html" style="display: block; width: 100%; height: 100%">
+                <img src="./images/product/j6.png" class="product_image" />
+                <div class="product-detail" style="text-align: center">
+                    <h4><b>STRAIGHT JEANS</b></h4>
+                    <p>59.99 $</p>
+                </div>
+            </a>
+        </div>
+        <div class="item2">
+            <a href="./product-1.html" style="display: block; width: 100%; height: 100%">
+                <img src="./images/product/3.png" class="product_image" />
+                <div class="product-detail" style="text-align: center">
+                    <h4><b>LEATHER SANDALS</b></h4>
+                    <p>39.99 $</p>
+                </div>
+            </a>
+        </div>
+        <div class="item2">
+            <a href="./product-1.html" style="display: block; width: 100%; height: 100%">
+                <img src="./images/product/j7.png" class="product_image" />
+                <div class="product-detail" style="text-align: center">
+                    <h4><b>SNOW PANTS</b></h4>
+                    <p>79.99 $</p>
+                </div>
+            </a>
+        </div>
+        <div class="item2">
+            <a href="./product-1.html" style="display: block; width: 100%; height: 100%">
+                <img src="./images/product/j3.jpeg" class="product_image" />
+                <div class="product-detail" style="text-align: center">
+                    <h4><b>BLACK WORKER JACKET</b></h4>
+                    <p>79.99 $</p>
+                </div>
+            </a>
+        </div>
+        <div class="item2">
+            <a href="./product-1.html" style="display: block; width: 100%; height: 100%">
+                <img src="./images/product/1.png" class="product_image" />
+                <div class="product-detail" style="text-align: center">
+                    <h4><b>PATTERNED SANDALS</b></h4>
+                    <p>80.99 $</p>
+                </div>
+            </a>
+        </div>
         </div>
         <br /><br /><br />
         <h1 class="store-title2" style="margin-left: 245px; width: 240px">
@@ -254,173 +354,13 @@
         </div>
 
 
-        <ul>
-            <li class="main-product">
-                <div class="img-product">
-                    <img class="img-prd" src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/sualai.jpg?v=1573720306000" alt="" />
-                </div>
-                <div class="content-product">
-                    <h3 class="content-product-h3">Mũi Hàn 500</h3>
-                    <div class="content-product-deltals">
-                        <div class="price">
-                            <span class="money">25000$</span>
-                        </div>
-                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
-                    </div>
-                </div>
-            </li>
-            <li class="main-product">
-                <div class="img-product">
-                    <img class="img-prd" src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/sp1-57698689-e2c0-429a-bf4f-3bd0f39230d8.jpg?v=1575337954000" alt="" />
-                </div>
-                <div class="content-product">
-                    <h3 class="content-product-h3">
-                        Trạm Hàn Hakko 942 75W 200-480*C 220VAC Cực Nóng
-                    </h3>
-                    <div class="content-product-deltals">
-                        <div class="price">
-                            <span class="money">1299000$</span>
-                        </div>
-                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
-                    </div>
-                </div>
-            </li>
-            <li class="main-product">
-                <div class="img-product">
-                    <img class="img-prd" src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/sp1-a45a32a1-38d4-4a8a-9c37-e936013858b2.jpg?v=1575877003000" alt="" />
-                </div>
-                <div class="content-product">
-                    <h3 class="content-product-h3">
-                        Máy Bơm Chìm Hộ Gia Đình QDX 1500W 220VAC 40L/1min H=8m
-                    </h3>
-                    <div class="content-product-deltals">
-                        <div class="price">
-                            <span class="money">1599000đ</span>
-                        </div>
-                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
-                    </div>
-                </div>
-            </li>
-            <li class="main-product no-margin">
-                <div class="img-product">
-                    <img class="img-prd" src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/module-diy-sac-khong-day-5.jpg?v=1570011041000" alt="" />
-                </div>
-                <div class="content-product">
-                    <h3 class="content-product-h3">
-                        Module DIY Sạc Không Dây Qi IOS/Androi - Bộ phát V2
-                    </h3>
-                    <div class="content-product-deltals">
-                        <div class="price">
-                            <span class="money">89000đ</span>
-                        </div>
-                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
-                    </div>
-                </div>
-            </li>
-            <li class="main-product">
-                <div class="img-product">
-                    <img class="img-prd" src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/bo-dieu-chinh-dien-ap-sdty-200p.jpg?v=1560155769920" alt="" />
-                </div>
-                <div class="content-product">
-                    <h3 class="content-product-h3">
-                        Bộ Điều Chỉnh Điện Áp CHLVFU SDTY-200P 20KW 200A (BH 06 Tháng)
-                    </h3>
-                    <div class="content-product-deltals">
-                        <div class="price">
-                            <span class="money">2199000đ</span>
-                        </div>
-                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
-                    </div>
-                </div>
-            </li>
-            <li class="main-product">
-                <div class="img-product">
-                    <img class="img-prd" src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/isd1760-thu-am-thanh-phat-am-thanh-2.jpg?v=1568951032960" alt="" />
-                </div>
-                <div class="content-product">
-                    <h3 class="content-product-h3">
-                        Module ISD1760 Thu Âm Thanh - Phát Âm Thanh 75s
-                    </h3>
-                    <div class="content-product-deltals">
-                        <div class="price">
-                            <span class="money">115000đ</span>
-                        </div>
-                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
-                    </div>
-                </div>
-            </li>
-            <li class="main-product">
-                <div class="img-product">
-                    <img class="img-prd" src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/new-arrival-b-plus-64-bit-quad-2.jpg?v=1568277329707" alt="" />
-                </div>
-                <div class="content-product">
-                    <h3 class="content-product-h3">
-                        Raspberry Pi 3 E14 Model B Plus B+ 2.4G/5G Bluetooth
-                    </h3>
-                    <div class="content-product-deltals">
-                        <div class="price">
-                            <span class="money">1295000đ</span>
-                        </div>
-                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
-                    </div>
-                </div>
-            </li>
-            <li class="main-product no-margin">
-                <div class="img-product">
-                    <img class="img-prd" src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/module-iot-esp8266-esp-12e-ch340-3.jpg?v=1565950165000" alt="" />
-                </div>
-                <div class="content-product">
-                    <h3 class="content-product-h3">
-                        Module IOT ESP8266 ESP-12E CH340 V3
-                    </h3>
-                    <div class="content-product-deltals">
-                        <div class="price">
-                            <span class="money">85000đ</span>
-                        </div>
-                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
-                    </div>
-                </div>
-            </li>
-        </ul>
+
         </div>
     </section>
 
-    <div class="modal-body">
-        <div class="cart-row">
-            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
-            <span class="cart-price cart-header cart-column">Giá</span>
-            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
-        </div>
-        <div class="cart-items">
-            <div class="cart-row">
-                <div class="cart-item cart-column">
-                    <img class="cart-item-image" src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/sualai.jpg?v=1573720306000" width="100" height="100" />
-                    <span class="cart-item-title">Mũi Hàn 500</span>
-                </div>
-                <span class="cart-price cart-column">$25000</span>
-                <div class="cart-quantity cart-column">
-                    <input class="cart-quantity-input" type="number" value="1" />
-                    <button class="btn btn-danger" type="button">Delete</button>
-                </div>
-            </div>
-            <div class="cart-row">
-                <div class="cart-item cart-column">
-                    <img class="cart-item-image" src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/sp1-a45a32a1-38d4-4a8a-9c37-e936013858b2.jpg?v=1575877003000" width="100" height="100" />
-                    <span class="cart-item-title">Máy Bơm Chìm Hộ Gia Đình QDX 1500W 220VAC 40L/1min H=8m</span>
-                </div>
-                <span class="cart-price cart-column">1599000đ</span>
-                <div class="cart-quantity cart-column">
-                    <input class="cart-quantity-input" type="number" value="2" />
-                    <button class="btn btn-danger" type="button">Delete</button>
-                </div>
-            </div>
-            <div class="cart-total">
-                <strong class="cart-total-title">Tổng Cộng:</strong>
-                <span class="cart-total-price">3223000VNĐ</span>
-            </div>
-        </div>
-    </div>
+
     <!-- footer -->
-    <?php include "include/store3-footer.php"; ?>< /body>
+    <?php include "include/store3-footer.php"; ?>
+</body>
 
 </html>
