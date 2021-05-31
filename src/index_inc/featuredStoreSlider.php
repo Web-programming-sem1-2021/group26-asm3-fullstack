@@ -41,8 +41,7 @@ for ($index = 0; $index < 10; $index++) { ?>
     <div class="product-details">
         <h2>
             <a href="./storepages/store-1.php?store_id=<?php echo $filteredStore[$index]->id ?>">
-                <em><?php echo $filteredStore[$index]
-                            ->name; ?></em> </a>
+                <em><?php echo $filteredStore[$index]->name; ?></em> </a>
         </h2>
 
         <br /> <a href=" ./storepages/product-1.html">View More</a>

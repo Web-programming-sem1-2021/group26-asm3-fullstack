@@ -7,9 +7,9 @@
     <title>Copyright</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
     <script src="./jsFunctions.js" defer></script>
-    <link rel="stylesheet" href="style/cookie.css">
-    <script src="/script/cookie.js" defer></script>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style/cookie.css">
+    <script src="./script/cookie.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 
 
 </head>
