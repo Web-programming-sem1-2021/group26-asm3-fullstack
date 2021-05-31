@@ -28,7 +28,7 @@ for ($i = 0; $i <= 10; $i++) { ?>
     </a>
     <div class="product-details">
         <h2>
-            <?php echo $productJson[$i]->created_time ?></h2>
+            <?php echo $productJson[$i]->name ?></h2>
         <a href="./storepages/product-1.html">View</a>
     </div>
 </div>
