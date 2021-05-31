@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+
+<head>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -200,107 +200,13 @@
       <div class="product-detail" style="width: 100%">
         <h1><b>RECOMMENDED PRODUCTS</b></h1>
       </div>
-
-      <div class="item">
-        <a
-          href="./product-1.html"
-          style="display: block; width: 100%; height: 100%"
-        >
-          <img src="./images/Jacket/jacket1.jpeg" class="product_image" />
-
-          <div class="product-detail" style="text-align: center; color: black">
-            <h4><b>LINEN WORKER JACKET</b></h4>
-            <p>$100.99</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="item">
-        <a
-          href="./product-1.html"
-          style="display: block; width: 100%; height: 100%"
-        >
-          <img src="./images/Jacket/jacket2.jpeg" class="product_image" />
-
-          <div class="product-detail" style="text-align: center; color: black">
-            <h4><b>FABRIC BOMBER JACKET</b></h4>
-            <p>$100.99</p>
-          </div>
-        </a>
-      </div>
-      <div class="item">
-        <a
-          href="./product-1.html"
-          style="display: block; width: 100%; height: 100%"
-        >
-          <img src="./images/Jacket/jacket3.jpeg" class="product_image" />
-
-          <div class="product-detail" style="text-align: center; color:
-          black;"">
-          <h4><b>LEATHER BIKER JACKET</b></h4>
-          <p>$190.99</p>
-        </a>
-      </div>
-
-      <div class="item">
-        <a
-          href="./product-3.html"
-          style="display: block; width: 100%; height: 100%"
-        >
-          <img src="./images/Jacket/jacket4.jpeg" class="product_image" />
-
-          <div class="product-detail" style="text-align: center; color: black">
-            <h4><b>BOMBER JACKET WITH POCKETS</b></h4>
-            <p>$79.99</p>
-          </div>
-        </a>
-      </div>
+      
     </div>
+    <?php include "./src/inc/footer.php"; ?>
   </body>
 
-  <footer>
-    <div class="footer">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>Other Authorities</h3>
-          <h3>
-            <a href="../homepage/footer/copyright.html"> Copyright</a>
-          </h3>
-          <h3><a href="../homepage/footer/privacy.html">Privacy Policy</a></h3>
-          <h3>
-            <a
-              href="..
-          ../homepage/footer/terms.html"
-              >Terms of Service</a
-            >
-          </h3>
-        </div>
-        <div class="footer-section">
-          <h3>Student contributors</h3>
-          <ol>
-            <li>Nguyen Thi Quynh Giang <b>[s3866617]</b></li>
-            <br />
-            <li>Joo Jeong-hyeon<b>[s3865746]</b></li>
-            <br />
-            <li>Vo Khai Minh<b>[s3879953]</b></li>
-            <br />
-            <li>Ramanaharan Ramcharan<b>[s3775271]</b></li>
-          </ol>
-        </div>
-        <div class="footer-section">
-          <h3>Application Information</h3>
-          <a
-            href="https://github.com/Web-programming-sem1-2021/group-26-HTML-CSS-assignment"
-            ><img class="footer-icon" src="../icons/github-character.svg" />
-            Source Code</a
-          >
-          <a href=""
-            ><img class="footer-icon" src="../icons/footerIcons/globe.svg" />
-            Website</a
-          >
-        </div>
-      </div>
-    </div>
-  </footer>
+
+
+
   <script src="/jsFunctions.js"></script>
-</html>
+

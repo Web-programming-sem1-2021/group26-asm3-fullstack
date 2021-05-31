@@ -21,57 +21,7 @@
     <?php include "include/store3-header.php"; ?>
 
     <!-- header original -->
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        ><img src="./images/close.png" width="20px"
-      /></a>
- 
-      <div class="dropdown">
-        <button class="dropbtn">UNISEX</button>
-        <div class="dropdown-content">
-          <a href="../storepages/category-1.html">Jacket</a>
-          <a href="../storepages/category-1.html">Dresses</a>
-          <a href="../storepages/category-1.html">Jeans</a>
-          <a href="../storepages/category-1.html">T-shirt</a>
-          <a href="../storepages/category-1.html">Shoes</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn" style="margin-top: 250px">+ INFO</button>
-        <div class="dropdown-content">
-          <a href="../storepages/category-1.html">Contact Us</a>
-          <a href="../storepages/category-1.html">Help</a>
-          <a href="../storepages/category-1.html">Newsletter</a>
-          <a href="../storepages/category-1.html">Company</a>
-        </div>
-      </div>
-    </div>
-    <!-- <div class="sidenav"></div> -->
-    <div class="sidebar-button">
-      <span
-        style="font-size: 28px; cursor: pointer; margin-left: 30px"
-        onclick="openNav()"
-        ><img src="./images/menu.png" width="20px"
-      /></span>
-      <script>
-        function openNav() {
-          document.getElementById("mySidenav").style.width = "240px";
-        }
-
-        function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-        }
-      </script>
-    </div>
-    <div class="on-top">
-      <button type="button" class="button-top">LOGIN</button>
-      <button type="button" class="button-top">MY PAGE</button>
-      <button type="button" class="button-top">
-        <a href="../storepages/Basket.html" style="text-decoration: none">
-          MY BASKET</a
-        >
-      </button>
-    </div>
+  
     <div class="container">
       <!-- <div class="sticky">
             <img src="./images/logo1.png" style="object-fit:covor;width:350px">
@@ -591,9 +541,36 @@
         </div>
     </section>
 
+    <div class="bottom">
+      <hr />
+      <div class="bottom-info"></div>
+      <br />
+      <div class="bottom-info">
+        <b>POLICES </b><br />
+        <a href="../storepages/category-1.html">
+          <div class="bottom-info-detail">SHOP AT 26St.ore</div>
+        </a>
+        <a href="#">
+          <div class="bottom-info-detail">PRODUCT</div>
+        </a>
+        <a href="#">
+          <div class="bottom-info-detail">PAYMENT</div>
+        </a>
+        <a href="#">
+          <div class="bottom-info-detail">SHIPPING</div>
+        </a>
+      </div>
+      <div class="bottom-info">
+        <b>TEAM </b> <br />
+        <a href="../storepages/category-1.html">
+          <div class="bottom-info-detail">ABOUT US</div>
+        </a>
+        <a href="#">
+          <div class="bottom-info-detail">STORES</div>
+        </a>
+      </div>
+    </div>
 
-    <!-- footer -->
-    <?php include "include/store3-footer.php"; ?>
 </body>
 
 </html>

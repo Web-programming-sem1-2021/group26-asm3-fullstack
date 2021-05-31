@@ -15,8 +15,8 @@ li {
 nav {
   padding: 15px;
   width: 100%;
+  margin-right:0px;
   display: flex;
-  background: #f1df11;
 }
 
 nav .content-nav {
@@ -187,9 +187,13 @@ h5.modal-title {
 }
 
 #cart:hover {
-  border-color: #fff;
+  font-size: 15px;
+  background-color: #cfcfcf;
+  border-bottom-width: 2px;
 }
-
+.threeButtons{
+  margin-left: 0px;
+}
 /* wrapper */
 .wrapper {
   padding: 2rem;

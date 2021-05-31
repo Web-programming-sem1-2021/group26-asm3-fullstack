@@ -125,6 +125,7 @@ a {
 
 .button-top {
   width: auto;
+  height: fit-content;
 
   background-color: #ffffff;
 

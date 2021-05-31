@@ -35,6 +35,9 @@ a {
   text-decoration: none;
   color: blueviolet;
 }
+recomenddedProduct{
+  display: flex;
+}
 /* navigation bar */
 .nav {
   overflow: hidden;
@@ -173,13 +176,10 @@ a {
   }
 }
 .footer {
-  width: 95%;
+  width: 1300px;
   height: 300px;
-  position: relative;
-  justify-content: center;
-  background-color: #fff;
-  border-radius: 20px;
-  margin: 20px auto 10px auto;
+  background-color: rgb(255, 103, 103);
+
 }
 .footer-content {
   height: 300px;

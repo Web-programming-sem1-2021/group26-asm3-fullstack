@@ -1,12 +1,53 @@
 
 <header>
-    <nav>
-        <div class="img-nav">
-            <!-- <img src="img/logo.png" alt="" /> -->
+    <nav> 
+        <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        ><img src="./images/close.png" width="20px"
+      /></a>
+ <!--nav-->
+      <div class="dropdown">
+        <button class="dropbtn">UNISEX</button>
+        <div class="dropdown-content">
+          <a href="../storepages/category-1.html">Jacket</a>
+          <a href="../storepages/category-1.html">Dresses</a>
+          <a href="../storepages/category-1.html">Jeans</a>
+          <a href="../storepages/category-1.html">T-shirt</a>
+          <a href="../storepages/category-1.html">Shoes</a>
         </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn" style="margin-top: 250px">+ INFO</button>
+        <div class="dropdown-content">
+          <a href="../storepages/category-1.html">Contact Us</a>
+          <a href="../storepages/category-1.html">Help</a>
+          <a href="../storepages/category-1.html">Newsletter</a>
+          <a href="../storepages/category-1.html">Company</a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="sidenav"></div> -->
+    <div class="sidebar-button">
+      <span
+        style="font-size: 28px; cursor: pointer; margin-left: 30px"
+        onclick="openNav()"
+        ><img src="./images/menu.png" width="20px"
+      /></span>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "240px";
+        }
 
-        <!-- The Modal -->
-        <div class="on-top">
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
+    </div>
+
+
+        <!-- loginMypageMybasket -->
+        <div class="on-top" style="margin-right:0%;">      
+        　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
       <button type="button" class="button-top">LOGIN</button>
       <button type="button" class="button-top">MY PAGE</button>
       <button id="cart" class="fa fa-shopping-basket">
