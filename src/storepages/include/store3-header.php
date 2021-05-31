@@ -1,28 +1,4 @@
-<header>
-    <nav>
-        <!-- bắt đầu nav-mobile -->
-        <div class="nav-mobile">
-            <div class="icon-mobile" id="btnmenu">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-            </div>
-            <div class="item_menu" id="menutop">
-                <form>
-                    <input type="text" name="search" placeholder="Tìm kiếm sản phẩm..." />
-                    <button type="submit">
-                        <i class="fa fa-search" aria-hidden="true"></i>
-                    </button>
-                </form>
-                <ul>
-                    <li><a href="#">Trang Chủ</a></li>
-                    <li><a href="#">Sản Phẩm</a></li>
-                    <li><a href="#">Liên Hệ</a></li>
-                    <li><a href="#">Giới Thiệu</a></li>
-                </ul>
-            </div>
-        </div>
 
-    </nav>
-</header>
 <header>
     <nav>
         <div class="img-nav">
@@ -30,10 +6,13 @@
         </div>
 
         <!-- The Modal -->
-        <button id="cart">
-            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
-            My Basket
+        <div class="on-top">
+      <button type="button" class="button-top">LOGIN</button>
+      <button type="button" class="button-top">MY PAGE</button>
+      <button id="cart" class="fa fa-shopping-basket">
+            MY BASKET
         </button>
+        </div>
         <div id="myModal" class="modal">
             <div class="modal-content">
                 <div class="modal-header">

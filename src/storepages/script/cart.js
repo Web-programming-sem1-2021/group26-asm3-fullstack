@@ -51,10 +51,8 @@ function updatecart() {
   }
   document.getElementsByClassName("cart-total-price")[0].textContent =
     total + "$";
-  // Thay đổi text = total trong .cart-total-price. Chỉ có một .cart-total-price nên mình sử dụng [0].
 }
 
-// thay đổi số lượng sản phẩm
 const quantity_input = document.getElementsByClassName("cart-quantity-input");
 for (let i = 0; i < quantity_input.length; i++) {
   const input = quantity_input[i];
