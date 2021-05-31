@@ -29,7 +29,7 @@ for ($index = 0; $index <= 10; $index++) { ?>
     <div class="product-details">
         <h2>
             <?php echo $storeJson[$index]->name ?></h2>
-        <a href="./storepages/store-1.html">View</a>
+        <a href="./storepages/store-1.php?store_id=<?php echo $storeJson[$index]->id ?>">View</a>
     </div>
 </div>
 

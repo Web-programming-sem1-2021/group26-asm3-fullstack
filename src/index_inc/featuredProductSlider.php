@@ -41,12 +41,13 @@ for ($index = 0; $index < 10; $index++) { ?>
         <h2>
 
         </h2>
-        <p><span>$39.99</span> $29.99</p>
+        <p>$<?php echo $filteredProducts[$index]
+                    ->price; ?></p>
         <p><a href="./storepages/store-1.php">
                 <em><?php echo $filteredProducts[$index]
                             ->name; ?></em> </a>
         </p>
-        <a href=" ./storepages/product-1.html">View More</a>
+        <a href="./storepages/product-1.html">View More</a>
     </div>
 </div>
 <?php }

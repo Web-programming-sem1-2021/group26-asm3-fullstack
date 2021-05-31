@@ -40,16 +40,12 @@ for ($index = 0; $index < 10; $index++) { ?>
         <img src="./images/homeImages/6.png" alt="jacket" /></a>
     <div class="product-details">
         <h2>
-
-        </h2>
-        <p><span>$39.99</span> $29.99</p>
-        <p><a href="./storepages/store-1.php?store_id=<?php echo $filteredStore[$index]->id ?>">
+            <a href="./storepages/store-1.php?store_id=<?php echo $filteredStore[$index]->id ?>">
                 <em><?php echo $filteredStore[$index]
                             ->name; ?></em> </a>
-        </p>
+        </h2>
 
-
-        <a href=" ./storepages/product-1.html">View More</a>
+        <br /> <a href=" ./storepages/product-1.html">View More</a>
     </div>
 </div>
 <?php }
