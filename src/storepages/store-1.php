@@ -158,7 +158,7 @@
          <div class="Product_row">
              <div class="product--col">
                  <div class="product_inner">
-                     <img src="./src/images/iphone12.png" width="250" />
+                     <img src="./images/iphone12.png" width=" 250" />
                      <p>Iphone12</p>
                      <p>Price £1099</p>
                      <p>Updated: 12/04/2021</p>
