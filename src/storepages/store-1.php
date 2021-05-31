@@ -1,35 +1,35 @@
      <?php
-      $store_id = $_GET['store_id'];
+        $store_id = $_GET['store_id'];
 
-      function csvToJson($fname)
-      {
-        if (!($fp = fopen($fname, "r"))) {
-          die("Can't open file...");
+        function csvToJson($fname)
+        {
+            if (!($fp = fopen($fname, "r"))) {
+                die("Can't open file...");
+            }
+            $key = fgetcsv($fp, "1024", ",");
+            $json = [];
+            while ($row = fgetcsv($fp, "1024", ",")) {
+                $json[] = array_combine($key, $row);
+            }
+            fclose($fp);
+            return json_encode($json, true);
         }
-        $key = fgetcsv($fp, "1024", ",");
-        $json = [];
-        while ($row = fgetcsv($fp, "1024", ",")) {
-          $json[] = array_combine($key, $row);
-        }
-        fclose($fp);
-        return json_encode($json, true);
-      }
 
-      $storesFileName = "../data/stores.csv";
-      $jsonStores = json_decode(csvToJson($storesFileName));
+        $storesFileName = "../data/stores.csv";
+        $jsonStores = json_decode(csvToJson($storesFileName));
 
-      // function getStoreData($stores, $storeId)
+        // function getStoreData($stores, $storeId)
 
-      // {
-      //   foreach ($stores as $store) {
-      //     if ($store->id === $storeId) {
-      //       return $store;
-      //     }
-      //   }
-      //   // echo $store;
-      // }
-      // getStoreData($jsonStores, $store_id);
-      ?>
+        // {
+        //   foreach ($stores as $store) {
+        //     if ($store->id === $storeId) {
+        //       return $store;
+        //     }
+        //   }
+        //   // echo $store;
+        // }
+        // getStoreData($jsonStores, $store_id);
+        ?>
 
 
      <!DOCTYPE html>
@@ -55,10 +55,10 @@
                  <div id="logo">
                      <h1 style="color:red;margin:20px; font-size:50px">
                          <?php foreach ($jsonStores as $store) {
-                  if ($store->id === $store_id) {
-                    echo ($store->name);
-                  }
-                } ?>
+                                if ($store->id === $store_id) {
+                                    echo ($store->name);
+                                }
+                            } ?>
                      </h1>
                  </div>
 
@@ -293,152 +293,15 @@
              <h1>New Products</h1>
          </div>
          <div class="carousel">
-             <div class="item">
-                 <img src="./images/ipad.png" alt="Avatar" style="width: 100%; padding: 0px" />
-                 <div class="card-container">
-                     <h4><b>Ipad 2021</b></h4>
-                     <p>Price:$1290</p>
-                     <button><a href="./product-4.html">Add to basket</a></button>
-                 </div>
-             </div>
-
-             <div class="item">
-                 <img src="./images/camer.png" alt="Avatar" style="width: 100%; padding: 0px" />
-                 <div class="card-container">
-                     <h4><b>Canon 70d</b></h4>
-                     <p>Price:$1760</p>
-                     <button><a href="./product-3.html">Add to basket</a></button>
-                 </div>
-             </div>
-
-             <div class="item">
-                 <img src="./images/iphone12.png" alt="Avatar" style="width: 100%; padding: 0px" />
-                 <div class="card-container">
-                     <br /><br /><br />
-                     <h4><b>iphone 12</b></h4>
-                     <p>Price:$1350</p>
-                     <button><a href="./product-3.html">Add to basket</a></button>
-                 </div>
-             </div>
-             <div class="item">
-                 <img src="./images/tv.png" alt="Avatar" style="width: 100%; padding: 0px" />
-                 <div class="card-container">
-                     <br /><br /><br />
-                     <h4><b>Avendous Laptop</b></h4>
-                     <p>Price:$1990</p>
-                     <button><a href="./product-3.html">Add to basket</a></button>
-                 </div>
-             </div>
-
-             <div class="item">
-                 <img src="./images/ipad.png" alt="Avatar" style="width: 100%; padding: 0px" />
-                 <div class="card-container">
-                     <h4><b>Ipad 2021</b></h4>
-                     <p>Price:$1290</p>
-                     <button><a href="./product-4.html">Add to basket</a></button>
-                 </div>
-             </div>
-
-             <div class="item">
-                 <img src="./images/camer.png" alt="Avatar" style="width: 100%; padding: 0px" />
-                 <div class="card-container">
-                     <h4><b>Canon 70d</b></h4>
-                     <p>Price:$1760</p>
-                     <button><a href="./product-3.html">Add to basket</a></button>
-                 </div>
-             </div>
-
-             <div class="item">
-                 <img src="./images/iphone12.png" alt="Avatar" style="width: 100%; padding: 0px" />
-                 <div class="card-container">
-                     <br /><br /><br />
-                     <h4><b>iphone 12</b></h4>
-                     <p>Price:$1350</p>
-                     <button><a href="./product-3.html">Add to basket</a></button>
-                 </div>
-             </div>
-
-             <div class="item">
-                 <img src="./images/laptop.png" alt="Avatar" style="width: 100%; padding: 0px" />
-                 <div class="card-container">
-                     <br /><br /><br />
-                     <h4><b>Avendous Laptop</b></h4>
-                     <p>Price:$2100</p>
-                     <button><a href="./product-3.html">Add to basket</a></button>
-                 </div>
-             </div>
-             <div class="item">
-                 <img src="./images/laptop.png" alt="Avatar" style="width: 100%; padding: 0px" />
-                 <div class="card-container">
-                     <br /><br /><br />
-                     <h4><b>Avendous Laptop</b></h4>
-                     <p>Price:$2100</p>
-                     <button><a href="./product-3.html">Add to basket</a></button>
-                 </div>
-             </div>
-
-             <div class="item">
-                 <img src="./images/tv.png" alt="Avatar" style="width: 100%; padding: 0px" />
-                 <div class="card-container">
-                     <br /><br /><br />
-                     <h4><b>Avendous Laptop</b></h4>
-                     <p>Price:$1990</p>
-                     <button><a href="./product-3.html">Add to basket</a></button>
-                 </div>
-             </div>
-
-             <div class="item">
-                 <img src="./images/ipad.png" alt="Avatar" style="width: 100%; padding: 0px" />
-                 <div class="card-container">
-                     <h4><b>Ipad 2021</b></h4>
-                     <p>Price:$1290</p>
-                     <button><a href="./product-4.html">Add to basket</a></button>
-                 </div>
-             </div>
-
-             <div class="item">
-                 <img src="./images/camer.png" alt="Avatar" style="width: 100%; padding: 0px" />
-                 <div class="card-container">
-                     <h4><b>Canon 70d</b></h4>
-                     <p>Price:$1760</p>
-                     <button><a href="./product-3.html">Add to basket</a></button>
-                 </div>
-             </div>
-
-             <div class="item">
-                 <img src="./images/iphone12.png" alt="Avatar" style="width: 100%; padding: 0px" />
-                 <div class="card-container">
-                     <br /><br /><br />
-                     <h4><b>iphone 12</b></h4>
-                     <p>Price:$1350</p>
-                     <button><a href="./product-3.html">Add to basket</a></button>
-                 </div>
-             </div>
-
-             <div class="item">
-                 <img src="./images/laptop.png" alt="Avatar" style="width: 100%; padding: 0px" />
-                 <div class="card-container">
-                     <br /><br /><br />
-                     <h4><b>Avendous Laptop</b></h4>
-                     <p>Price:$2100</p>
-                     <button><a href="./product-3.html">Add to basket</a></button>
-                 </div>
-             </div>
          </div>
 
          <div class="Cardhead">
              <h1>Featured Products</h1>
+
          </div>
          <div class="carousel">
-             <div class="item">
-                 <!-- <img src="./images/ipad.png" alt="Avatar" style="width: 100%; padding: 0px" />
-            <div class="card-container">
-                <button><a href="./product-4.html">Add to basket</a></button>
-            </div> -->
-                 <div class="card-container">
-                 </div>
+             <?php include 'store_inc/featureProductStore1.php'; ?>
 
-             </div>
          </div>
 
          <br />
