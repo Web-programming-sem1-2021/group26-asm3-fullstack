@@ -45,7 +45,7 @@
     <section class="profile-card">
         <h2 style="position: relative">Nguyễn Thị Quỳnh Giang</h2>
         <p class="modal-open" data-modal="modal-giang">
-            <img class="small1" src="./images/team/Giang.jpg" alt="Picture of Giang" />
+            <img class="small1" id="Giang" src="./images/team/Giang.jpg" alt="Picture of Giang" />
         </p>
         <div>
             <h3>Major: Information Technology</h3>

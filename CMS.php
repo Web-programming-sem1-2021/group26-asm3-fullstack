@@ -1,45 +1,179 @@
+<?php
+session_start();
+
+
+
+
+
+function content()
+{
+    $content = $_POST["content"];
+    $page = $_POST["content_page"];
+    switch ($page) {
+        case "privacy":
+            $page = "src/data/privacy.html";
+            break;
+        case "terms":
+            $page = "src/data/terms.html";
+            break;
+        case "copyright":
+            $page = "src/data/copyright.html";
+            break;
+    }
+    file_put_contents($page, $content);
+}
+
+
+
+if (isset($_POST["content_page"])) {
+    content();
+    echo '<script type="text/JavaScript">
+    function display_toast() {
+    document.querySelector("#toast").style.display = "flex";
+    setTimeout(function(){
+        document.querySelector("#toast").style.display = "none"
+        }, 2000);
+    }
+    </script>';
+}
+
+function update_photo()
+{
+    $photo = $_FILES["profilepic"];
+    $location = $_POST["photo_location"];
+    switch ($location) {
+        case "Giang":
+            $photo_name = "Giang.jpg";
+            break;
+        case "Jeong-hyeon":
+            $photo_name = "Jeong-hyeon.png";
+            break;
+        case "Ram":
+            $photo_name = "Ram.jpg";
+            break;
+        case "Minh":
+            $photo_name = "Minh.png";
+            break;
+    }
+    move_uploaded_file(
+        $photo["tmp_name"],
+        $_SERVER["DOCUMENT_ROOT"] . "src/images/team" . $photo_name
+    );
+}
+
+if (isset($_POST["photo_location"])) {
+    update_photo();
+    echo '<script type="text/JavaScript">
+        function display_toast() {
+        document.querySelector("#toast").style.display = "flex";
+        setTimeout(function(){
+            document.querySelector("#toast").style.display = "none"
+            }, 2000);
+        }
+        </script>';
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
+    
+    <meta charset="utf-8" />
+    <title>CMS For Administor</title>
+    <meta name="description" content="CMS For Administor" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/dashboard.css">
-    <script src="./script/dashboard.js" defer async></script>
+
+    
 </head>
 
 <body>
-
-<form action="CMS.php" method="post" enctype="multipart/form-data">
-
-<div class="upload_file">
-    <label for="profile_photo">Click here to upload new photo</label>
-    <input type="file" name="profile_photo" id="profile_photo" required accept="image/png, image/jpeg, image/jpg" />
-</div>
+    <header id="nav_header"></header>
+    <div class="body_spacing">
 
 
-<div class="styled-radio">
-    <p>New photo for...</p>
-    <input type="radio" name="photo_location" id="photo_1" value="photo_1" required checked />
-    <label for="photo_1">Nguyễn Thị Quỳnh Giang</label>
-    <br />
-    <input type="radio" name="photo_location" id="photo_2" value="photo_2" required />
-    <label for="photo_2">Joo Jeong-hyeon</label>
-    <br>
-    <input type="radio" name="photo_location" id="photo_3" value="photo_3" required />
-    <label for="photo_3">Ramcharan Ramacharan</label>
-    <br />
-    <input type="radio" name="photo_location" id="photo_4" value="photo_4" required />
-    <label for="photo_4">Võ Khải Minh</label>
-</div>
+        <div class="toast-large" id="toast">
+            <div class="toast-large-elements">
+                <p id="toast-large-message">Input Updated successfully!</p>
+            </div>
+        </div>
+        <script>
+        display_toast()
+        </script>
+
+        
+        <div class="HeaderH1_Left_With_Spacing">
+            <h1>Content Management System</h1>
+    
+        </div>
 
 
-<input type="submit" />
+        <div class="card">
+            <h3>Manage Content</h3>
+            <form action="CMS.php" method="post" enctype="application/x-www-form-urlencoded">
 
-</form>
+                <div class="styled-textarea bottom-24">
+                    <label for="content">Content Input</label><br />
+                    <textarea name="content" id="content" placeholder="Write new information here" required></textarea>
+                </div>
+
+       
+                <div class="styled-radio">
+                    <p>Update section...</p>
+                    <input type="radio" name="content_page" id="privacy" value="privacy" required checked />
+                    <label for="privacy">Privacy Policy</label>
+                    <br />
+                    <input type="radio" name="content_page" id="terms" value="terms" required />
+                    <label for="terms">Terms of Service</label>
+                    <br>
+                    <input type="radio" name="content_page" id="copyright" value="copyright" required />
+                    <label for="copyright">Copyright</label>
+                </div>
+
+                <input type="submit" />
+
+            </form>
+
+    
+        </div>
+
+  
+        <div class="card">
+            <h3>Upload new photo to About Us</h3>
+            <form action="CMS.php" method="post" enctype="multipart/form-data">
+
+                <div class="upload_file">
+                    <label for="profilepic">Upload New Photo</label>
+                    <input type="file" name="profilepic" id="profilepic" required accept="image/png, image/jpeg, image/jpg" />
+                </div>
+
+                <div class="styled-radio">
+                    <p>Replace photos of the Team Member</p>
+                    <input type="radio" name="photo_location" id="Giang" value="Giang" required checked />
+                    <label for="Giang">Giang</label>
+                    <br />
+                    <input type="radio" name="photo_location" id="Jeong-hyeon" value="Jeong-hyeon" required />
+                    <label for="Jeong-hyeon">Jeong-hyeon</label>
+                    <br>
+                    <input type="radio" name="photo_location" id="Ram" value="Ram" required />
+                    <label for="Ram">Ram)</label>
+                    <br />
+                    <input type="radio" name="photo_location" id="Minh" value="Minh" required />
+                    <label for="Minh">Minh</label>
+                </div>
+
+            
+                <input type="submit" />
+
+              
+            </form>
+
+            <a href="5.1.2-Aboutus.html">View About Us</a>
+
+        </div>
 
 
-
+    </div>
 </body>
 
 </html>
