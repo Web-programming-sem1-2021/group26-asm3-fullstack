@@ -1,7 +1,7 @@
-/* (A) WHOLE PAGE */
+
 html, body { font-family: arial, sans-serif; }
 
-/* (B) LOGIN FORM */
+
 #login-form {
   padding: 20px;
   background: #f2f2f2;
@@ -27,7 +27,7 @@ html, body { font-family: arial, sans-serif; }
   cursor: pointer;
 }
 
-/* (C) INVALID LOGIN */
+
 #bad-login {
   padding : 10px;
   margin-bottom: 10px;

@@ -1,8 +1,8 @@
 <?php
-// (A) LOGIN CHECKS
+
 require "CMS_check.php";
 
-// (B) LOGIN PAGE HTML ?>
+?>
 <!DOCTYPE html>
 <html>
   <head>

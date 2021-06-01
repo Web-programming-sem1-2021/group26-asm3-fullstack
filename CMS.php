@@ -1,11 +1,11 @@
 <?php
-// (A) START SESSION
+
 session_start();
 
-// (B) LOGOUT REQUEST
+
 if (isset($_POST['logout'])) { unset($_SESSION['user']); }
 
-// (C) REDIRECT TO LOGIN PAGE IF NOT LOGGED IN
+
 if (!isset($_SESSION['user'])) {
   header("Location: CMS_login.php");
   exit();
@@ -63,9 +63,10 @@ function update_photo()
     }
     move_uploaded_file(
         $photo["tmp_name"],
-        $_SERVER["DOCUMENT_ROOT"] . "src/images/team" . $photo_name
+        $_SERVER["DOCUMENT_ROOT"] . "./src/images/team" . $photo_name
     );
 }
+
 
 if (isset($_POST["photo_location"])) {
     update_photo();
@@ -91,6 +92,7 @@ if (isset($_POST["photo_location"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style/CMS.css" />
     <link rel="stylesheet" href="./src/style.css" />
+    
 </head>
 
 <body>
@@ -147,27 +149,26 @@ if (isset($_POST["photo_location"])) {
 
   
         <div class="card">
-            <h3>Upload new photo to About Us</h3>
+            <h3>Upload Team Photo</h3>
             <form action="CMS.php" method="post" enctype="multipart/form-data">
 
                 <div class="upload_file">
-                    <label for="profilepic">Upload New Photo</label>
-                    <input type="file" name="profilepic" id="profilepic" required accept="image/png, image/jpeg, image/jpg" />
+                    <input type="file" name="profilepic" id="profilepic"  />
                 </div>
 
                 <div class="styled-radio">
                     <p>Replace photos of the Team Member</p>
-                    <input type="radio" name="photo_location" id="Giang" value="Giang" required checked />
-                    <label for="Giang">Giang</label>
+                    <input type="radio" name="photo_location" id="Giang" value="Giang" required  />
+                    <label for="Giang">Nguyễn Thị Quỳnh Giang</label>
                     <br />
                     <input type="radio" name="photo_location" id="Jeong-hyeon" value="Jeong-hyeon" required />
-                    <label for="Jeong-hyeon">Jeong-hyeon</label>
+                    <label for="Jeong-hyeon">Joo Jeong-hyeon</label>
                     <br>
                     <input type="radio" name="photo_location" id="Ram" value="Ram" required />
-                    <label for="Ram">Ram)</label>
+                    <label for="Ram">Ramcharan Ramanaharan</label>
                     <br />
                     <input type="radio" name="photo_location" id="Minh" value="Minh" required />
-                    <label for="Minh">Minh</label>
+                    <label for="Minh">Võ Khải Minh</label>
                 </div>
 
             
