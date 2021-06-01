@@ -185,7 +185,7 @@
                     </h4>
                     <div class="content-product-deltals">
                         <div class="price">
-                            <p class="money">79.99 $</p>
+                            <p class="money">149.99 $</p>
                         </div>
 
                     </div>
