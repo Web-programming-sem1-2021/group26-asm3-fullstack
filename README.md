@@ -1,22 +1,22 @@
 # Group26_Asm2_Javascript
 
-This is the root repository for Assignment 2 of Web Programming course(COSC2430) semester 1/2021. It is owned by course group 26.
+This is the root repository for Assignment 3 of Web Programming course(COSC2430) semester 1/2021. It is owned by course group 26.
+
+The root directory is is src/.
+
+Enjoy marking, we are looking forward to your feedback!!!!!!
+
+Thank you!!
 
 ---
 
-## [GitHub Repository](https://github.com/Web-programming-sem1-2021/Group26_Asm2_Javascript)
-
----
-
-## [Website](https://web-programming-sem1-2021.github.io/Group26_Asm2_Javascript)
-
----
+## [GitHub Repository](https://github.com/Web-programming-sem1-2021/group26-asm3-fullstack)
 
 ## Students
 
 1. Nguyen Thi Quynh Giang - s3866617
 2. Joo Jeong-hyeon - s3865746
-3. Vo Khai Min - s3879953
+3. Vo Khai Minh - s3879953
 4. Ramanaharan Ramcharan - s3775271
 
 ---
