@@ -6,14 +6,20 @@ $phone = $_GET["phone"];
 
 $password = $_GET["password"];
 
-$email = $_GET["email"];
+$fName = $_GET["first-name"];
 
-$phone = $_GET["phone"];
+$lName = $_GET["last-name"];
 
-$password = $_GET["password"];
+$address = $_GET["address"];
 
-$file_open = fopen("data/credentials.csv", "a");
-$no_rows = count(file("data/credentials.csv"));
+$city = $_GET["city"];
+
+$zip = $_GET["zip"];
+
+
+
+$file_open = fopen("../credentials.csv", "a");
+$no_rows = count(file("../credentials.csv"));
 if ($no_rows > 1) {
     $no_rows = $no_rows - 1 + 1;
 }
@@ -25,6 +31,12 @@ $form_data = [
     "email" => $email,
     "phone" => $phone,
     "password" => $password,
+    "first-name" => $fName,
+    "last-name" => $lName,
+    "address" => $address,
+    "city" => $city,
+    "zip" => $zip,
+ 
 ];
 
 fputcsv($file_open, $form_data);
@@ -32,6 +44,11 @@ fputcsv($file_open, $form_data);
 if ($email !== null) {
     echo $email;
     echo $phone;
-    // var_dump($email);
+    echo $password;
+    echo $fName;
+    echo $lName;
+    echo $address;
+    echo $city;
+    echo $zip;
     header('Location: login.php');
 }
