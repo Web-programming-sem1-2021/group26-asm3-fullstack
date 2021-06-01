@@ -8,7 +8,7 @@
         id="nav-bar-account">Account</a>
     <details class="dropdown">
         <summary class="dropbtn2">
-            Browse<i class="fa fa-caret-down"></i>
+            Browse
         </summary>
         <div onclick="" class="dropdown-content">
             <a href="browse-stores-by-name.php">Browse Store <br />
