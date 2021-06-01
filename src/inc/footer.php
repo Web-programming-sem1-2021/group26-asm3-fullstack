@@ -19,8 +19,8 @@
               </div>
               <div class="footer-section">
                   <h3>Application Information</h3>
-                  <a href="https://github.com/Web-programming-sem1-2021/Group26_Asm2_Javascript"><img
-                          class="footer-icon" src="./icons/github-character.svg" />
+                  <a href="https://github.com/Web-programming-sem1-2021/group26-asm3-fullstack"><img class="footer-icon"
+                          src="./icons/github-character.svg" />
                       Source Code</a>
                   <a href="https://web-programming-sem1-2021.github.io/Group26_Asm2_Javascript/"><img
                           class="footer-icon" src="./icons/footerIcons/globe.svg" />

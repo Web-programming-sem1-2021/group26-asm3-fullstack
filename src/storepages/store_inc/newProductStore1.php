@@ -31,16 +31,21 @@ function getNewroductMatchedStore($products)
 $productMatchedStore = getNewroductMatchedStore($productJson);
 
 $dates = array_map('strtotime', array_column($productMatchedStore, 'created_time'));
-array_multisort($dates,  SORT_DESC, SORT_NUMERIC, $productMatchedStore);
+array_multisort($dates, SORT_DESC, SORT_NUMERIC, $productMatchedStore);
 
-for ($index = 0; $index < 10; $index++) { ?>
+
+if (count($productMatchedStore) > 0) {
+    for ($index = 0; $index <= 10; $index++) { ?>
 <div class="item">
     <img src="./images/ipad.png" alt="Avatar" style="width: 100%; padding: 0px" />
     <div class="card-container">
-        <h4><b><?php echo $productMatchedStore[$index]->name ?></b></h4>
+        <h4><b><?php echo $productMatchedStore[$index]->name ?></b>
+        </h4>
         <h4>Price: <b><?php echo $productMatchedStore[$index]->price ?></b></h4>
         <button><a href="./product-4.html">Add to basket</a></button>
     </div>
 </div>
 <?php }
-    ?>
+} else { ?>
+<h1 style="color:darkblue">No New Products found!</h1>
+<?php }

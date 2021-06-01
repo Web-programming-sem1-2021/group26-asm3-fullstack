@@ -2,16 +2,16 @@
 $store_id = $_GET['store_id'];
 function csvToJson($fname)
 {
-  if (!($fp = fopen($fname, "r"))) {
-    die("Can't open file...");
-  }
-  $key = fgetcsv($fp, "1024", ",");
-  $json = [];
-  while ($row = fgetcsv($fp, "1024", ",")) {
-    $json[] = array_combine($key, $row);
-  }
-  fclose($fp);
-  return json_encode($json, true);
+    if (!($fp = fopen($fname, "r"))) {
+        die("Can't open file...");
+    }
+    $key = fgetcsv($fp, "1024", ",");
+    $json = [];
+    while ($row = fgetcsv($fp, "1024", ",")) {
+        $json[] = array_combine($key, $row);
+    }
+    fclose($fp);
+    return json_encode($json, true);
 }
 
 $storesFileName = "../data/stores.csv";
@@ -45,63 +45,8 @@ $jsonStores = json_decode(csvToJson($storesFileName));
 </head>
 
 <body>
-    <header>
-        <!---Naivgation-->
-        <nav>
-            <div id="logo">
-                <a class="logo" href="./store-1.php?store_id=<?php echo $store_id ?>">
-                    <h1 style="color:red;margin:20px; font-size:50px">
-                        <?php foreach ($jsonStores as $store) {
-              if ($store->id === $store_id) {
-                echo ($store->name);
-              }
-            } ?>
-                    </h1>
-                </a>
-            </div>
-            <label for=" drop" class="toggle">Menu</label>
-            <input type="checkbox" id="drop" />
-            <ul class="menu">
-                <li>
-                    <!-- First Tier Drop Down -->
-                    <label for="drop-2" class="toggle">Products <i class="fa fa-caret-down"></i></label>
-                    <a href="#">Products<i class="fa fa-caret-down"></i></a>
-                    <input type="checkbox" id="drop-2" />
-                    <ul>
-                        <li><a href="#">Created Time</a></li>
-                        <li>
-                            <!-- Second Tier Drop Down -->
-                            <label for="drop-3" class="toggle">Categories<i class="fa fa-caret-down"></i></label>
-                            <a href="../storepages/browse-products-by-categories-store1.html">Categories<input
-                                    class="fa fa-caret-down"></input></a>
-                            <input type="checkbox" id="drop-3" />
 
-                            <ul>
-                                <li>
-                                    <a href="../storepages/browse-products-by-categories-store1.html">Laptop</a>
-                                </li>
-                                <li>
-                                    <a href="../storepages/browse-products-by-categories-store1.html">Phones</a>
-                                </li>
-                                <li>
-                                    <a href="../storepages/browse-products-by-categories-store1.html">Cameras</a>
-                                </li>
-                                <li>
-                                    <a href="../storepages/browse-products-by-categories-store1.html">Tablets</a>
-                                </li>
-                                <li>
-                                    <a href="../storepages/browse-products-by-categories-store1.html">TV</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="../homepage/about-us.html">About Us</a></li>
-                <li><a href="../homepage/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
+    <?php include './include/store1-header.php' ?>
     <h1 style="margin: 20px; color: gray; font-size: 50px; text-align: center">
         Browse Products by Created Time
     </h1>
@@ -124,80 +69,104 @@ $jsonStores = json_decode(csvToJson($storesFileName));
     <div class="Product_row">
 
 
-        <?php
-    include  './store_inc/browseByTime.php'
-    ?>
+        <?php include  './store_inc/browseByTime.php' ;
+        $total_products = count($productMatchedStore);
+        
+        echo  $total_products; ?>
+
 
 
     </div>
 
+
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            <!-- Pagination list items will go here -->
+        </ul>
+    </nav>
+    <?php
+
+$limit = 2;
+
+$current_page = isset($_GET['page']) ? $_GET['page'] : 1;
+
+if (!empty($current_page) && $current_page > 1) {
+    $offset = ($current_page * $limit) - $limit;
+} else {
+    $offset = 0;
+}
+
+
+$first_product_displayed = $offset + 1;
+
+
+
+$total_pages = ceil($total_products / $limit);
+
+$last_product_displayed = $total_products >= ($offset * $limit) + $limit ? $offset + $limit : $total_products;
+
+if ($first_product_displayed === $last_product_displayed) {
+    $range = 'the Last of ' . $total_products . ' Products';
+} else {
+    $range = $first_product_displayed . ' - ' . $last_product_displayed . ' of ' . $total_products . ' Products';
+}
+
+  if ($total_pages > 1) { ?>
+
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+
+            <?php
+
+        if ($current_page > 1) { ?>
+
+            <li class="page-item"><a class="page-link"
+                    href="<?php echo '?page=1' . $filtered_category_query; ?>">First</a>
+            </li>
+
+            <?php
+        }
+
+
+        for ($page_in_loop = 1; $page_in_loop <= $total_pages; $page_in_loop++) {
+            if ($total_pages > 3) {
+                if (($page_in_loop >= $current_page - 5 && $page_in_loop <= $current_page)  || ($page_in_loop <= $current_page + 5 && $page_in_loop >= $current_page)) {  ?>
+
+            <li class="page-item <?php echo $page_in_loop == $current_page ? 'active disabled' : ''; ?>">
+                <a class="page-link"
+                    href="browse-products-by-time-store1.php?store_id=<?php echo $store_id; ?><?php echo '&page=' . $page_in_loop ?> "><?php echo $page_in_loop; ?>
+                </a>
+            </li>
+
+            <?php }
+            } else { ?>
+
+            <li class="page-item <?php echo $page_in_loop == $current_page ? 'active disabled' : ''; ?>">
+                <a class="page-link"
+                    href="browse-products-by-time-store1.php?store_id=<?php echo $store_id; ?><?php echo '&page=' . $page_in_loop  ?> "><?php echo $page_in_loop; ?></a>
+            </li>
+
+            <?php } ?>
+
+            <?php
+        }
+
+
+        if ($current_page < $total_pages) { ?>
+
+            <li class="page-item"><a class="page-link"
+                    href="<?php echo '?page=' . $total_pages . $filtered_category_query; ?>">Last</a>
+            </li>
+
+            <?php } ?>
+        </ul>
+    </nav>
+
+    <?php }
+  ?>
+
     <!--  FOOTER START -->
-    <footer>
-        <div class="footer">
-            <div class="inner-footer">
-                <!--  for company name and description -->
-                <div class="footer-items">
-                    <a href="./store-1.html"><img class="logo-img" src="./images/logo-white.png" alt="Logo"
-                            style="width: 100%" /></a>
-                </div>
-
-                <!--  for quick links  -->
-                <div class="footer-items">
-                    <h3>Find It Fast</h3>
-                    <div class="border1"></div>
-                    <!--for the underline -->
-                    <ul>
-                        <a href="../homepage/footer/terms.html">
-                            <li>Term of service</li>
-                        </a>
-                        <a href="../homepage/footer/privacy.html">
-                            <li>Privacy Policy</li>
-                        </a>
-                        <a href="../homepage/contact.html">
-                            <li>Contact</li>
-                        </a>
-                        <a href="../homepage/about-us.html">
-                            <li>About Us</li>
-                        </a>
-                    </ul>
-                </div>
-
-                <!--  for some other links -->
-                <div class="footer-items">
-                    <h3>Quick Link</h3>
-                    <div class="border1"></div>
-                    <!--for the underline -->
-                    <ul>
-                        <a href="../index.html">
-                            <li>Mall</li>
-                        </a>
-                        <a href="./browse-products-by-categories-store1.html">
-                            <li>Products</li>
-                        </a>
-                        <a href="../homepage/myAccount/login.html">
-                            <li>My Account</li>
-                        </a>
-                    </ul>
-                </div>
-
-                <!--  for contact us info -->
-                <div class="footer-items">
-                    <h3>Opening Hours</h3>
-                    <div class="border1"></div>
-                    <ul>
-                        <li>MON TO SAT: 8.30am to 7 pm</li>
-                        <li>SUN : CLOSED</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!--   Footer Bottom start  -->
-            <div class="footer-bottom">
-                Copyright &copy;<a href="../homepage/copyright.html">
-                    Group 26 Semester A 2021</a>
-            </div>
-        </div>
-    </footer>
+    <?php include './include/store1-footer.php' ?>
     <script src="../jsFunctions.js"></script>
 </body>
 
