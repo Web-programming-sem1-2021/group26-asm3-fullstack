@@ -141,6 +141,36 @@
 
     </div>
     </div>
+    <div class="bottom">
+        <hr />
+        <div class="bottom-info"></div>
+        <br />
+        <div class="bottom-info">
+            <b>POLICES </b><br />
+            <a href="./store-2.php">
+                <div class="bottom-info-detail">SHOP AT 26St.ore</div>
+            </a>
+            <a href="./store-2.php">
+                <div class="bottom-info-detail">PRODUCT</div>
+            </a>
+            <a href="./store-2.php">
+                <div class="bottom-info-detail">PAYMENT</div>
+            </a>
+            <a href="./store-2.php">
+                <div class="bottom-info-detail">SHIPPING</div>
+            </a>
+        </div>
+        <div class="bottom-info">
+            <b>TEAM </b> <br />
+            <a href="../index.php">
+                <div class="bottom-info-detail">ABOUT US</div>
+            </a>
+            <a href="../index.php">
+                <div class="bottom-info-detail">STORES</div>
+            </a>
+        </div>
+    </div>
+
 </body>
 
 </html>
