@@ -47,13 +47,24 @@ $filteredProducts = filterFeaturedProduct($productOfCurrentStore);
 
 if (count($filteredProducts) > 0) { 
     for ($index = 0; $index < count($filteredProducts); $index++) {?>
-<div class="item">
-    <img src="./images/ipad.png" alt="Avatar" style="width: 100%; padding: 0px" />
-    <div class="card-container">
-        <h4><b><?php echo $filteredProducts[$index]->name ?></b></h4>
-        <h4>Price: <b><?php echo $filteredProducts[$index]->price ?></b></h4>
-        <button><a href="./product-4.html">Add to basket</a></button>
-    </div>
-</div>
+    <li class="main-product">
+        <div class="item">
+            <a href="product-2.php">
+                <div class="img-product">
+                    <img class="img-prd" src="./images/ipad.png" alt="Avatar" style="width: 100%; padding: 0px" />
+                </div>
+                <div class="card-container">
+                    <div class="product-detail">
+
+                        <h4 class="content-product-h3"><b><?php echo $productMatchedStore[$index]->name ?></b></h4>
+            </a>
+            <h4>Price:</h4>
+            <p class="price money"><b><?php echo $productMatchedStore[$index]->price ?> $</b></p>
+
+
+            <button class="btn-cart">Add to basket</button>
+        </div>
+        </div>
+    </li>
 <?php }}else { ?><h1 style="color:darkblue">No Featured Products found!</h1>
 <?php } ?>

@@ -34,13 +34,24 @@ $dates = array_map('strtotime', array_column($productMatchedStore, 'created_time
 array_multisort($dates,  SORT_DESC, SORT_NUMERIC, $productMatchedStore);
 
 for ($index = 0; $index < 10; $index++) { ?>
-<div class="item">
-    <img src="./images/ipad.png" alt="Avatar" style="width: 100%; padding: 0px" />
-    <div class="card-container">
-        <h4><b><?php echo $productMatchedStore[$index]->name ?></b></h4>
-        <h4>Price: <b><?php echo $productMatchedStore[$index]->price ?></b></h4>
-        <button><a href="./product-4.html">Add to basket</a></button>
-    </div>
-</div>
+    <li class="main-product">
+        <div class="item">
+            <a href="product-1.php">
+                <div class="img-product">
+                    <img class="img-prd" src="./images/ipad.png" alt="Avatar" style="width: 100%; padding: 0px" />
+                </div>
+                <div class="card-container">
+                    <div class="product-detail">
+
+                        <h4 class="content-product-h3"><b><?php echo $productMatchedStore[$index]->name ?></b></h4>
+            </a>
+            <h4>Price:</h4>
+            <p class="price money"><b><?php echo $productMatchedStore[$index]->price ?> $</b></p>
+
+
+            <button class="btn-cart">Add to basket</button>
+        </div>
+        </div>
+    </li>
 <?php }
-    ?>
+?>

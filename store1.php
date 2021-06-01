@@ -117,10 +117,10 @@
             <div class="product_inner">
                 <img src="./src/storepages/images/iphone12.png" width="250" />
                 <p>Iphone12</p>
-                <p>Price £1099</p>
+                <p>Price $1099</p>
                 <p>Updated: 12/04/2021</p>
-                <button><a href="./src/product-3.html">More Detail</a></button>
-                <button><a href="./src/product-3.html">Add to basket</a></button>
+                <button><a href="./src/product-1.php">More Detail</a></button>
+                <button><a href="./src/product-1.php">Add to basket</a></button>
             </div>
 
             <div class="product_overlay">
@@ -135,10 +135,10 @@
             <div class="product_inner">
                 <img src="../src/storepages/images/laptop.png" width="300" />
                 <p>Adventors Laptop</p>
-                <p>Price £1990</p>
+                <p>Price $1990</p>
                 <p>Updated: 12/04/2021</p>
-                <button><a href="./product-3.html">More Detail</a></button>
-                <button><a href="./product-3.html">Add to basket</a></button>
+                <button><a href="./product-1.php">More Detail</a></button>
+                <button><a href="./product-1.php">Add to basket</a></button>
             </div>
             <div class="product_overlay">
                 <h2>Added to basket</h2>
@@ -149,10 +149,10 @@
             <div class="product_inner">
                 <img src="../src/storepages/images/iphone12.png" width="300" />
                 <p>Iphone 12</p>
-                <p>Price £1999</p>
+                <p>Price $1999</p>
                 <p>Updated: 12/04/2021</p>
-                <button><a href="./product-3.html">More Detail</a></button>
-                <button><a href="./product-3.html">Add to basket</a></button>
+                <button><a href="./product-1.php">More Detail</a></button>
+                <button><a href="./product-1.php">Add to basket</a></button>
             </div>
             <div class="product_overlay">
                 <h2>Added to basket</h2>
@@ -219,10 +219,10 @@
             <div class="product_inner">
                 <img src="../src/storepages/images/iphone12.png" width="300" />
                 <p>Iphone 12</p>
-                <p>Price £1999</p>
+                <p>Price $1999</p>
                 <p>Updated: 12/04/2021</p>
-                <button><a href="./product-3.html">More Detail</a></button>
-                <button><a href="./product-3.html">Add to basket</a></button>
+                <button><a href="./product-1.php">More Detail</a></button>
+                <button><a href="./product-1.php">Add to basket</a></button>
             </div>
             <div class="product_overlay">
                 <h2>Added to basket</h2>
@@ -233,10 +233,10 @@
             <div class="product_inner">
                 <img src="../src/storepages/images/laptop.png" width="300" />
                 <p>Laptop</p>
-                <p>Price £1999</p>
+                <p>Price $1999</p>
                 <p>Updated: 12/04/2021</p>
-                <button><a href="./product-3.html">More Detail</a></button>
-                <button><a href="./product-3.html">Add to basket</a></button>
+                <button><a href="./product-1.php">More Detail</a></button>
+                <button><a href="./product-1.php">Add to basket</a></button>
             </div>
             <div class="product_overlay">
                 <h2>Added to basket</h2>
@@ -264,7 +264,7 @@
             <div class="card-container">
                 <h4><b>Canon 70d</b></h4>
                 <p>Price:$1760</p>
-                <button><a href="./product-3.html">Add to basket</a></button>
+                <button><a href="./product-1.php">Add to basket</a></button>
             </div>
         </div>
 
@@ -274,7 +274,7 @@
                 <br /><br /><br />
                 <h4><b>iphone 12</b></h4>
                 <p>Price:$1350</p>
-                <button><a href="./product-3.html">Add to basket</a></button>
+                <button><a href="./product-1.php">Add to basket</a></button>
             </div>
         </div>
         <div class="item">
@@ -283,7 +283,7 @@
                 <br /><br /><br />
                 <h4><b>Avendous Laptop</b></h4>
                 <p>Price:$1990</p>
-                <button><a href="./product-3.html">Add to basket</a></button>
+                <button><a href="./product-1.php">Add to basket</a></button>
             </div>
         </div>
 
@@ -301,7 +301,7 @@
             <div class="card-container">
                 <h4><b>Canon 70d</b></h4>
                 <p>Price:$1760</p>
-                <button><a href="./product-3.html">Add to basket</a></button>
+                <button><a href="./product-1.php">Add to basket</a></button>
             </div>
         </div>
 
@@ -311,7 +311,7 @@
                 <br /><br /><br />
                 <h4><b>iphone 12</b></h4>
                 <p>Price:$1350</p>
-                <button><a href="./product-3.html">Add to basket</a></button>
+                <button><a href="./product-1.php">Add to basket</a></button>
             </div>
         </div>
 
@@ -321,7 +321,7 @@
                 <br /><br /><br />
                 <h4><b>Avendous Laptop</b></h4>
                 <p>Price:$2100</p>
-                <button><a href="./product-3.html">Add to basket</a></button>
+                <button><a href="./product-1.php">Add to basket</a></button>
             </div>
         </div>
         <div class="item">
@@ -330,7 +330,7 @@
                 <br /><br /><br />
                 <h4><b>Avendous Laptop</b></h4>
                 <p>Price:$2100</p>
-                <button><a href="./product-3.html">Add to basket</a></button>
+                <button><a href="./product-1.php">Add to basket</a></button>
             </div>
         </div>
 
@@ -340,7 +340,7 @@
                 <br /><br /><br />
                 <h4><b>Avendous Laptop</b></h4>
                 <p>Price:$1990</p>
-                <button><a href="./product-3.html">Add to basket</a></button>
+                <button><a href="./product-1.php">Add to basket</a></button>
             </div>
         </div>
 
@@ -358,7 +358,7 @@
             <div class="card-container">
                 <h4><b>Canon 70d</b></h4>
                 <p>Price:$1760</p>
-                <button><a href="./product-3.html">Add to basket</a></button>
+                <button><a href="./product-1.php">Add to basket</a></button>
             </div>
         </div>
 
@@ -368,7 +368,7 @@
                 <br /><br /><br />
                 <h4><b>iphone 12</b></h4>
                 <p>Price:$1350</p>
-                <button><a href="./product-3.html">Add to basket</a></button>
+                <button><a href="./product-1.php">Add to basket</a></button>
             </div>
         </div>
 
@@ -378,7 +378,7 @@
                 <br /><br /><br />
                 <h4><b>Avendous Laptop</b></h4>
                 <p>Price:$2100</p>
-                <button><a href="./product-3.html">Add to basket</a></button>
+                <button><a href="./product-1.php">Add to basket</a></button>
             </div>
         </div>
     </div>

@@ -1,9 +1,7 @@
-// Modal
+
 const modal = document.getElementById("myModal");
 const btn = document.getElementById("cart");
 const close = document.getElementsByClassName("close")[0];
-// tại sao lại có [0] như  thế này bởi vì mỗi close là một html colection nên khi mình muốn lấy giá trị html thì phải thêm [0].
-// Nếu mình có 2 cái component cùng class thì khi [0] nó sẽ hiển thị component 1 còn [1] thì nó sẽ hiển thị component 2.
 const close_footer = document.getElementsByClassName("close-footer")[0];
 const order = document.getElementsByClassName("order")[0];
 btn.onclick = function () {
@@ -24,7 +22,6 @@ window.onclick = function (event) {
   }
 };
 
-// xóa cart
 const remove_cart = document.getElementsByClassName("btn-danger");
 for (let i = 0; i < remove_cart.length; i++) {
   const button = remove_cart[i];
@@ -45,8 +42,8 @@ function updatecart() {
     const quantity_item = cart_row.getElementsByClassName(
       "cart-quantity-input"
     )[0];
-    const price = parseFloat(price_item.innerText); // chuyển một chuổi string sang number để tính tổng tiền.
-    const quantity = quantity_item.value; // lấy giá trị trong thẻ input
+    const price = parseFloat(price_item.innerText); 
+    const quantity = quantity_item.value; 
     total = total + price * quantity;
   }
   document.getElementsByClassName("cart-total-price")[0].textContent =
@@ -65,7 +62,7 @@ for (let i = 0; i < quantity_input.length; i++) {
   });
 }
 
-// Thêm vào giỏ
+
 const add_cart = document.getElementsByClassName("btn-cart");
 for (let i = 0; i < add_cart.length; i++) {
   const add = add_cart[i];

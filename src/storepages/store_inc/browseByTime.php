@@ -43,8 +43,8 @@ for ($index = 0; $index < count($productMatchedStore); $index++) { ?>
         <h2><b><?php echo $productMatchedStore[$index]->name ?></b></h2>
         <h2>Price: <b><?php echo $productMatchedStore[$index]->price ?></b></h2>
         <h5>Created Date: <?php echo substr($productMatchedStore[$index]->created_time, 0, 10) ?></h5>
-        <button><a href="./product-3.html">More Detail</a></button>
-        <button><a href="./product-3.html">Add to basket</a></button>
+        <button><a href="./product-1.php">More Detail</a></button>
+        <button><a href="./product-1.php">Add to basket</a></button>
     </div>
     <div class="product_overlay">
         <h2>Added to basket</h2>

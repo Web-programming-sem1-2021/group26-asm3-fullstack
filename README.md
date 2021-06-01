@@ -196,7 +196,7 @@ Group26_Asm2_Javascript
 │  ├─ popup-product.css
 │  ├─ product-1.php
 │  ├─ product-2.html
-│  ├─ product-3.html
+│  ├─ product-1.php
 │  ├─ product-4.html
 │  ├─ product-style.css
 │  ├─ store-1.html
