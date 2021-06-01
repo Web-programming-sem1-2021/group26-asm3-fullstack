@@ -292,7 +292,6 @@ li {
   width: 85vw;
   height: fit-content;
 
-
   background-color: #ffffff;
 }
 .carousel3::-webkit-scrollbar {
@@ -305,7 +304,6 @@ li {
   -ms-overflow-style: none;
   margin: 0 auto 0 auto;
   height: fit-content;
-
 }
 .item2 {
   min-width: 300px;

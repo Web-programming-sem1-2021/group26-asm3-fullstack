@@ -41,7 +41,7 @@ a {
   top: 0;
 }
 .middle {
-  align-items:center;
+  align-items: center;
   margin-top: 20px;
   width: 1300px;
   height: 800px;
@@ -220,7 +220,7 @@ body {
   align-items: center;
   /* background-color: aquamarine; */
   text-align: center;
-  width: 100%;;
+  width: 100%;
   font-size: small;
   margin-top: -10%;
 }

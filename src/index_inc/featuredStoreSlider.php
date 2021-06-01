@@ -36,20 +36,15 @@ $filteredStore = filterFeaturedStore($storeJson);
 
 for ($index = 0; $index < 10; $index++) { ?>
 <div class="thumbnail">
-    <a href="./storepages/product-1.php">
+    <a href="./storepages/store-1.php?store_id=<?php echo $filteredStore[$index]->id ?>">
         <img src="./images/homeImages/6.png" alt="jacket" /></a>
     <div class="product-details">
         <h2>
-
+            <a href="./storepages/store-1.php?store_id=<?php echo $filteredStore[$index]->id ?>">
+                <em><?php echo $filteredStore[$index]->name; ?></em> </a>
         </h2>
-        <p><span>$39.99</span> $29.99</p>
-        <p><a href="./storepages/store-3.php">
-                <em><?php echo $filteredStore[$index]
-                            ->name; ?></em> </a>
-        </p>
 
-
-        <a href=" ./storepages/product-1.php">View More</a>
+        <br /> <a href=" ./storepages/product-1.php">View More</a>
     </div>
 </div>
 <?php }
