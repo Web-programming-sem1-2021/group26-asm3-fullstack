@@ -1,0 +1,38 @@
+
+body {
+  background-color: lightblue;
+}
+
+.card1{
+  text-align: center;
+}
+
+textarea
+{
+	width: 75%;
+	height: 10%;
+}
+
+
+input[type='radio'], label{   
+  vertical-align:middle;
+  margin-top: -1px;
+
+}
+.card{
+  margin-top: 3%;
+  text-align: center  ;
+}
+
+input {
+  background-color: lightblue;
+  padding: 15px 100px;
+  margin: 10px 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+input:hover {
+  opacity: 0.5;
+}

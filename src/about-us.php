@@ -16,7 +16,7 @@
     <script src="./script/modal.js" defer></script>
     <style></style>
     <script src="./jsFunctions.js" defer></script>
-    <link rel="stylesheet" href="/style/cookie.css" />
+    <link rel="stylesheet" href="./style/cookie.css" />
     <script src="script/cookie.js" defer></script>
 </head>
 
@@ -45,7 +45,7 @@
     <section class="profile-card">
         <h2 style="position: relative">Nguyễn Thị Quỳnh Giang</h2>
         <p class="modal-open" data-modal="modal-giang">
-            <img class="small1" src="./images/team/Giang.jpg" alt="Picture of Giang" />
+            <img class="small1" id="Giang" src="./images/team/Giang.jpg" alt="Picture of Giang" />
         </p>
         <div>
             <h3>Major: Information Technology</h3>
@@ -68,7 +68,7 @@
     <section class="profile-card">
         <h2 style="display: block; position: relative">Joo Jeong-hyeon</h2>
         <p class="modal-open" data-modal="modal-joo">
-            <img class="small2" src="./images/team/Jeong-hyeon.png" alt="Picture of Jeong-hyeon" />
+            <img class="small2" id="Jeong-hyeon" src="./images/team/Jeong-hyeon.png" alt="Picture of Jeong-hyeon" />
         </p>
         <div>
             <h3>Major: Information Technology</h3>
@@ -93,7 +93,7 @@
     <section class="profile-card">
         <h2 style="display: block; position: relative">Ramcharan Ramacharan</h2>
         <p class="modal-open" data-modal="modal-ramcharan">
-            <img class="small1" src="./images/team/Ram.jpg" alt="Picture of Ramcharan" />
+            <img class="small1" id="Ram" src="./images/team/Ram.jpg" alt="Picture of Ramcharan" />
         </p>
         <div>
             <h3>Major: Information Technology</h3>
