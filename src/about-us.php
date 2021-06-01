@@ -474,8 +474,7 @@
                                     <i class="fas fa-envelope"></i>
                                     Email
                                 </h3>
-                                <a href="mailto:Robertsmith@gmail.com"
-                                    class="contacts-text">vokhaiminh0811@gmail.com</a>
+                                <a href="mailto:Robertsmith@gmail.com" class="contacts-text">vokhaiminh0811@gmail.com</a>
                             </div>
 
                             <div class="contacts-item">

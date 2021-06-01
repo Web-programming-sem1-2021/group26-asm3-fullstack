@@ -44,7 +44,7 @@ for ($index = 0; $index < 10; $index++) { ?>
                 <em><?php echo $filteredStore[$index]->name; ?></em> </a>
         </h2>
 
-        <br /> <a href=" ./storepages/product-1.html">View More</a>
+        <br /> <a href=" ./storepages/product-1.php">View More</a>
     </div>
 </div>
 <?php }
