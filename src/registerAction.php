@@ -6,6 +6,12 @@ $phone = $_GET["phone"];
 
 $password = $_GET["password"];
 
+$email = $_GET["email"];
+
+$phone = $_GET["phone"];
+
+$password = $_GET["password"];
+
 $file_open = fopen("data/credentials.csv", "a");
 $no_rows = count(file("data/credentials.csv"));
 if ($no_rows > 1) {
