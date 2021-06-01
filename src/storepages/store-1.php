@@ -43,7 +43,7 @@
          <link rel="stylesheet" href="/src/style/store.css" />
          <link rel="stylesheet" href="/src/style/cookie.css" />
          <script src="/src/script/cookie.js" defer></script>
-         <script src="./script/store3-main.js" defer></script>
+         
          <script src="./script/cart.js" defer ></script>
      </head>
 
@@ -320,7 +320,7 @@
 
                      <!--   Footer Bottom start  -->
                      <div class="footer-bottom">
-                         Copyright &copy;<a href="../homepage/copyright.html">
+                         Copyright &copy;<a href="../../src/copyright.php">
                              Group 26 Semester A 2021</a>
                      </div>
                  </div>

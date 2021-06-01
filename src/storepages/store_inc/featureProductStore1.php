@@ -45,9 +45,9 @@ $productOfCurrentStore =  getProductMatchedStore($productJson);
 $filteredProducts = filterFeaturedProduct($productOfCurrentStore);
 
 
-if (count($filteredProducts) > 0) { 
-    for ($index = 0; $index < count($filteredProducts); $index++) {?>
-    <li class="main-product">
+if (count($filteredProducts) > 0) {
+    for ($index = 0; $index < count($filteredProducts); $index++) { ?>
+      <li class="main-product">
         <div class="item">
             <a href="product-2.php">
                 <div class="img-product">
@@ -65,5 +65,7 @@ if (count($filteredProducts) > 0) {
         </div>
         </div>
     </li>
-<?php }}else { ?><h1 style="color:darkblue">No Featured Products found!</h1>
+    <?php }
+} else { ?><h1 style="color:darkblue">No Featured Products found!</h1>
 <?php } ?>
+

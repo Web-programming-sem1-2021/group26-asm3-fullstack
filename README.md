@@ -54,7 +54,7 @@ Group26_Asm2_Javascript
 │  ├─ faqs.html
 │  ├─ fees.html
 │  ├─ footer
-│  │  ├─ copyright.html
+│  │  ├─ copyright.php
 │  │  ├─ privacy.html
 │  │  └─ terms.html
 │  ├─ myAccount
@@ -205,7 +205,7 @@ Group26_Asm2_Javascript
 │  ├─ store-3.html
 │  ├─ store-4.html
 │  ├─ style2.css
-│  └─ thankyou.html
+│  └─ thankyou.php
 ├─ style
 │  ├─ aboutUs
 │  │  ├─ about-us.css
