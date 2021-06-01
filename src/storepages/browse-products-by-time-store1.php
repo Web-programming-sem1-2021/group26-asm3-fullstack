@@ -71,8 +71,31 @@ $jsonStores = json_decode(csvToJson($storesFileName));
 
         <?php include  './store_inc/browseByTime.php' ;
         $total_products = count($productMatchedStore);
+
+        $paginatedProducts = getProductsForPage($productMatchedStore, $_GET['offset'], $_GET['limit']);
+
+        for ($index = 0; $index < count($paginatedProducts); $index++) { ?>
+
+        <div class="product--col">
+            <div class="product_inner">
+                <img src="../storepages/images/laptop.png" width="300" />
+                <h2><b><?php echo $paginatedProducts[$index]->name ?></b>
+                </h2>
+                <h2>Price: <b><?php echo $paginatedProducts[$index]->price ?></b>
+                </h2>
+                <h5>Created Date: <?php echo substr($paginatedProducts[$index]->created_time, 0, 10) ?>
+                </h5>
+                <button><a href="./product-3.html">More Detail</a></button>
+                <button><a href="./product-3.html">Add to basket</a></button>
+            </div>
+            <div class="product_overlay">
+                <h2>Added to basket</h2>
+                <i class="fa fa-check"></i>
+            </div>
+        </div>
+        <?php }
         
-        echo  $total_products; ?>
+    ?>
 
 
 
@@ -82,6 +105,7 @@ $jsonStores = json_decode(csvToJson($storesFileName));
     <nav aria-label="Page navigation">
         <ul class="pagination">
             <!-- Pagination list items will go here -->
+
         </ul>
     </nav>
     <?php
@@ -100,16 +124,10 @@ if (!empty($current_page) && $current_page > 1) {
 $first_product_displayed = $offset + 1;
 
 
-
 $total_pages = ceil($total_products / $limit);
 
 $last_product_displayed = $total_products >= ($offset * $limit) + $limit ? $offset + $limit : $total_products;
 
-if ($first_product_displayed === $last_product_displayed) {
-    $range = 'the Last of ' . $total_products . ' Products';
-} else {
-    $range = $first_product_displayed . ' - ' . $last_product_displayed . ' of ' . $total_products . ' Products';
-}
 
   if ($total_pages > 1) { ?>
 
@@ -117,11 +135,10 @@ if ($first_product_displayed === $last_product_displayed) {
         <ul class="pagination">
 
             <?php
-
         if ($current_page > 1) { ?>
 
             <li class="page-item"><a class="page-link"
-                    href="<?php echo '?page=1' . $filtered_category_query; ?>">First</a>
+                    href="browse-products-by-time-store1.php?store_id=<?php echo $store_id; ?><?php echo '&page=1&offset=0&limit=2'; ?>">First</a>
             </li>
 
             <?php
@@ -134,16 +151,17 @@ if ($first_product_displayed === $last_product_displayed) {
 
             <li class="page-item <?php echo $page_in_loop == $current_page ? 'active disabled' : ''; ?>">
                 <a class="page-link"
-                    href="browse-products-by-time-store1.php?store_id=<?php echo $store_id; ?><?php echo '&page=' . $page_in_loop ?> "><?php echo $page_in_loop; ?>
-                </a>
+                    href="browse-products-by-time-store1.php?store_id=<?php echo $store_id; ?><?php echo('&page=' . $page_in_loop . '&offset=' . $offset .'&limit=' . $limit); ?>">
+                    <?php echo $page_in_loop; ?> </a>
             </li>
 
             <?php }
             } else { ?>
 
-            <li class="page-item <?php echo $page_in_loop == $current_page ? 'active disabled' : ''; ?>">
+            <li class=" page-item <?php echo $page_in_loop == $current_page ? 'active disabled' : ''; ?>">
                 <a class="page-link"
-                    href="browse-products-by-time-store1.php?store_id=<?php echo $store_id; ?><?php echo '&page=' . $page_in_loop  ?> "><?php echo $page_in_loop; ?></a>
+                    href="browse-products-by-time-store1.php?store_id=<?php echo $store_id; ?><?php echo('&page=' . $page_in_loop . '&offset=' . $offset .'&limit=' . $limit) ?> ">
+                </a>
             </li>
 
             <?php } ?>
@@ -154,8 +172,8 @@ if ($first_product_displayed === $last_product_displayed) {
 
         if ($current_page < $total_pages) { ?>
 
-            <li class="page-item"><a class="page-link"
-                    href="<?php echo '?page=' . $total_pages . $filtered_category_query; ?>">Last</a>
+            <li class=" page-item"><a class="page-link"
+                    href="browse-products-by-time-store1.php?store_id=<?php echo $store_id; ?><?php echo '&page=' . $total_pages . '&offset=' . $offset .'&limit=' . $limit; ?>; ?>">Last</a>
             </li>
 
             <?php } ?>

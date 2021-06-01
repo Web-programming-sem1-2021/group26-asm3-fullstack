@@ -33,23 +33,10 @@ function getNewroductMatchedStore($products)
 $productMatchedStore = getNewroductMatchedStore($productJson);
 
 $dates = array_map('strtotime', array_column($productMatchedStore, 'created_time'));
-array_multisort($dates,  SORT_DESC, SORT_NUMERIC, $productMatchedStore);
+array_multisort($dates, SORT_DESC, SORT_NUMERIC, $productMatchedStore);
 
-for ($index = 0; $index < count($productMatchedStore); $index++) { ?>
 
-<div class="product--col">
-    <div class="product_inner">
-        <img src="../storepages/images/laptop.png" width="300" />
-        <h2><b><?php echo $productMatchedStore[$index]->name ?></b></h2>
-        <h2>Price: <b><?php echo $productMatchedStore[$index]->price ?></b></h2>
-        <h5>Created Date: <?php echo substr($productMatchedStore[$index]->created_time, 0, 10) ?></h5>
-        <button><a href="./product-3.html">More Detail</a></button>
-        <button><a href="./product-3.html">Add to basket</a></button>
-    </div>
-    <div class="product_overlay">
-        <h2>Added to basket</h2>
-        <i class="fa fa-check"></i>
-    </div>
-</div>
-<?php }
-?>
+function getProductsForPage($productArray, $offset, $limit)
+{
+    return array_slice($productArray, $offset, $limit);
+};
