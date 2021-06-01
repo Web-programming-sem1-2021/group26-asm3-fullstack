@@ -133,7 +133,7 @@ Group26_Asm2_Javascript
 │  ├─ basket.css
 │  ├─ browse-products-by-categories-store1.html
 │  ├─ browse-products-by-time-store1.html
-│  ├─ category-1.html
+│  ├─ category-1.php
 │  ├─ checkout.html
 │  ├─ images
 │  │  ├─ Carousel
@@ -201,7 +201,7 @@ Group26_Asm2_Javascript
 │  ├─ product-style.css
 │  ├─ store-1.html
 │  ├─ store-2-style.css
-│  ├─ store-3.php
+│  ├─ store-2.php
 │  ├─ store-3.html
 │  ├─ store-4.html
 │  ├─ style2.css

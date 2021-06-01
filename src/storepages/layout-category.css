@@ -9,11 +9,11 @@ a {
 }
 .container {
   width: 1300px;
+  height: 700px;
   margin: 0 auto;
-  background-color: rgb(255, 255, 255);
 }
 .container div {
-  text-align: left;
+  text-align: center;
   display: table;
 }
 .sidebar-button {
@@ -42,10 +42,8 @@ a {
 }
 .middle {
   align-items: center;
-  margin-top: 20px;
+  margin-top: 7g0px;
   width: 1300px;
-  height: 800px;
-  background-color: rgb(255, 255, 255);
   position: relative;
 }
 /* .middle-left{
