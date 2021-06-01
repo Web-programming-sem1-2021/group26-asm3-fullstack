@@ -23,13 +23,13 @@ array_multisort($dates,  SORT_DESC, SORT_NUMERIC, $productJson);
 
 for ($i = 0; $i <= 10; $i++) { ?>
 <div class="thumbnail">
-    <a href="./storepages/product-1.html">
+    <a href="./storepages/store-1.php?store_id=<?php echo $productJson[$i]->id?>">
         <img src="./images/homeImages/store1.png" alt="" />
     </a>
     <div class="product-details">
         <h2>
-            <?php echo $productJson[$i]->created_time ?></h2>
-        <a href="./storepages/product-1.html">View</a>
+            <?php echo $productJson[$i]->name ?></h2>
+        <a href="./storepages/store-1.php?store_id=<?php echo $productJson[$i]->id?>">View</a>
     </div>
 </div>
 
