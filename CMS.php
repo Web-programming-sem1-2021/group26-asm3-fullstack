@@ -83,18 +83,19 @@ if (isset($_POST["photo_location"])) {
     <title>CMS For Administor</title>
     <meta name="description" content="CMS For Administor" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    
+    <link rel="stylesheet" href="./src/style/CMS.css" />
+    <link rel="stylesheet" href="./src/style.css" />
 </head>
 
 <body>
-    <header id="nav_header"></header>
+<?php include "./src/inc/header.php"; ?>
+
     <div class="body_spacing">
 
 
         <div class="toast-large" id="toast">
             <div class="toast-large-elements">
-                <p id="toast-large-message">Input Updated successfully!</p>
+                
             </div>
         </div>
         <script>
@@ -109,17 +110,18 @@ if (isset($_POST["photo_location"])) {
 
 
         <div class="card">
+        <div class="card1">
             <h3>Manage Content</h3>
             <form action="CMS.php" method="post" enctype="application/x-www-form-urlencoded">
 
                 <div class="styled-textarea bottom-24">
-                    <label for="content">Content Input</label><br />
+                    <label for="content">Input</label><br />
                     <textarea name="content" id="content" placeholder="Write new information here" required></textarea>
                 </div>
 
        
                 <div class="styled-radio">
-                    <p>Update section...</p>
+                    
                     <input type="radio" name="content_page" id="privacy" value="privacy" required checked />
                     <label for="privacy">Privacy Policy</label>
                     <br />
@@ -133,7 +135,7 @@ if (isset($_POST["photo_location"])) {
                 <input type="submit" />
 
             </form>
-
+        </div>
     
         </div>
 
@@ -168,7 +170,7 @@ if (isset($_POST["photo_location"])) {
               
             </form>
 
-            <a href="5.1.2-Aboutus.html">View About Us</a>
+            
 
         </div>
 

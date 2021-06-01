@@ -69,7 +69,7 @@
         <head>
             <title>Terms of service</title>
         </head>
-        <img src="../../icons/handshake.svg" alt="" class="icon" />
+        <img src="./icons/handshake.svg" alt="" class="icon" />
 
         <div class="space"></div>
         <div class="main">

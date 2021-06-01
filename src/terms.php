@@ -9,6 +9,7 @@
   <script src="../../jsFunctions.js" async></script>
   <link rel="stylesheet" href="/style/cookie.css">
   <script src="/script/cookie.js" defer></script>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -66,7 +67,7 @@
     <head>
       <title>Terms of service</title>
     </head>
-    <img src="../../icons/handshake.svg" alt="" class="icon" />
+    <img src="./icons/handshake.svg" alt="" class="icon" />
 
     <div class="space"></div>
     <div class="main">
