@@ -63,7 +63,8 @@ function update_photo()
     }
     move_uploaded_file(
         $photo["tmp_name"],
-        $_SERVER["DOCUMENT_ROOT"] . "./src/images/team" . $photo_name
+        $_SERVER["DOCUMENT_ROOT"] . "src/images/team" . $photo_name
+        
     );
 }
 
@@ -153,7 +154,7 @@ if (isset($_POST["photo_location"])) {
             <form action="CMS.php" method="post" enctype="multipart/form-data">
 
                 <div class="upload_file">
-                    <input type="file" name="profilepic" id="profilepic"  />
+                    <input type="file" name="profilepic" id="profilepic"  required accept="image/png, image/jpeg, image/jpg"/>
                 </div>
 
                 <div class="styled-radio">
