@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <?php include '../storepages/include/product1-header.php' ?>
+<?php include '../storepages/include/product1-header.php' ?>
 
 
     <div class="container">

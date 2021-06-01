@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="layout-product.css" />
     <script src="./layout-product.js" defer></script>
     <link rel="icon" href="#" />
-    <title>LINNEN BOMBER JACKET</title>
+    <title>BEIGE LENNEN JACKET</title>
     <link rel="stylesheet" href="./style2.css" />
     <script src="../script/cart.js" defer></script>
     <link rel="stylesheet" href="../style/cookie.css" />
@@ -39,7 +39,7 @@
             <div class="middle-left">
                 <li class="main-product">
                     <div class="img-product">
-                        <img class="img-prd" src="./images/Jacket/jacket2.jpeg"/>
+                        <img class="img-prd" src="./images/Jacket/jacket2.jpeg" />
                     </div>
                 </li>
             </div>
@@ -49,11 +49,11 @@
             <div class="middle-right-1"></div>
             <div class="middle-right-2">
                 <li class=" main-product">
-                <div class=" product-detail">
-                    <h1 class="content-product-h3" style="text-align: left;">
-                    LINEN WORKER JACKET
-                    </h1>
-                </div>
+                    <div class=" product-detail">
+                        <h1 class="content-product-h3" style="text-align: left;">
+                            BEIGE LENNEN JACKET
+                        </h1>
+                    </div>
                 </li>
             </div>
 
@@ -62,7 +62,7 @@
 
             <div class="middle-right-3">
                 <p class="Scription">
-                LIGHTWEIGHT COLLARED JACKET MADE OF LINEN. FEATURING LONG SLEEVES,
+                    LIGHTWEIGHT COLLARED JACKET MADE OF LINEN. FEATURING LONG SLEEVES,
 
                 </p>
             </div>
@@ -79,7 +79,7 @@
             </div>
 
             <div class="middle-right-4">
-                <p>Color : Navy Blue | 7545/600</p>
+                <p>Color : Cotton Beige | 7545/600</p>
             </div>
             <br />
             <hr width="230px" />
