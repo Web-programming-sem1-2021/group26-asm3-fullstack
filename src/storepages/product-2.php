@@ -29,7 +29,7 @@
 
         <!-- TOP -->
         <div class="top">
-            <a href="../storepages/store-3.php">
+            <a href="../storepages/store-2.php">
                 <img src="./images/logo1.png" style="width: 500px" />
             </a>
         </div>

@@ -622,8 +622,11 @@ body {
   margin: 0 auto 0 auto;
   width: 95vw;
   height: fit-content;
-  border: solid #7daeee 0.5px;
-  background-color: #282b2bd2;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 222, 223) 0%,
+    rgb(255, 255, 227) 100%
+  );
 }
 
 .carousel::-webkit-scrollbar {
@@ -637,8 +640,7 @@ body {
   margin: 15px;
   font-size: 5em;
   text-align: center;
-  background-color: #fff9ef;
-  border-radius: 7px;
+  background-color: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: inline-table;
   position: static;

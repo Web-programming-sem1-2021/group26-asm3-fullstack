@@ -56,13 +56,12 @@ if (count($filteredProducts) > 0) {
                 <div class="card-container">
                     <div class="product-detail">
 
-                        <h4 class="content-product-h3"><b><?php echo $productMatchedStore[$index]->name ?></b></h4>
+                        <h4 class="content-product-h3" style="font-family:Segoe UI; color:black; font-size:9.8pt; font-weight:normal"><b><?php echo $productMatchedStore[$index]->name ?></b></h4>
             </a>
-            <h4>Price:</h4>
-            <p class="price money"><b><?php echo $productMatchedStore[$index]->price ?> $</b></p>
+            <p class="price money" style="font-family:Segoe UI; color:black; font-size:9pt; font-weight:normal "><b><?php echo $productMatchedStore[$index]->price ?> $</b></p>
 
 
-            <button class="btn-cart">Add to basket</button>
+            <button class="btn-cart"style="width: 100%; background-color:white; border-color:rgb(156, 156, 156);border-width: 1px; color:black; padding:0.6em; cursor:pointer">Add to basket</button>
         </div>
         </div>
     </li>

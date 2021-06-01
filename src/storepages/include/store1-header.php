@@ -1,14 +1,15 @@
-
 <header>
-    <nav> 
-     
+    <nav>
+
 
 
         <!-- loginMypageMybasket -->
-        <div class="on-top" style="margin-right:0%;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
-       <button id="cart" class="fa fa-shopping-basket">
-          MY BASKET
-        </button>
+        <div class="on-top" style="z-index: 2 !important">
+            <button id="cart" class="fa fa-shopping-basket" style="cursor:pointer;">
+                <h3>
+                MY BASKET
+                </h3>
+            </button>
         </div>
         <div id="myModal" class="modal">
             <div class="modal-content">

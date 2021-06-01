@@ -41,7 +41,6 @@
          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
          <title>Store</title>
          <link rel="stylesheet" href="/src/style/store.css" />
-         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
          <link rel="stylesheet" href="/src/style/cookie.css" />
          <script src="/src/script/cookie.js" defer></script>
          <script src="./script/store3-main.js" defer></script>

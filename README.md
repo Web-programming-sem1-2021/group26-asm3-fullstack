@@ -201,7 +201,7 @@ Group26_Asm2_Javascript
 │  ├─ product-style.css
 │  ├─ store-1.php
 │  ├─ store-2-style.css
-│  ├─ store-3.php
+│  ├─ store-2.php
 │  ├─ store-3.html
 │  ├─ store-4.html
 │  ├─ style2.css
