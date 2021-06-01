@@ -36,16 +36,31 @@ array_multisort($dates, SORT_DESC, SORT_NUMERIC, $productMatchedStore);
 
 if (count($productMatchedStore) > 0) {
     for ($index = 0; $index <= 10; $index++) { ?>
-<div class="item">
-    <img src="./images/ipad.png" alt="Avatar" style="width: 100%; padding: 0px" />
-    <div class="card-container">
-        <h4><b><?php echo $productMatchedStore[$index]->name ?></b>
-        </h4>
-        <h4>Price: <b><?php echo $productMatchedStore[$index]->price ?></b></h4>
-        <button><a href="./product-4.html">Add to basket</a></button>
+
+<li class="main-product">
+    <div class="item">
+        <a href="product-2.php">
+            <div class="img-product">
+                <img class="img-prd" src="./images/ipad.png" alt="Avatar" style="width: 100%; padding: 0px" />
+            </div>
+            <div class="card-container">
+                <div class="product-detail">
+                    <h4 class="content-product-h3"
+                        style="font-family:Segoe UI; color:black; font-size:9.8pt; font-weight:normal">
+                        <b><?php echo $productMatchedStore[$index]->name ?></b>
+                    </h4>
+        </a>
+        <p class="price money" style="font-family:Segoe UI; color:black; font-size:9pt; font-weight:normal ">
+            <b><?php echo $productMatchedStore[$index]->price ?>$</b>
+        </p>
+        <button class="btn-cart"
+            style="width: 100%; background-color:white; border-color:rgb(156, 156, 156);border-width: 1px; color:black; padding:0.6em; cursor:pointer">Add
+            to basket</button>
     </div>
-</div>
-<?php }
+    </div>
+</li>
+    <?php }
 } else { ?>
-<h1 style="color:darkblue">No New Products found!</h1>
-<?php }
+    <h1 style="color:darkblue">No New Products found!</h1>
+    <?php }
+

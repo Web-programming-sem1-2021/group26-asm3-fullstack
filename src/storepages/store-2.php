@@ -108,6 +108,7 @@
                                     </div>
 
                                 </div>
+                            </div>
                         </a>
                         <button type="button" class="btn btn-cart">
                             Add to cart

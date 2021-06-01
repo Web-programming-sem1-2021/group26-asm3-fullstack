@@ -30,7 +30,7 @@
                     <div class="caption">
                         <h1>1. Winter Collection 2020</h1>
                         <p>Lorem ipsum dummy text goes here.</p>
-                        <a href="./storepages/store-1.html">Shop Now</a>
+                        <a href="./storepages/store-1.php">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@
                     <div class="caption">
                         <h1>2. Winter Collection 2020</h1>
                         <p>Lorem ipsum dummy text goes here.</p>
-                        <a href="./storepages/store-1.html">Shop Now</a>
+                        <a href="./storepages/store-1.php">Shop Now</a>
                     </div>
                 </div>
             </div>
