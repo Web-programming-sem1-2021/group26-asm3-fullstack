@@ -137,7 +137,7 @@ $jsonStores = json_decode(csvToJson($storesFileName));
             <div class="inner-footer">
                 <!--  for company name and description -->
                 <div class="footer-items">
-                    <a href="./store-1.html"><img class="logo-img" src="./images/logo-white.png" alt="Logo"
+                    <a href="./store-1.php"><img class="logo-img" src="./images/logo-white.png" alt="Logo"
                             style="width: 100%" /></a>
                 </div>
 

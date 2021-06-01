@@ -124,7 +124,7 @@
                          <div class="caption">
                              <h1>Opening Sales 2021</h1>
                              <p>Upto 50% Exciting Offers</p>
-                             <a href="./store-1.html">Shop Now</a>
+                             <a href="./store-1.php">Shop Now</a>
                          </div>
                      </div>
                  </div>
@@ -133,7 +133,7 @@
                          <div class="caption">
                              <h1>New Collection 2021</h1>
                              <p>Offers upto 50%</p>
-                             <a href="./store-1.html">Shop Now</a>
+                             <a href="./store-1.php">Shop Now</a>
                          </div>
                      </div>
                  </div>
@@ -142,7 +142,7 @@
                          <div class="caption">
                              <h1>Exciting Collection 2021</h1>
                              <p>Upto 50% offer</p>
-                             <a href="./store-1.html">Shop Now</a>
+                             <a href="./store-1.php">Shop Now</a>
                          </div>
                      </div>
                  </div>
@@ -329,7 +329,7 @@
                      <div class="inner-footer">
                          <!--  for company name and description -->
                          <div class="footer-items">
-                             <a href="./store-1.html"><img class="logo-img" src="./images/logo-white.png" alt="Logo"
+                             <a href="./store-1.php"><img class="logo-img" src="./images/logo-white.png" alt="Logo"
                                      style="width: 100%" /></a>
                          </div>
 
