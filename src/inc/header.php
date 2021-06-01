@@ -5,7 +5,7 @@
     <a class="nav-section" href="about-us.php">About Us</a>
     <a class="nav-section" href="fees.php">Fees</a><a class="nav-section" href="login.php" id="nav-bar-account">Account</a>
     <details class="dropdown">
-        <summary class="dropbtn">
+        <summary class="dropbtn2">
             Browse<i class="fa fa-caret-down"></i>
         </summary>
         <div onclick="" class="dropdown-content">

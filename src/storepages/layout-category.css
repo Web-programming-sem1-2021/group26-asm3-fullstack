@@ -13,7 +13,7 @@ a {
   background-color: rgb(255, 255, 255);
 }
 .container div {
-  text-align: left;
+  text-align: center;
   display: table;
 }
 .sidebar-button {

@@ -18,7 +18,7 @@
 
 <body>
     <!-- header -->
-    <?php include "include/store3-header.php"; ?>
+    <?php include "include/store2-header.php"; ?>
 
     <!-- header original -->
 
@@ -29,7 +29,7 @@
         <!-- TOP -->
         <div class="top">
             <div class="sticky">
-                <a href="../storepages/store-3.php">
+                <a href="../storepages/store-2.php">
                     <img src="./images/logo1.png" style="object-fit: cover; width: 500px" />
                 </a>
             </div>
@@ -117,7 +117,7 @@
 
                 <li class="main-product">
                     <div class="item">
-                        <a href="../storepages/product-1.php" class=product_detail>
+                        <a href="../storepages/product-2.php" class=product_detail>
                             <div class="img-product">
                                 <img class="img-prd" src="./images/Jacket/jacket2.jpeg" alt="" />
                             </div>
@@ -168,7 +168,7 @@
 
         <li class="main-product">
             <div class="item">
-                <a href="../storepages/product-1.php" class=product_detail>
+                <a href="../storepages/product-2.php" class=product_detail>
                     <div class="img-product">
                         <img class="img-prd" src="./images/Jacket/jacket4.jpeg" alt="" />
                     </div>
@@ -542,25 +542,25 @@
         <br />
         <div class="bottom-info">
             <b>POLICES </b><br />
-            <a href="../storepages/category-1.html">
+            <a href="./store-2.php">
                 <div class="bottom-info-detail">SHOP AT 26St.ore</div>
             </a>
-            <a href="#">
+            <a href="./store-2.php">
                 <div class="bottom-info-detail">PRODUCT</div>
             </a>
-            <a href="#">
+            <a href="./store-2.php">
                 <div class="bottom-info-detail">PAYMENT</div>
             </a>
-            <a href="#">
+            <a href="./store-2.php">
                 <div class="bottom-info-detail">SHIPPING</div>
             </a>
         </div>
         <div class="bottom-info">
             <b>TEAM </b> <br />
-            <a href="../storepages/category-1.html">
+            <a href="../index.php">
                 <div class="bottom-info-detail">ABOUT US</div>
             </a>
-            <a href="#">
+            <a href="../index.php">
                 <div class="bottom-info-detail">STORES</div>
             </a>
         </div>

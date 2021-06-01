@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
     <link rel="icon" href="#" />
-    <title>Home</title>
+    <title>ICONIC MALL</title>
     <link rel="stylesheet" href="
     style.css" />
 
@@ -48,7 +48,7 @@
                     <div class="caption">
                         <h1 style="color: rgb(255, 255, 255)">Apple Products</h1>
                         <p style="color: oldlace">Lorem ipsum dummy text goes here.</p>
-                        <a href="./storepages/store-3.php">Shop Now</a>
+                        <a href="./storepages/store-2.php">Shop Now</a>
                     </div>
                 </div>
             </div>
