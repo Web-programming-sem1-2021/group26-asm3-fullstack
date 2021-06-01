@@ -9,7 +9,7 @@
     <script src="./jsFunctions.js" defer></script>
     <link rel="stylesheet" href="./style/cookie.css">
     <script src="./script/cookie.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 
 
 </head>

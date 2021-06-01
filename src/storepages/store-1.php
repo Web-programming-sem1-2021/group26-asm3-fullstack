@@ -53,13 +53,16 @@
              <!---Naivgation-->
              <nav>
                  <div id="logo">
-                     <h1 style="color:red;margin:20px; font-size:50px">
-                         <?php foreach ($jsonStores as $store) {
-                                if ($store->id === $store_id) {
-                                    echo ($store->name);
-                                }
-                            } ?>
-                     </h1>
+                     <a class="logo" href="./store-1.php?store_id=<?php echo $store_id ?>">
+                         <h1 style="color:red;margin:20px; font-size:50px">
+                             <?php foreach ($jsonStores as $store) {
+                                    if ($store->id === $store_id) {
+                                        echo ($store->name);
+                                    }
+                                } ?>
+                         </h1>
+                     </a>
+
                  </div>
 
                  <label for="drop"
@@ -74,7 +77,9 @@
                          <input type="checkbox" id="drop-2" />
                          <ul>
                              <li>
-                                 <a href="./browse-products-by-time-store1.html">Created Time</a>
+                                 <a
+                                     href="./browse-products-by-time-store1.php?store_id=<?php echo ($_GET['store_id']) ?>">Created
+                                     Time</a>
                              </li>
                              <li>
                                  <!-- Second Tier Drop Down -->
@@ -296,7 +301,7 @@
              <?php include 'store_inc/newProductStore1.php'; ?>
          </div>
 
-         <div class="Cardhead">
+         <div class=" Cardhead">
              <h1>Featured Products</h1>
 
          </div>
