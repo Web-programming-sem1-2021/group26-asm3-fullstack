@@ -48,7 +48,7 @@
                     <div class="caption">
                         <h1 style="color: rgb(255, 255, 255)">Apple Products</h1>
                         <p style="color: oldlace">Lorem ipsum dummy text goes here.</p>
-                        <a href="./storepages/store-2.html">Shop Now</a>
+                        <a href="./storepages/store-3.php">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -57,12 +57,12 @@
         <!-- controls  -->
         <div class="controls">
             <div class="prev">
-                < </div>
-                    <div class="next">></div>
             </div>
+            <div class="next"> </div>
+        </div>
 
-            <!-- indicators -->
-            <div class="indicator"></div>
+        <!-- indicators -->
+        <div class="indicator"></div>
     </section>
     <main>
         <h1 class="store-title">New stores</h1>
@@ -78,7 +78,7 @@
         <div class="slide-container1">
             <div class="slide-button" id="slide-left-1" src="images/arrow-left.png"></div>
             <section class="slider">
-
+                <?php include "./index_inc/newProductSlider.php"; ?>
 
 
             </section>

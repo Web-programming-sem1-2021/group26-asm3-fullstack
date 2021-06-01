@@ -82,7 +82,8 @@ li {
 
 .carousel {
   position: relative;
-  padding-top: 40%;
+  padding-top: 50%;
+  margin-left: 13%;
   filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
 }
@@ -281,13 +282,28 @@ li {
   display: none;
   -webkit-overflow-scrolling: auto;
 }
+
+.carousel3 {
+  display: flex;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin: 0 auto 0 auto;
+  width: 85vw;
+  height: fit-content;
+
+  background-color: #ffffff;
+}
+.carousel3::-webkit-scrollbar {
+  display: none;
+  -webkit-overflow-scrolling: auto;
+}
 .featured {
-  width: 100%;
-  background: linear-gradient(
-    90deg,
-    rgb(255, 240, 241) 0%,
-    rgb(210, 210, 255) 100%
-  );
+  display: flex;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  margin: 0 auto 0 auto;
+  height: fit-content;
 }
 .item2 {
   min-width: 300px;

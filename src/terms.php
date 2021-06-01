@@ -13,56 +13,56 @@
 </head>
 
 <body>
-  <!DOCTYPE html>
-  <html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Terms of Service</title>
-    <link rel="stylesheet" href="../../style.css" />
-    <style>
-      .content {
-        width: 600px;
-        margin: 50px auto;
-        background-color: white;
-      }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Terms of Service</title>
+        <link rel="stylesheet" href="../../style.css" />
+        <style>
+        .content {
+            width: 600px;
+            margin: 50px auto;
+            background-color: white;
+        }
 
-      .main {
-        text-align: center;
-        color: #000;
-        background-color: #fff;
-        width: 90%;
-        margin: 0px auto;
-        font-family: Monospace, Verdana, sans-serif;
-      }
+        .main {
+            text-align: center;
+            color: #000;
+            background-color: #fff;
+            width: 90%;
+            margin: 0px auto;
+            font-family: Monospace, Verdana, sans-serif;
+        }
 
-      .space {
-        width: 600px;
-        margin: 50px auto;
-        padding: 10px;
-      }
+        .space {
+            width: 600px;
+            margin: 50px auto;
+            padding: 10px;
+        }
 
-      .icon {
-        height: 500px;
-        width: 500px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
+        .icon {
+            height: 500px;
+            width: 500px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-      p,
-      li,
-      .heading {
-        text-align: left;
-        list-style: none;
-        margin: 20px;
-      }
-    </style>
-  </head>
+        p,
+        li,
+        .heading {
+            text-align: left;
+            list-style: none;
+            margin: 20px;
+        }
+        </style>
+    </head>
 
-  <body>
-    <?php include "inc/header.php"; ?>
+    <body>
+        <?php include "inc/header.php"; ?>
 
     <head>
       <title>Terms of service</title>
@@ -86,7 +86,7 @@
     </footer>
   </body>
 
-  </html>
+    </html>
 </body>
 
 </html>

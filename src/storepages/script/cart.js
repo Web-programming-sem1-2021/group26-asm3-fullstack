@@ -16,7 +16,7 @@ close_footer.onclick = function () {
   modal.style.display = "none";
 };
 order.onclick = function () {
-  alert("Cảm ơn bạn đã thanh toán đơn hàng");
+  alert("Thank you for using our 26ST.ore");
 };
 window.onclick = function (event) {
   if (event.target == modal) {
@@ -50,11 +50,9 @@ function updatecart() {
     total = total + price * quantity;
   }
   document.getElementsByClassName("cart-total-price")[0].textContent =
-    total + "VNĐ";
-  // Thay đổi text = total trong .cart-total-price. Chỉ có một .cart-total-price nên mình sử dụng [0].
+    total + "$";
 }
 
-// thay đổi số lượng sản phẩm
 const quantity_input = document.getElementsByClassName("cart-quantity-input");
 for (let i = 0; i < quantity_input.length; i++) {
   const input = quantity_input[i];
@@ -75,11 +73,11 @@ for (let i = 0; i < add_cart.length; i++) {
     const button = event.target;
     const product = button.parentElement.parentElement;
     const img = product.parentElement.getElementsByClassName("img-prd")[0].src;
-    const title = product.getElementsByClassName("content-product-h3")[0]
-      .innerText;
+    const title =
+      product.getElementsByClassName("content-product-h3")[0].innerText;
     const price = product.getElementsByClassName("price")[0].innerText;
     addItemToCart(title, price, img);
-    // Khi thêm sản phẩm vào giỏ hàng thì sẽ hiển thị modal
+
     modal.style.display = "block";
 
     updatecart();
@@ -91,10 +89,9 @@ function addItemToCart(title, price, img) {
   cartRow.classList.add("cart-row");
   const cartItems = document.getElementsByClassName("cart-items")[0];
   const cart_title = cartItems.getElementsByClassName("cart-item-title");
-  //   Nếu title của sản phẩm bằng với title mà bạn thêm vao giỏ hàng thì sẽ thông cho user.
   for (let i = 0; i < cart_title.length; i++) {
     if (cart_title[i].innerText == title) {
-      alert("Sản Phẩm Đã Có Trong Giỏ Hàng");
+      alert("It's already added to your basket");
       return;
     }
   }
@@ -107,7 +104,7 @@ function addItemToCart(title, price, img) {
   <span class="cart-price cart-column">${price}</span>
   <div class="cart-quantity cart-column">
       <input class="cart-quantity-input" type="number" value="1">
-      <button class="btn btn-danger" type="button">Xóa</button>
+      <button class="btn btn-danger" type="button">Delete</button>
   </div>`;
   cartRow.innerHTML = cartRowContents;
   cartItems.append(cartRow);

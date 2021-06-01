@@ -8,20 +8,18 @@
     <link rel="stylesheet" href="store-2-style.css" />
     <link rel="stylesheet" href="layout-product.js" />
     <link rel="stylesheet" href="/style/cookie.css" />
+    <script src="./script/store3-main.js" defer></script>
+    <script src="./script/cart.js" defer async></script>
     <script src="/script/cookie.js" defer></script>
   </head>
   <body>
+        <!-- header -->
+        <?php include "include/store3-header.php"; ?>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
         ><img src="./images/close.png" width="20px"
       /></a>
-      <!-- <div class="selected">
-            <a href="../storepages/category-1.html">Jacket</a>
-            </div>
-            <a href="#">Dresses</a>
-            <a href="#">Jeans</a>
-            <a href="#">T-shirt</a>
-            <a href="#">Shoes</a> -->
+ 
       <div class="dropdown">
         <button class="dropbtn">UNISEX</button>
         <div class="dropdown-content">
@@ -75,7 +73,7 @@
       <!-- TOP -->
       <div class="top">
         <div class="sticky">
-          <a href="../storepages/store-2.html">
+          <a href="../storepages/store-3.php">
             <img
               src="./images/logo1.png"
               style="object-fit: cover; width: 500px"
@@ -160,7 +158,7 @@
         <div class="featured">
           <div class="item">
             <a
-              href="./product-1.html"
+              href="./product-1.php"
               style="display: block; width: 100%; height: 100%"
             >
               <img src="./images/Jacket/jacket1.jpeg" class="product_image" />
@@ -214,7 +212,7 @@
     <div class="carousel2">
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/j1.jpeg" class="product_image" />
@@ -226,7 +224,7 @@
       </div>
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/j6.png" class="product_image" />
@@ -238,7 +236,7 @@
       </div>
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/3.png" class="product_image" />
@@ -250,7 +248,7 @@
       </div>
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/j7.png" class="product_image" />
@@ -262,7 +260,7 @@
       </div>
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/j3.jpeg" class="product_image" />
@@ -274,7 +272,7 @@
       </div>
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/1.png" class="product_image" />
@@ -292,7 +290,7 @@
     <div class="carousel2">
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/3.png" class="product_image" />
@@ -304,7 +302,7 @@
       </div>
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/j5.jpeg" class="product_image" />
@@ -316,7 +314,7 @@
       </div>
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/j7.png" class="product_image" />
@@ -328,7 +326,7 @@
       </div>
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/j9.png" class="product_image" />
@@ -340,7 +338,7 @@
       </div>
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/4.png" class="product_image" />
@@ -352,7 +350,7 @@
       </div>
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/2.png" class="product_image" />
@@ -364,7 +362,7 @@
       </div>
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/j11.png" class="product_image" />

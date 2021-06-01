@@ -21,15 +21,15 @@ $storeJson = json_decode(newStoreCsvToJson($fname));
 $dates = array_map('strtotime', array_column($storeJson, 'created_time'));
 array_multisort($dates,  SORT_DESC, SORT_NUMERIC, $storeJson);
 
-for ($i = 0; $i <= 10; $i++) { ?>
+for ($index = 0; $index <= 10; $index++) { ?>
 <div class="thumbnail">
-    <a href="./storepages/store-1.html">
+    <a href="./storepages/store-1.php?store_id=<?php echo $storeJson[$index]->id ?>">
         <img src="./images/homeImages/store1.png" alt="" />
     </a>
     <div class="product-details">
         <h2>
-            <?php echo $storeJson[$i]->created_time ?></h2>
-        <a href="./storepages/store-1.html">View</a>
+            <?php echo $storeJson[$index]->name ?></h2>
+        <a href="./storepages/store-1.php?store_id=<?php echo $storeJson[$index]->id ?>">View</a>
     </div>
 </div>
 
