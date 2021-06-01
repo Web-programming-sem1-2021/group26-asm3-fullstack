@@ -55,5 +55,5 @@ if (count($filteredProducts) > 0) {
         <button><a href="./product-4.html">Add to basket</a></button>
     </div>
 </div>
-<?php }}else { ?><h1 style="color:darkblue">No Featured Products found!</h1>
+<?php }} else { ?><h1 style="color:darkblue">No Featured Products found!</h1>
 <?php } ?>
