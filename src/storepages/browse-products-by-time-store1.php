@@ -1,5 +1,5 @@
 <?php
-$store_id = $_GET['store_id'];
+$store_id = $_GET["store_id"];
 function csvToJson($fname)
 {
     if (!($fp = fopen($fname, "r"))) {
@@ -16,8 +16,6 @@ function csvToJson($fname)
 
 $storesFileName = "../data/stores.csv";
 $jsonStores = json_decode(csvToJson($storesFileName));
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,7 +44,7 @@ $jsonStores = json_decode(csvToJson($storesFileName));
 
 <body>
 
-    <?php include './include/store1-header.php' ?>
+    <?php include "./include/store1-header.php"; ?>
     <h1 style="margin: 20px; color: gray; font-size: 50px; text-align: center">
         Browse Products by Created Time
     </h1>
@@ -69,21 +67,31 @@ $jsonStores = json_decode(csvToJson($storesFileName));
     <div class="Product_row">
 
 
-        <?php include  './store_inc/browseByTime.php' ;
+        <?php
+        include "./store_inc/browseByTime.php";
         $total_products = count($productMatchedStore);
 
-        $paginatedProducts = getProductsForPage($productMatchedStore, $_GET['offset'], $_GET['limit']);
+        $paginatedProducts = getProductsForPage(
+            $productMatchedStore,
+            $_GET["offset"],
+            $_GET["limit"]
+        );
 
         for ($index = 0; $index < count($paginatedProducts); $index++) { ?>
 
         <div class="product--col">
             <div class="product_inner">
                 <img src="../storepages/images/laptop.png" width="300" />
-                <h2><b><?php echo $paginatedProducts[$index]->name ?></b>
+                <h2><b><?php echo $paginatedProducts[$index]->name; ?></b>
                 </h2>
-                <h2>Price: <b><?php echo $paginatedProducts[$index]->price ?></b>
+                <h2>Price: <b><?php echo $paginatedProducts[$index]
+                    ->price; ?></b>
                 </h2>
-                <h5>Created Date: <?php echo substr($paginatedProducts[$index]->created_time, 0, 10) ?>
+                <h5>Created Date: <?php echo substr(
+                    $paginatedProducts[$index]->created_time,
+                    0,
+                    10
+                ); ?>
                 </h5>
                 <button><a href="./product-3.html">More Detail</a></button>
                 <button><a href="./product-3.html">Add to basket</a></button>
@@ -94,8 +102,7 @@ $jsonStores = json_decode(csvToJson($storesFileName));
             </div>
         </div>
         <?php }
-        
-    ?>
+        ?>
 
 
 
@@ -109,82 +116,121 @@ $jsonStores = json_decode(csvToJson($storesFileName));
         </ul>
     </nav>
     <?php
+    $limit = 2;
 
-$limit = 2;
+    $current_page = isset($_GET["page"]) ? $_GET["page"] : 1;
 
-$current_page = isset($_GET['page']) ? $_GET['page'] : 1;
+    if (!empty($current_page) && $current_page > 1) {
+        $offset = $current_page * $limit - $limit;
+    } else {
+        $offset = 0;
+    }
 
-if (!empty($current_page) && $current_page > 1) {
-    $offset = ($current_page * $limit) - $limit;
-} else {
-    $offset = 0;
-}
+    $first_product_displayed = $offset + 1;
 
+    $total_pages = ceil($total_products / $limit);
 
-$first_product_displayed = $offset + 1;
+    $last_product_displayed =
+        $total_products >= $offset * $limit + $limit
+            ? $offset + $limit
+            : $total_products;
 
-
-$total_pages = ceil($total_products / $limit);
-
-$last_product_displayed = $total_products >= ($offset * $limit) + $limit ? $offset + $limit : $total_products;
-
-
-  if ($total_pages > 1) { ?>
+    if ($total_pages > 1) { ?>
 
     <nav aria-label="Page navigation">
         <ul class="pagination">
 
             <?php
-        if ($current_page > 1) { ?>
+            if ($current_page > 1) { ?>
 
             <li class="page-item"><a class="page-link"
-                    href="browse-products-by-time-store1.php?store_id=<?php echo $store_id; ?><?php echo '&page=1&offset=0&limit=2'; ?>">First</a>
+                    href="browse-products-by-time-store1.php?store_id=<?php
+                    echo $store_id;
+                    echo "&page=1&offset=0&limit=2";
+                    ?>">First</a>
             </li>
 
-            <?php
-        }
+            <?php }
 
+            for (
+                $page_in_loop = 1;
+                $page_in_loop <= $total_pages;
+                $page_in_loop++
+            ) {
+                if ($total_pages > 3) {
+                    if (
+                        ($page_in_loop >= $current_page - 5 &&
+                            $page_in_loop <= $current_page) ||
+                        ($page_in_loop <= $current_page + 5 &&
+                            $page_in_loop >= $current_page)
+                    ) { ?>
 
-        for ($page_in_loop = 1; $page_in_loop <= $total_pages; $page_in_loop++) {
-            if ($total_pages > 3) {
-                if (($page_in_loop >= $current_page - 5 && $page_in_loop <= $current_page)  || ($page_in_loop <= $current_page + 5 && $page_in_loop >= $current_page)) {  ?>
-
-            <li class="page-item <?php echo $page_in_loop == $current_page ? 'active disabled' : ''; ?>">
+            <li class="page-item <?php echo $page_in_loop == $current_page
+                ? "active disabled"
+                : ""; ?>">
                 <a class="page-link"
-                    href="browse-products-by-time-store1.php?store_id=<?php echo $store_id; ?><?php echo('&page=' . $page_in_loop . '&offset=' . $offset .'&limit=' . $limit); ?>">
+                    href="browse-products-by-time-store1.php?store_id=<?php
+                    echo $store_id;
+                    echo "&page=" .
+                        $page_in_loop .
+                        "&offset=" .
+                        $offset .
+                        "&limit=" .
+                        $limit;
+                    ?>">
                     <?php echo $page_in_loop; ?> </a>
             </li>
 
             <?php }
-            } else { ?>
+                } else {
+                     ?>
 
-            <li class=" page-item <?php echo $page_in_loop == $current_page ? 'active disabled' : ''; ?>">
+            <li class=" page-item <?php echo $page_in_loop == $current_page
+                ? "active disabled"
+                : ""; ?>">
                 <a class="page-link"
-                    href="browse-products-by-time-store1.php?store_id=<?php echo $store_id; ?><?php echo('&page=' . $page_in_loop . '&offset=' . $offset .'&limit=' . $limit) ?> ">
+                    href="browse-products-by-time-store1.php?store_id=<?php
+                    echo $store_id;
+                    echo "&page=" .
+                        $page_in_loop .
+                        "&offset=" .
+                        $offset .
+                        "&limit=" .
+                        $limit;
+                    ?> ">
                 </a>
             </li>
 
-            <?php } ?>
+            <?php
+                } ?>
 
             <?php
-        }
+            }
 
-
-        if ($current_page < $total_pages) { ?>
+            if ($current_page < $total_pages) { ?>
 
             <li class=" page-item"><a class="page-link"
-                    href="browse-products-by-time-store1.php?store_id=<?php echo $store_id; ?><?php echo '&page=' . $total_pages . '&offset=' . $offset .'&limit=' . $limit; ?>; ?>">Last</a>
+                    href="browse-products-by-time-store1.php?store_id=<?php
+                    echo $store_id;
+                    echo "&page=" .
+                        $total_pages .
+                        "&offset=" .
+                        $offset .
+                        "&limit=" .
+                        $limit;
+                    ?>; ?>">Last</a>
             </li>
 
-            <?php } ?>
+            <?php }
+            ?>
         </ul>
     </nav>
 
     <?php }
-  ?>
+    ?>
 
     <!--  FOOTER START -->
-    <?php include './include/store1-footer.php' ?>
+    <?php include "./include/store1-footer.php"; ?>
     <script src="../jsFunctions.js"></script>
 </body>
 

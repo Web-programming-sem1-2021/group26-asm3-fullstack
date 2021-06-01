@@ -1,4 +1,3 @@
-
 const modal = document.getElementById("myModal");
 const btn = document.getElementById("cart");
 const close = document.getElementsByClassName("close")[0];
@@ -14,7 +13,7 @@ close.onclick = function () {
 close_footer.onclick = function () {
   modal.style.display = "none";
 };
-coupon_footer.onclick = function (){
+coupon_footer.onclick = function () {
   coupon();
 };
 order.onclick = function () {
@@ -46,12 +45,12 @@ function updatecart() {
     const quantity_item = cart_row.getElementsByClassName(
       "cart-quantity-input"
     )[0];
-    const price = parseFloat(price_item.innerText); 
-    const quantity = quantity_item.value; 
+    const price = parseFloat(price_item.innerText);
+    const quantity = quantity_item.value;
     total = total + price * quantity;
   }
   document.getElementsByClassName("cart-total-price")[0].textContent =
-    (total).toFixed(2) + "$";
+    total.toFixed(2) + "$";
 }
 
 function coupon() {
@@ -64,13 +63,13 @@ function coupon() {
     const quantity_item = cart_row.getElementsByClassName(
       "cart-quantity-input"
     )[0];
-    const price = parseFloat(price_item.innerText); 
-    const quantity = quantity_item.value; 
+    const price = parseFloat(price_item.innerText);
+    const quantity = quantity_item.value;
     total = total + price * quantity;
   }
 
   document.getElementsByClassName("cart-total-price")[0].textContent =
-  (total * 7 / 10).toFixed(2) + "$";
+    ((total * 7) / 10).toFixed(2) + "$";
 }
 
 const quantity_input = document.getElementsByClassName("cart-quantity-input");
@@ -84,7 +83,6 @@ for (let i = 0; i < quantity_input.length; i++) {
     updatecart();
   });
 }
-
 
 const add_cart = document.getElementsByClassName("btn-cart");
 for (let i = 0; i < add_cart.length; i++) {

@@ -16,8 +16,6 @@ $city = $_GET["city"];
 
 $zip = $_GET["zip"];
 
-
-
 $file_open = fopen("../credentials.csv", "a");
 $no_rows = count(file("../credentials.csv"));
 if ($no_rows > 1) {
@@ -36,7 +34,6 @@ $form_data = [
     "address" => $address,
     "city" => $city,
     "zip" => $zip,
- 
 ];
 
 fputcsv($file_open, $form_data);
@@ -50,5 +47,5 @@ if ($email !== null) {
     echo $address;
     echo $city;
     echo $zip;
-    header('Location: login.php');
+    header("Location: login.php");
 }

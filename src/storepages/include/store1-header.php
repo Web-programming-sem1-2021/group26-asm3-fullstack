@@ -3,11 +3,11 @@
     <!---Naivgation-->
     <nav>
         <div id="logo" style="width:fit-content;">
-            <a class="logo" href="./store-1.php?store_id=<?php echo $store_id ?>">
+            <a class="logo" href="./store-1.php?store_id=<?php echo $store_id; ?>">
                 <h1 style="color:red;margin:20px; font-size:50px">
                     <?php foreach ($jsonStores as $store) {
                         if ($store->id === $store_id) {
-                            echo ($store->name);
+                            echo $store->name;
                         }
                     } ?>
                 </h1>
@@ -26,7 +26,9 @@
                 <input type="checkbox" id="drop-2" />
                 <ul>
                     <li>
-                        <a href="./browse-products-by-time-store1.php?store_id=<?php echo $_GET['store_id'] . '&offset=0&limit=2' ?>">Created
+                        <a href="./browse-products-by-time-store1.php?store_id=<?php echo $_GET[
+                            "store_id"
+                        ] . "&offset=0&limit=2"; ?>">Created
                             Time</a>
                     </li>
                     <li>

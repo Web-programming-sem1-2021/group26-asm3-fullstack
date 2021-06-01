@@ -1,23 +1,23 @@
      <?php
-        $store_id = $_GET['store_id'];
+     $store_id = $_GET["store_id"];
 
-        function csvToJson($fname)
-        {
-            if (!($fp = fopen($fname, "r"))) {
-                die("Can't open file...");
-            }
-            $key = fgetcsv($fp, "1024", ",");
-            $json = [];
-            while ($row = fgetcsv($fp, "1024", ",")) {
-                $json[] = array_combine($key, $row);
-            }
-            fclose($fp);
-            return json_encode($json, true);
-        }
+     function csvToJson($fname)
+     {
+         if (!($fp = fopen($fname, "r"))) {
+             die("Can't open file...");
+         }
+         $key = fgetcsv($fp, "1024", ",");
+         $json = [];
+         while ($row = fgetcsv($fp, "1024", ",")) {
+             $json[] = array_combine($key, $row);
+         }
+         fclose($fp);
+         return json_encode($json, true);
+     }
 
-        $storesFileName = "../data/stores.csv";
-        $jsonStores = json_decode(csvToJson($storesFileName));
-        ?>
+     $storesFileName = "../data/stores.csv";
+     $jsonStores = json_decode(csvToJson($storesFileName));
+     ?>
 
 
      <!DOCTYPE html>
@@ -211,7 +211,7 @@
              <h1>New Products</h1>
          </div>
          <div class="carousel">
-             <?php include 'store_inc/newProductStore1.php'; ?>
+             <?php include "store_inc/newProductStore1.php"; ?>
          </div>
 
          <div class=" Cardhead">
@@ -219,7 +219,7 @@
 
          </div>
          <div class="carousel">
-             <?php include 'store_inc/featureProductStore1.php'; ?>
+             <?php include "store_inc/featureProductStore1.php"; ?>
 
          </div>
 

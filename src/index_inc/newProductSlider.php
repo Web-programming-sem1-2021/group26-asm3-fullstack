@@ -18,18 +18,20 @@ $fname = "./data/products.csv";
 
 $productJson = json_decode(newProductCsvToJson($fname));
 
-$dates = array_map('strtotime', array_column($productJson, 'created_time'));
-array_multisort($dates,  SORT_DESC, SORT_NUMERIC, $productJson);
+$dates = array_map("strtotime", array_column($productJson, "created_time"));
+array_multisort($dates, SORT_DESC, SORT_NUMERIC, $productJson);
 
 for ($i = 0; $i <= 10; $i++) { ?>
 <div class="thumbnail">
-    <a href="./storepages/store-1.php?store_id=<?php echo $productJson[$i]->id?>">
+    <a href="./storepages/store-1.php?store_id=<?php echo $productJson[$i]
+        ->id; ?>">
         <img src="./images/homeImages/store1.png" alt="" />
     </a>
     <div class="product-details">
         <h2>
-            <?php echo $productJson[$i]->name ?></h2>
-        <a href="./storepages/store-1.php?store_id=<?php echo $productJson[$i]->id?>">View</a>
+            <?php echo $productJson[$i]->name; ?></h2>
+        <a href="./storepages/store-1.php?store_id=<?php echo $productJson[$i]
+            ->id; ?>">View</a>
     </div>
 </div>
 

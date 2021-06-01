@@ -50,7 +50,7 @@
 .middle-right {
   position: absolute;
   top: 0px;
-  margin-left:50px;
+  margin-left: 50px;
   margin-top: 220px;
   margin-right: 0px;
   left: 1000px;
@@ -88,7 +88,6 @@
   margin-bottom: 0px;
   color: rgb(0, 0, 0);
 }
-
 
 .button-product {
   width: 230px;

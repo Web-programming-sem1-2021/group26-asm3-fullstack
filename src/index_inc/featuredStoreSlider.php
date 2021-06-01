@@ -14,33 +14,33 @@ function storeCsvToJson($fname)
     return json_encode($json, true);
 }
 
-
 $fname = "./data/stores.csv";
 
 $storeJson = json_decode(storeCsvToJson($fname));
 
 function filterFeaturedStore($storeArray)
 {
-    $filteredFeatured = array();
+    $filteredFeatured = [];
     foreach ($storeArray as $store) {
-        if ($store->featured === 'TRUE') {
+        if ($store->featured === "TRUE") {
             array_push($filteredFeatured, $store);
-        };
+        }
     }
     return $filteredFeatured;
-};
-
+}
 
 $filteredStore = filterFeaturedStore($storeJson);
 
-
 for ($index = 0; $index < 10; $index++) { ?>
 <div class="thumbnail">
-    <a href="./storepages/store-1.php?store_id=<?php echo $filteredStore[$index]->id ?>">
+    <a href="./storepages/store-1.php?store_id=<?php echo $filteredStore[$index]
+        ->id; ?>">
         <img src="./images/homeImages/6.png" alt="jacket" /></a>
     <div class="product-details">
         <h2>
-            <a href="./storepages/store-1.php?store_id=<?php echo $filteredStore[$index]->id ?>">
+            <a href="./storepages/store-1.php?store_id=<?php echo $filteredStore[
+                $index
+            ]->id; ?>">
                 <em><?php echo $filteredStore[$index]->name; ?></em> </a>
         </h2>
 

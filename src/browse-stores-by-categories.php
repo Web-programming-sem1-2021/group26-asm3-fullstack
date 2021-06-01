@@ -68,8 +68,12 @@
                 $index++
             ) { ?>
             <div class='category-link'>
-                <img class="footer-icon" src="./icons/<?php echo $icons[$index]; ?>" />
-                <a href="./browse-stores-by-categories.php?id=<?php echo $jsonCategories[$index]->id; ?>">
+                <img class="footer-icon" src="./icons/<?php echo $icons[
+                    $index
+                ]; ?>" />
+                <a href="./browse-stores-by-categories.php?id=<?php echo $jsonCategories[
+                    $index
+                ]->id; ?>">
                     <?php echo $jsonCategories[$index]->name; ?></a>
                 <br />
             </div>
@@ -85,13 +89,17 @@
                 $jsonStores[$i]->category_id === $_GET["id"]
             ) { ?>
         <div class="store-card">
-            <a href="./storepages/store-1.php?store_id=<?php echo $jsonStores[$i]->id ?>">
+            <a href="./storepages/store-1.php?store_id=<?php echo $jsonStores[
+                $i
+            ]->id; ?>">
                 <h2>
                     <?php echo $jsonStores[$i]->name; ?>
                 </h2>
             </a>
             <p>
-                <a href="./storepages/store-1.php?store_id=<?php echo $jsonStores[$i]->id ?>">
+                <a href="./storepages/store-1.php?store_id=<?php echo $jsonStores[
+                    $i
+                ]->id; ?>">
                     <img class="store-image" src="./storepages/images/iphone12.png" alt="Picture of Helen" />
                 </a>
             </p>
@@ -103,13 +111,17 @@
         </div>
         <?php } elseif (empty($_GET["id"])) { ?>
         <div class="store-card">
-            <a href="./storepages/store-1.php?store_id=<?php echo $jsonStores[$i]->id ?>">
+            <a href="./storepages/store-1.php?store_id=<?php echo $jsonStores[
+                $i
+            ]->id; ?>">
                 <h2>
                     <?php echo $jsonStores[$i]->name; ?>
                 </h2>
             </a>
             <p>
-                <a href="./storepages/store-1.php?store_id=<?php echo $jsonStores[$i]->id ?>">
+                <a href="./storepages/store-1.php?store_id=<?php echo $jsonStores[
+                    $i
+                ]->id; ?>">
                     <img class="store-image" src="./storepages/images/iphone12.png" alt="Picture of Helen" />
                 </a>
             </p>

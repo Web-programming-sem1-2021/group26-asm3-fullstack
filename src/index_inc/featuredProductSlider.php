@@ -20,18 +20,16 @@ $productJson = json_decode(productcsvToJson($fname));
 
 function filterFeaturedProduct($productArray)
 {
-    $filteredFeatured = array();
+    $filteredFeatured = [];
     foreach ($productArray as $product) {
-        if ($product->featured_in_mall === 'TRUE') {
+        if ($product->featured_in_mall === "TRUE") {
             array_push($filteredFeatured, $product);
-        };
+        }
     }
     return $filteredFeatured;
-};
-
+}
 
 $filteredProducts = filterFeaturedProduct($productJson);
-
 
 for ($index = 0; $index < 10; $index++) { ?>
 <div class="thumbnail">
@@ -41,11 +39,9 @@ for ($index = 0; $index < 10; $index++) { ?>
         <h2>
 
         </h2>
-        <p>$<?php echo $filteredProducts[$index]
-                    ->price; ?></p>
+        <p>$<?php echo $filteredProducts[$index]->price; ?></p>
         <p><a href="./storepages/store-1.php">
-                <em><?php echo $filteredProducts[$index]
-                            ->name; ?></em> </a>
+                <em><?php echo $filteredProducts[$index]->name; ?></em> </a>
         </p>
         <a href="./storepages/product-1.php">View More</a>
     </div>

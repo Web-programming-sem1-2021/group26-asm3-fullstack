@@ -1,5 +1,4 @@
 :root {
- 
   --store-slider-bg-color: white;
   --nav-color: #cec8ef;
   --nav-text-color: rgb(80, 78, 78);
@@ -37,7 +36,7 @@ a {
 recomenddedProduct {
   display: flex;
 }
-dropbtn2{
+dropbtn2 {
   position: relative;
   width: 25%;
   display: inline-flex;
@@ -103,7 +102,7 @@ dropbtn2{
 .nav .nav-section:active,
 .dropdown2:hover .dropbtn2 {
   background-color: var(--nav-hover-color);
- 
+
   letter-spacing: 5px;
 }
 .dropdown2 {
@@ -111,11 +110,11 @@ dropbtn2{
   display: inline;
   background-color: var(--nav-color);
 }
-.dropbtn2{
-  color:#504E4E;
+.dropbtn2 {
+  color: #504e4e;
 }
 .dropdown2 .dropbtn2 {
-  color:#504E4E;
+  color: #504e4e;
   display: inline-block;
   text-shadow: none;
   background-color: var(--nav-color);
@@ -250,7 +249,7 @@ dropbtn2{
   display: none;
   -webkit-overflow-scrolling: auto;
 }
-.bot{
+.bot {
   margin-top: 200px;
 }
 .footer-content {
@@ -303,7 +302,6 @@ dropbtn2{
     justify-content: space-between;
   }
 }
-
 
 * {
   padding: 0;
@@ -419,7 +417,6 @@ nav .content-nav ul li a:hover {
 }
 
 .btn {
-
   cursor: pointer;
   outline: none;
   font-weight: 400;
@@ -523,14 +520,10 @@ h5.modal-title {
   object-fit: fill;
 }
 
-
-
-
 .product_detail {
   color: black;
   text-decoration: none;
 }
-
 
 /* nav mobile */
 .nav-mobile {
