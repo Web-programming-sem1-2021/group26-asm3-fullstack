@@ -1,6 +1,6 @@
 <?php
 
-function csvToJson($fname)
+function newProductCsvToJson($fname)
 {
     if (!($fp = fopen($fname, "r"))) {
         die("Can't open file...");
@@ -14,24 +14,24 @@ function csvToJson($fname)
     return json_encode($json, true);
 }
 
+$fname = "./data/products.csv";
 
+$productJson = json_decode(newProductCsvToJson($fname));
 
-$fname = "./data/product.csv";
+$dates = array_map('strtotime', array_column($productJson, 'created_time'));
+array_multisort($dates,  SORT_DESC, SORT_NUMERIC, $productJson);
 
-$productJson = json_decode(csvToJson($fname));
-for ($i = 0; $i <= 4; $i++) { ?>
+for ($i = 0; $i <= 10; $i++) { ?>
 <div class="thumbnail">
-    <a href="./storepages/product-1.html">
-        <img src="./images/homeImages/6.png" alt="jacket" /></a>
+    <a href="./storepages/store-1.php?store_id=<?php echo $productJson[$i]->id?>">
+        <img src="./images/homeImages/store1.png" alt="" />
+    </a>
     <div class="product-details">
         <h2>
-
-        </h2>
-        <p><span>$39.99</span> $29.99</p>
-        <p><a href="./storepages/store-2.html">Store:<?php echo $a[$i]
-                                                                ->name; ?> </a></p>
-        <a href="./storepages/product-1.html">View More</a>
+            <?php echo $productJson[$i]->name ?></h2>
+        <a href="./storepages/store-1.php?store_id=<?php echo $productJson[$i]->id?>">View</a>
     </div>
 </div>
+
 <?php }
 ?>
