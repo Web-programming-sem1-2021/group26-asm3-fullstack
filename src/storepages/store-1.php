@@ -293,6 +293,7 @@
              <h1>New Products</h1>
          </div>
          <div class="carousel">
+             <?php include 'store_inc/newProductStore1.php'; ?>
          </div>
 
          <div class="Cardhead">

@@ -44,7 +44,9 @@ $productOfCurrentStore =  getProductMatchedStore($productJson);
 
 $filteredProducts = filterFeaturedProduct($productOfCurrentStore);
 
-for ($index = 0; $index < count($filteredProducts); $index++) { ?>
+
+if (count($filteredProducts) > 0) { 
+    for ($index = 0; $index < count($filteredProducts); $index++) {?>
 <div class="item">
     <img src="./images/ipad.png" alt="Avatar" style="width: 100%; padding: 0px" />
     <div class="card-container">
@@ -53,5 +55,5 @@ for ($index = 0; $index < count($filteredProducts); $index++) { ?>
         <button><a href="./product-4.html">Add to basket</a></button>
     </div>
 </div>
-<?php }
-?>
+<?php }}else { ?><h1 style="color:darkblue">No Featured Products found!</h1>
+<?php } ?>
