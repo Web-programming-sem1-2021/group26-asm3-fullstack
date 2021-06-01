@@ -10,34 +10,32 @@
 
 <body>
 
-<form action="dashborad.php" method="post" enctype="multipart/form-data">
+<form action="CMS.php" method="post" enctype="multipart/form-data">
 
-<!-- Photo file -->
 <div class="upload_file">
     <label for="profile_photo">Click here to upload new photo</label>
     <input type="file" name="profile_photo" id="profile_photo" required accept="image/png, image/jpeg, image/jpg" />
 </div>
 
-<!-- Member select radio -->
+
 <div class="styled-radio">
     <p>New photo for...</p>
     <input type="radio" name="photo_location" id="photo_1" value="photo_1" required checked />
-    <label for="photo_1">1st member (12)</label>
+    <label for="photo_1">Nguyễn Thị Quỳnh Giang</label>
     <br />
     <input type="radio" name="photo_location" id="photo_2" value="photo_2" required />
-    <label for="photo_2">2nd member (432)</label>
+    <label for="photo_2">Joo Jeong-hyeon</label>
     <br>
     <input type="radio" name="photo_location" id="photo_3" value="photo_3" required />
-    <label for="photo_3">3rd member (32)</label>
+    <label for="photo_3">Ramcharan Ramacharan</label>
     <br />
     <input type="radio" name="photo_location" id="photo_4" value="photo_4" required />
-    <label for="photo_4">4th member (42)</label>
+    <label for="photo_4">Võ Khải Minh</label>
 </div>
 
-<!-- Submit button -->
+
 <input type="submit" />
 
-<!-- End form -->
 </form>
 
 
