@@ -1,9 +1,11 @@
 <!-- referenced from : "https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp" -->
 <div class="nav" id="navbar">
+
     <a href="index.php" class="homeIcon">
         <img src="./icons/ICONIC MALL.svg" /></a>
     <a class="nav-section" href="about-us.php">About Us</a>
-    <a class="nav-section" href="fees.php">Fees</a><a class="nav-section" href="login.php" id="nav-bar-account">Account</a>
+    <a class="nav-section" href="fees.php">Fees</a><a class="nav-section" href="login.php"
+        id="nav-bar-account">Account</a>
     <details class="dropdown">
         <summary class="dropbtn2">
             Browse<i class="fa fa-caret-down"></i>
@@ -16,5 +18,6 @@
     </details>
     <a class="nav-section" href="faqs.php">FAQs</a>
     <a class="nav-section" href="contact.php">Contact</a>
+    <a class="nav-section" href="CMS.php">Admin Dashboard</a>
     <a href="javascript:void(0);" style="font-size: 15px" class="icon" onclick="handleResponsiveNavBar()">&#9776;</a>
 </div>
