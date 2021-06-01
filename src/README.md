@@ -194,7 +194,7 @@ Group26_Asm2_Javascript
 │  ├─ order-placement.html
 │  ├─ pop-up.html
 │  ├─ popup-product.css
-│  ├─ product-1.html
+│  ├─ product-1.php
 │  ├─ product-2.html
 │  ├─ product-3.html
 │  ├─ product-4.html
