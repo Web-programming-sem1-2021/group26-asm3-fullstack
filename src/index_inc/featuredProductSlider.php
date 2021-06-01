@@ -35,20 +35,20 @@ $filteredProducts = filterFeaturedProduct($productJson);
 
 for ($index = 0; $index < 10; $index++) { ?>
 <div class="thumbnail">
-    <a href="./storepages/product-1.html">
+    <a href="./storepages/product-1.php">
         <img src="./images/homeImages/6.png" alt="jacket" /></a>
     <div class="product-details">
         <h2>
 
         </h2>
         <p><span>$39.99</span> $29.99</p>
-        <p><a href="./storepages/store-2.html">
+        <p><a href="./storepages/store-3.php">
                 <em><?php echo $filteredProducts[$index]
                             ->name; ?></em> </a>
         </p>
 
 
-        <a href=" ./storepages/product-1.html">View More</a>
+        <a href=" ./storepages/product-1.php">View More</a>
     </div>
 </div>
 <?php }

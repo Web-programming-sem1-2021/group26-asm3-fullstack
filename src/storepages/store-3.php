@@ -29,7 +29,7 @@
       <!-- TOP -->
       <div class="top">
         <div class="sticky">
-          <a href="../storepages/store-2.html">
+          <a href="../storepages/store-3.php">
             <img
               src="./images/logo1.png"
               style="object-fit: cover; width: 500px"
@@ -97,7 +97,7 @@
 
             <li class="main-product">
                 <div class="item">
-                    <a href="../storepages/product-1.html" class=product_detail>
+                    <a href="../storepages/product-1.php" class=product_detail>
                         <div class="img-product">
                             <img class="img-prd" src="./images/Jacket/jacket1.jpeg" alt="" />
                         </div>
@@ -122,7 +122,7 @@
         
         <li class="main-product">
                     <div class="item">
-                        <a href="../storepages/product-1.html" class=product_detail>
+                        <a href="../storepages/product-1.php" class=product_detail>
                             <div class="img-product">
                                 <img class="img-prd" src="./images/Jacket/jacket2.jpeg" alt="" />
                             </div>
@@ -148,7 +148,7 @@
 
             <li class="main-product">
                 <div class="item">
-                    <a href="../storepages/product-1.html" class=product_detail>
+                    <a href="../storepages/product-1.php" class=product_detail>
                         <div class="img-product">
                             <img class="img-prd" src="./images/Jacket/jacket3.jpeg" alt="" />
                         </div>
@@ -173,7 +173,7 @@
 
         <li class="main-product">
             <div class="item">
-                <a href="../storepages/product-1.html" class=product_detail>
+                <a href="../storepages/product-1.php" class=product_detail>
                     <div class="img-product">
                         <img class="img-prd" src="./images/Jacket/jacket4.jpeg" alt="" />
                     </div>
@@ -205,7 +205,7 @@
 
             <li class="main-product">
                 <div class="item">
-                    <a href="../storepages/product-1.html" class=product_detail>
+                    <a href="../storepages/product-1.php" class=product_detail>
                         <div class="img-product">
                             <img class="img-prd" src="./images/product/j1.jpeg" alt="" />
                         </div>
@@ -230,7 +230,7 @@
 
         <li class="main-product">
             <div class="item">
-                <a href="../storepages/product-1.html" class=product_detail>
+                <a href="../storepages/product-1.php" class=product_detail>
                     <div class="img-product">
                         <img class="img-prd" src="./images/product/j6.png" alt="" />
                     </div>
@@ -255,7 +255,7 @@
 
         <li class="main-product">
             <div class="item">
-                <a href="../storepages/product-1.html" class=product_detail>
+                <a href="../storepages/product-1.php" class=product_detail>
                     <div class="img-product">
                         <img class="img-prd" src="./images/product/3.png" alt="" />
                     </div>
@@ -280,7 +280,7 @@
 
         <li class="main-product">
             <div class="item">
-                <a href="../storepages/product-1.html" class=product_detail>
+                <a href="../storepages/product-1.php" class=product_detail>
                     <div class="img-product">
                         <img class="img-prd" src="./images/product/j7.png" alt="" />
                     </div>
@@ -304,7 +304,7 @@
         </li>
         <li class="main-product">
             <div class="item">
-                <a href="../storepages/product-1.html" class=product_detail>
+                <a href="../storepages/product-1.php" class=product_detail>
                     <div class="img-product">
                         <img class="img-prd" src="./images/product/j3.jpeg" alt="" />
                     </div>
@@ -328,7 +328,7 @@
         </li>
         <li class="main-product">
             <div class="item">
-                <a href="../storepages/product-1.html" class=product_detail>
+                <a href="../storepages/product-1.php" class=product_detail>
                     <div class="img-product">
                         <img class="img-prd" src="./images/product/1.png" alt="" />
                     </div>
@@ -360,7 +360,7 @@
 
             <li class="main-product">
                 <div class="item">
-                    <a href="../storepages/product-1.html" class=product_detail>
+                    <a href="../storepages/product-1.php" class=product_detail>
                         <div class="img-product">
                             <img class="img-prd" src="./images/product/3.png" alt="" />
                         </div>
@@ -385,7 +385,7 @@
 
         <li class="main-product">
             <div class="item">
-                <a href="../storepages/product-1.html" class=product_detail>
+                <a href="../storepages/product-1.php" class=product_detail>
                     <div class="img-product">
                         <img class="img-prd" src="./images/product/j5.jpeg" alt="" />
                     </div>
@@ -411,7 +411,7 @@
 
         <li class="main-product">
             <div class="item">
-                <a href="../storepages/product-1.html" class=product_detail>
+                <a href="../storepages/product-1.php" class=product_detail>
                     <div class="img-product">
                         <img class="img-prd" src="./images/product/j7.png" alt="" />
                     </div>
@@ -436,7 +436,7 @@
 
         <li class="main-product">
             <div class="item">
-                <a href="../storepages/product-1.html" class=product_detail>
+                <a href="../storepages/product-1.php" class=product_detail>
                     <div class="img-product">
                         <img class="img-prd" src="./images/product/j9.png" alt="" />
                     </div>
@@ -461,7 +461,7 @@
 
         <li class="main-product">
             <div class="item">
-                <a href="../storepages/product-1.html" class=product_detail>
+                <a href="../storepages/product-1.php" class=product_detail>
                     <div class="img-product">
                         <img class="img-prd" src="./images/product/4.png" alt="" />
                     </div>
@@ -486,7 +486,7 @@
 
         <li class="main-product">
             <div class="item">
-                <a href="../storepages/product-1.html" class=product_detail>
+                <a href="../storepages/product-1.php" class=product_detail>
                     <div class="img-product">
                         <img class="img-prd" src="./images/product/2.png" alt="" />
                     </div>
@@ -512,7 +512,7 @@
 
         <li class="main-product">
             <div class="item">
-                <a href="../storepages/product-1.html" class=product_detail>
+                <a href="../storepages/product-1.php" class=product_detail>
                     <div class="img-product">
                         <img class="img-prd" src="./images/product/j11.png" alt="" />
                     </div>

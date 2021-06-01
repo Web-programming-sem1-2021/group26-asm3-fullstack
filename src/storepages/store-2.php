@@ -73,7 +73,7 @@
       <!-- TOP -->
       <div class="top">
         <div class="sticky">
-          <a href="../storepages/store-2.html">
+          <a href="../storepages/store-3.php">
             <img
               src="./images/logo1.png"
               style="object-fit: cover; width: 500px"
@@ -158,7 +158,7 @@
         <div class="featured">
           <div class="item">
             <a
-              href="./product-1.html"
+              href="./product-1.php"
               style="display: block; width: 100%; height: 100%"
             >
               <img src="./images/Jacket/jacket1.jpeg" class="product_image" />
@@ -212,7 +212,7 @@
     <div class="carousel2">
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/j1.jpeg" class="product_image" />
@@ -224,7 +224,7 @@
       </div>
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/j6.png" class="product_image" />
@@ -236,7 +236,7 @@
       </div>
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/3.png" class="product_image" />
@@ -248,7 +248,7 @@
       </div>
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/j7.png" class="product_image" />
@@ -260,7 +260,7 @@
       </div>
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/j3.jpeg" class="product_image" />
@@ -272,7 +272,7 @@
       </div>
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/1.png" class="product_image" />
@@ -290,7 +290,7 @@
     <div class="carousel2">
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/3.png" class="product_image" />
@@ -302,7 +302,7 @@
       </div>
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/j5.jpeg" class="product_image" />
@@ -314,7 +314,7 @@
       </div>
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/j7.png" class="product_image" />
@@ -326,7 +326,7 @@
       </div>
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/j9.png" class="product_image" />
@@ -338,7 +338,7 @@
       </div>
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/4.png" class="product_image" />
@@ -350,7 +350,7 @@
       </div>
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/2.png" class="product_image" />
@@ -362,7 +362,7 @@
       </div>
       <div class="item2">
         <a
-          href="./product-1.html"
+          href="./product-1.php"
           style="display: block; width: 100%; height: 100%"
         >
           <img src="./images/product/j11.png" class="product_image" />

@@ -48,7 +48,7 @@
                     <div class="caption">
                         <h1 style="color: rgb(255, 255, 255)">Apple Products</h1>
                         <p style="color: oldlace">Lorem ipsum dummy text goes here.</p>
-                        <a href="./storepages/store-2.html">Shop Now</a>
+                        <a href="./storepages/store-3.php">Shop Now</a>
                     </div>
                 </div>
             </div>
