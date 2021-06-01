@@ -39,7 +39,7 @@
             <div class="middle-left">
                 <li class="main-product">
                     <div class="img-product">
-                        <img class="img-prd" src="./images/Jacket/jacket1.jpeg"/>
+                        <img class="img-prd" src="./images/Jacket/jacket2.jpeg"/>
                     </div>
                 </li>
             </div>
@@ -51,7 +51,7 @@
                 <li class=" main-product">
                 <div class=" product-detail">
                     <h1 class="content-product-h3" style="text-align: left;">
-                        LINNEN BOMBER JACKET
+                    LINEN WORKER JACKET
                     </h1>
                 </div>
                 </li>
@@ -62,8 +62,8 @@
 
             <div class="middle-right-3">
                 <p class="Scription">
-                    LIGHTWEIGHT COLLARED JACKET MADE OF LINEN. FEATURING LONG SLEEVES,
-                    CHEST PATCH POCKETS WITH FLAPS, HIP PATCH
+                LIGHTWEIGHT COLLARED JACKET MADE OF LINEN. FEATURING LONG SLEEVES,
+
                 </p>
             </div>
 
@@ -71,7 +71,7 @@
                 <li class="main-product">
                     <div class="content-product-deltals">
                         <div class="price">
-                            <p class="money">100.99 $</p>
+                            <p class="money">120.99 $</p>
                         </div>
 
                     </div>

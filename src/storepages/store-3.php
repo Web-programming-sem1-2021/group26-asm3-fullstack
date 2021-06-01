@@ -21,22 +21,19 @@
     <?php include "include/store3-header.php"; ?>
 
     <!-- header original -->
-  
+
     <div class="container">
-      <!-- <div class="sticky">
+        <!-- <div class="sticky">
             <img src="./images/logo1.png" style="object-fit:covor;width:350px">
             </div> -->
-      <!-- TOP -->
-      <div class="top">
-        <div class="sticky">
-          <a href="../storepages/store-3.php">
-            <img
-              src="./images/logo1.png"
-              style="object-fit: cover; width: 500px"
-            />
-          </a>
+        <!-- TOP -->
+        <div class="top">
+            <div class="sticky">
+                <a href="../storepages/store-3.php">
+                    <img src="./images/logo1.png" style="object-fit: cover; width: 500px" />
+                </a>
+            </div>
         </div>
-      </div>
     </div>
     <!-- content -->
     <section class="wrapper">
@@ -90,37 +87,35 @@
                     </aside>
                 </section>
                 <br /><br /><br />
-</div>
-                <h1 class="store-title2" style="margin-left: 100px; width: 240px">
-            Featured Products</h1>
-                 <div class="carousel3">
+            </div>
+            <h1 class="store-title2" style="margin-left: 100px; width: 240px">
+                Featured Products</h1>
+            <div class="carousel3">
 
-            <li class="main-product">
-                <div class="item">
-                    <a href="../storepages/product-1.php" class=product_detail>
-                        <div class="img-product">
-                            <img class="img-prd" src="./images/Jacket/jacket1.jpeg" alt="" />
-                        </div>
-                        <div class="product-detail">
-                            <h4 class="content-product-h3">
-                            LINNEN BOMBER JACKET
-                            </h4>
-                            <div class="content-product-deltals">
-                                <div class="price">
-                                    <p class="money">100.99 $</p>
-                                </div>
-
+                <li class="main-product">
+                    <div class="item">
+                        <a href="../storepages/product-1.php" class=product_detail>
+                            <div class="img-product">
+                                <img class="img-prd" src="./images/Jacket/jacket1.jpeg" alt="" />
                             </div>
-                    </a>
-                    <button type="button" class="btn btn-cart">
-                        Add to cart
-                    </button>
-                </div>
+                            <div class="product-detail">
+                                <h4 class="content-product-h3">
+                                    LINNEN BOMBER JACKET
+                                </h4>
+                                <div class="content-product-deltals">
+                                    <div class="price">
+                                        <p class="money">100.99 $</p>
+                                    </div>
 
-      
-        </li>
-        
-        <li class="main-product">
+                                </div>
+                        </a>
+                        <button type="button" class="btn btn-cart">
+                            Add to cart
+                        </button>
+                    </div>
+                </li>
+
+                <li class="main-product">
                     <div class="item">
                         <a href="../storepages/product-1.php" class=product_detail>
                             <div class="img-product">
@@ -195,12 +190,12 @@
 
             </div>
         </li>
-</div>
-</div>
-                   
+        </div>
+        </div>
+
         <br /><br /><br />
         <h1 class="store-title2" style="margin-left: 200px; width: 240px">New Products</h1>
-        
+
         <div class="carousel2">
 
             <li class="main-product">
@@ -542,33 +537,33 @@
     </section>
 
     <div class="bottom">
-      <hr />
-      <div class="bottom-info"></div>
-      <br />
-      <div class="bottom-info">
-        <b>POLICES </b><br />
-        <a href="../storepages/category-1.html">
-          <div class="bottom-info-detail">SHOP AT 26St.ore</div>
-        </a>
-        <a href="#">
-          <div class="bottom-info-detail">PRODUCT</div>
-        </a>
-        <a href="#">
-          <div class="bottom-info-detail">PAYMENT</div>
-        </a>
-        <a href="#">
-          <div class="bottom-info-detail">SHIPPING</div>
-        </a>
-      </div>
-      <div class="bottom-info">
-        <b>TEAM </b> <br />
-        <a href="../storepages/category-1.html">
-          <div class="bottom-info-detail">ABOUT US</div>
-        </a>
-        <a href="#">
-          <div class="bottom-info-detail">STORES</div>
-        </a>
-      </div>
+        <hr />
+        <div class="bottom-info"></div>
+        <br />
+        <div class="bottom-info">
+            <b>POLICES </b><br />
+            <a href="../storepages/category-1.html">
+                <div class="bottom-info-detail">SHOP AT 26St.ore</div>
+            </a>
+            <a href="#">
+                <div class="bottom-info-detail">PRODUCT</div>
+            </a>
+            <a href="#">
+                <div class="bottom-info-detail">PAYMENT</div>
+            </a>
+            <a href="#">
+                <div class="bottom-info-detail">SHIPPING</div>
+            </a>
+        </div>
+        <div class="bottom-info">
+            <b>TEAM </b> <br />
+            <a href="../storepages/category-1.html">
+                <div class="bottom-info-detail">ABOUT US</div>
+            </a>
+            <a href="#">
+                <div class="bottom-info-detail">STORES</div>
+            </a>
+        </div>
     </div>
 
 </body>
