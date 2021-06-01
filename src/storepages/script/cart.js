@@ -3,6 +3,7 @@ const modal = document.getElementById("myModal");
 const btn = document.getElementById("cart");
 const close = document.getElementsByClassName("close")[0];
 const close_footer = document.getElementsByClassName("close-footer")[0];
+const coupon_footer = document.getElementsByClassName("coupon-footer")[0];
 const order = document.getElementsByClassName("order")[0];
 btn.onclick = function () {
   modal.style.display = "block";
@@ -12,6 +13,9 @@ close.onclick = function () {
 };
 close_footer.onclick = function () {
   modal.style.display = "none";
+};
+coupon_footer.onclick = function (){
+  coupon();
 };
 order.onclick = function () {
   alert("Thank you for using our 26ST.ore");
@@ -47,7 +51,26 @@ function updatecart() {
     total = total + price * quantity;
   }
   document.getElementsByClassName("cart-total-price")[0].textContent =
-    total + "$";
+    (total).toFixed(2) + "$";
+}
+
+function coupon() {
+  const cart_item = document.getElementsByClassName("cart-items")[0];
+  const cart_rows = cart_item.getElementsByClassName("cart-row");
+  let total = 0;
+  for (let i = 0; i < cart_rows.length; i++) {
+    const cart_row = cart_rows[i];
+    const price_item = cart_row.getElementsByClassName("cart-price ")[0];
+    const quantity_item = cart_row.getElementsByClassName(
+      "cart-quantity-input"
+    )[0];
+    const price = parseFloat(price_item.innerText); 
+    const quantity = quantity_item.value; 
+    total = total + price * quantity;
+  }
+
+  document.getElementsByClassName("cart-total-price")[0].textContent =
+  (total * 7 / 10).toFixed(2) + "$";
 }
 
 const quantity_input = document.getElementsByClassName("cart-quantity-input");

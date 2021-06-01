@@ -92,6 +92,8 @@
                 </div>
 
                 <div class="modal-footer">
+                <button type="button" class="btn btn-secondary coupon-footer" style="background-color: pink;">Get
+                        30% Discount</button>
                     <button type="button" class="btn btn-secondary close-footer">
                         Keep Shopping
                     </button>
