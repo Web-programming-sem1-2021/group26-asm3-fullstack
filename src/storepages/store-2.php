@@ -92,15 +92,16 @@
                 Featured Products</h1>
             <div class="carousel3">
 
+               
                 <li class="main-product">
                     <div class="item">
-                        <a href="../storepages/product-1.php" class=product_detail>
+                        <a href="../storepages/product-2.php" class=product_detail>
                             <div class="img-product">
                                 <img class="img-prd" src="./images/Jacket/jacket1.jpeg" alt="" />
                             </div>
                             <div class="product-detail">
                                 <h4 class="content-product-h3">
-                                    LINNEN BOMBER JACKET
+                                LINNEN BOMBER JACKET
                                 </h4>
                                 <div class="content-product-deltals">
                                     <div class="price">
@@ -108,14 +109,14 @@
                                     </div>
 
                                 </div>
-                            </div>
                         </a>
                         <button type="button" class="btn btn-cart">
                             Add to cart
                         </button>
                     </div>
-                </li>
 
+            </div>
+            </li>
                 <li class="main-product">
                     <div class="item">
                         <a href="../storepages/product-2.php" class=product_detail>
@@ -179,7 +180,7 @@
                         </h4>
                         <div class="content-product-deltals">
                             <div class="price">
-                                <p class="money">129.99 $</p>
+                                <p class="money">149.99 $</p>
                             </div>
 
                         </div>
@@ -310,7 +311,7 @@
                         </h4>
                         <div class="content-product-deltals">
                             <div class="price">
-                                <p class="money">79.99 $</p>
+                                <p class="money">149.99 $</p>
                             </div>
 
                         </div>
