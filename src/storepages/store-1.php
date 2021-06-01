@@ -17,18 +17,6 @@
 
         $storesFileName = "../data/stores.csv";
         $jsonStores = json_decode(csvToJson($storesFileName));
-
-        // function getStoreData($stores, $storeId)
-
-        // {
-        //   foreach ($stores as $store) {
-        //     if ($store->id === $storeId) {
-        //       return $store;
-        //     }
-        //   }
-        //   // echo $store;
-        // }
-        // getStoreData($jsonStores, $store_id);
         ?>
 
 
@@ -43,14 +31,14 @@
          <link rel="stylesheet" href="/src/style/store.css" />
          <link rel="stylesheet" href="/src/style/cookie.css" />
          <script src="/src/script/cookie.js" defer></script>
-         
-         <script src="./script/cart.js" defer ></script>
+
+         <script src="./script/cart.js" defer></script>
      </head>
 
      <body>
-             <!-- header -->
+         <!-- header -->
 
-         
+
          <?php include "include/store1-header.php"; ?>
          <section class="home">
              <div class="slider">
@@ -99,232 +87,211 @@
          <div class="Cardhead">
              <h1>Product of the day</h1>
          </div>
-         <li class="main-product">
-             <div class="Product_row">
-                 <div class="product--col">
-                     <div class="product_inner">
-                         <div class="img-product">
-                             <img class="img-prd" src="./images/iphone12.png" width=" 250" />
-                         </div>
-                         <div class="product-detail">
-                         <p class="content-product-h3">Iphone12</p>
-                         <p>Price<p class="price money">1099$</p></p>
-                         
-                         <p>Updated: 12/04/2021</p>
-                         <button><a href="./src/product-1.php" class=product_detail>More Detail</a></button>
-                         <button type="button" class="btn-cart" style="color: black;">Add to basket</button>
-                     </div>
-                     </li>
 
-                     <div class="product_overlay">
-                         <h2>Added to basket</h2>
-                         <i class="fa fa-check"></i>
-                     </div>
+
+
+
+         <div class="row">
+             <div class="product--col">
+                 <div class="product_inner">
+                     <img src="./images/laptop.png" width="300" />
+                     <p>Adventors Laptop</p>
+                     <p>Price $1990</p>
+                     <p>Updated: 12/04/2021</p>
+                     <button><a href="./product-1.php">More Detail</a></button>
+                     <button><a href="./product-1.php">Add to basket</a></button>
+                 </div>
+                 <div class="product_overlay">
+                     <h2>Added to basket</h2>
+                     <i class="fa fa-check"></i>
                  </div>
              </div>
-         
-
-             <div class="row">
-                 <div class="product--col">
-                     <div class="product_inner">
-                         <img src="./images/laptop.png" width="300" />
-                         <p>Adventors Laptop</p>
-                         <p>Price $1990</p>
-                         <p>Updated: 12/04/2021</p>
-                         <button><a href="./product-1.php">More Detail</a></button>
-                         <button><a href="./product-1.php">Add to basket</a></button>
-                     </div>
-                     <div class="product_overlay">
-                         <h2>Added to basket</h2>
-                         <i class="fa fa-check"></i>
-                     </div>
+             <div class="product--col">
+                 <div class="product_inner">
+                     <img src="./images/iphone12.png" width="300" />
+                     <p>Iphone 12</p>
+                     <p>Price $1999</p>
+                     <p>Updated: 12/04/2021</p>
+                     <button><a href="./product-1.php">More Detail</a></button>
+                     <button><a href="./product-1.php">Add to basket</a></button>
                  </div>
-                 <div class="product--col">
-                     <div class="product_inner">
-                         <img src="./images/iphone12.png" width="300" />
-                         <p>Iphone 12</p>
-                         <p>Price $1999</p>
-                         <p>Updated: 12/04/2021</p>
-                         <button><a href="./product-1.php">More Detail</a></button>
-                         <button><a href="./product-1.php">Add to basket</a></button>
-                     </div>
-                     <div class="product_overlay">
-                         <h2>Added to basket</h2>
-                         <i class="fa fa-check"></i>
-                     </div>
-                 </div>
-                 <div class="product--col">
-                     <div class="product_inner">
-                         <img src="./images/camer.png" width="300" />
-                         <p>Conon 70D</p>
-                         <p>Price $950</p>
-                         <p>Updated: 12/04/2021</p>
-                         <button><a href="./product-4.html">More Detail</a></button>
-                         <button><a href="./product-4.html">Add to basket</a></button>
-                     </div>
-                     <div class="product_overlay">
-                         <h2>Added to basket</h2>
-                         <i class="fa fa-check"></i>
-                     </div>
-                 </div>
-                 <div class="product--col">
-                     <div class="product_inner">
-                         <img src="./images/ipad.png" width="300" />
-                         <p>ipad 2021</p>
-                         <p>Price $1200</p>
-                         <p>Updated: 12/04/2021</p>
-                         <button><a href="./product-4.html">More Detail</a></button>
-                         <button><a href="./product-4.html">Add to basket</a></button>
-                     </div>
-                     <div class="product_overlay">
-                         <h2>Added to basket</h2>
-                         <i class="fa fa-check"></i>
-                     </div>
-                 </div>
-                 <div class="product--col">
-                     <div class="product_inner">
-                         <img src="./images/tv.png" width="300" />
-                         <p>LED Smart TV</p>
-                         <p>Price $950</p>
-                         <p>Updated: 12/04/2021</p>
-                         <button><a href="./product-4.html">More Detail</a></button>
-                         <button><a href="./product-4.html">Add to basket</a></button>
-                     </div>
-                     <div class="product_overlay">
-                         <h2>Added to basket</h2>
-                         <i class="fa fa-check"></i>
-                     </div>
-                 </div>
-                 <div class="product--col">
-                     <div class="product_inner">
-                         <img src="./images/ipad.png" width="300" />
-                         <p>ipad 2021</p>
-                         <p>Price $1200</p>
-                         <p>Updated: 12/04/2021</p>
-                         <button><a href="./product-4.html">More Detail</a></button>
-                         <button><a href="./product-4.html">Add to basket</a></button>
-                     </div>
-                     <div class="product_overlay">
-                         <h2>Added to basket</h2>
-                         <i class="fa fa-check"></i>
-                     </div>
-                 </div>
-                 <div class="product--col">
-                     <div class="product_inner">
-                         <img src="./images/iphone12.png" width="300" />
-                         <p>Iphone 12</p>
-                         <p>Price $1999</p>
-                         <p>Updated: 12/04/2021</p>
-                         <button><a href="./product-1.php">More Detail</a></button>
-                         <button><a href="./product-1.php">Add to basket</a></button>
-                     </div>
-                     <div class="product_overlay">
-                         <h2>Added to basket</h2>
-                         <i class="fa fa-check"></i>
-                     </div>
-                 </div>
-                 <div class="product--col">
-                     <div class="product_inner">
-                         <img src="./images/laptop.png" width="300" />
-                         <p>Laptop</p>
-                         <p>Price $1999</p>
-                         <p>Updated: 12/04/2021</p>
-                         <button><a href="./product-1.php">More Detail</a></button>
-                         <button><a href="./product-1.php">Add to basket</a></button>
-                     </div>
-                     <div class="product_overlay">
-                         <h2>Added to basket</h2>
-                         <i class="fa fa-check"></i>
-                     </div>
+                 <div class="product_overlay">
+                     <h2>Added to basket</h2>
+                     <i class="fa fa-check"></i>
                  </div>
              </div>
-
-             <!--New products-->
-             <div class="Cardhead">
-                 <h1>New Products</h1>
+             <div class="product--col">
+                 <div class="product_inner">
+                     <img src="./images/camer.png" width="300" />
+                     <p>Conon 70D</p>
+                     <p>Price $950</p>
+                     <p>Updated: 12/04/2021</p>
+                     <button><a href="./product-4.html">More Detail</a></button>
+                     <button><a href="./product-4.html">Add to basket</a></button>
+                 </div>
+                 <div class="product_overlay">
+                     <h2>Added to basket</h2>
+                     <i class="fa fa-check"></i>
+                 </div>
              </div>
-             <div class="carousel">
-                 <?php include 'store_inc/newProductStore1.php'; ?>
+             <div class="product--col">
+                 <div class="product_inner">
+                     <img src="./images/ipad.png" width="300" />
+                     <p>ipad 2021</p>
+                     <p>Price $1200</p>
+                     <p>Updated: 12/04/2021</p>
+                     <button><a href="./product-4.html">More Detail</a></button>
+                     <button><a href="./product-4.html">Add to basket</a></button>
+                 </div>
+                 <div class="product_overlay">
+                     <h2>Added to basket</h2>
+                     <i class="fa fa-check"></i>
+                 </div>
              </div>
-
-             <div class=" Cardhead">
-                 <h1>Featured Products</h1>
-
+             <div class="product--col">
+                 <div class="product_inner">
+                     <img src="./images/tv.png" width="300" />
+                     <p>LED Smart TV</p>
+                     <p>Price $950</p>
+                     <p>Updated: 12/04/2021</p>
+                     <button><a href="./product-4.html">More Detail</a></button>
+                     <button><a href="./product-4.html">Add to basket</a></button>
+                 </div>
+                 <div class="product_overlay">
+                     <h2>Added to basket</h2>
+                     <i class="fa fa-check"></i>
+                 </div>
              </div>
-             <div class="carousel">
-                 <?php include 'store_inc/featureProductStore1.php'; ?>
-
+             <div class="product--col">
+                 <div class="product_inner">
+                     <img src="./images/ipad.png" width="300" />
+                     <p>ipad 2021</p>
+                     <p>Price $1200</p>
+                     <p>Updated: 12/04/2021</p>
+                     <button><a href="./product-4.html">More Detail</a></button>
+                     <button><a href="./product-4.html">Add to basket</a></button>
+                 </div>
+                 <div class="product_overlay">
+                     <h2>Added to basket</h2>
+                     <i class="fa fa-check"></i>
+                 </div>
              </div>
+             <div class="product--col">
+                 <div class="product_inner">
+                     <img src="./images/iphone12.png" width="300" />
+                     <p>Iphone 12</p>
+                     <p>Price $1999</p>
+                     <p>Updated: 12/04/2021</p>
+                     <button><a href="./product-1.php">More Detail</a></button>
+                     <button><a href="./product-1.php">Add to basket</a></button>
+                 </div>
+                 <div class="product_overlay">
+                     <h2>Added to basket</h2>
+                     <i class="fa fa-check"></i>
+                 </div>
+             </div>
+             <div class="product--col">
+                 <div class="product_inner">
+                     <img src="./images/laptop.png" width="300" />
+                     <p>Laptop</p>
+                     <p>Price $1999</p>
+                     <p>Updated: 12/04/2021</p>
+                     <button><a href="./product-1.php">More Detail</a></button>
+                     <button><a href="./product-1.php">Add to basket</a></button>
+                 </div>
+                 <div class="product_overlay">
+                     <h2>Added to basket</h2>
+                     <i class="fa fa-check"></i>
+                 </div>
+             </div>
+         </div>
 
-             <br />
+         <!--New products-->
+         <div class="Cardhead">
+             <h1>New Products</h1>
+         </div>
+         <div class="carousel">
+             <?php include 'store_inc/newProductStore1.php'; ?>
+         </div>
 
-             <!--  FOOTER START -->
-             <footer>
-                 <div class="footer">
-                     <div class="inner-footer">
-                         <!--  for company name and description -->
-                         <div class="footer-items">
-                             <a href="./store-1.php"><img class="logo-img" src="./images/logo-white.png" alt="Logo"
-                                     style="width: 100%" /></a>
-                         </div>
+         <div class=" Cardhead">
+             <h1>Featured Products</h1>
 
-                         <!--  for quick links  -->
-                         <div class="footer-items">
-                             <h3>Find It Fast</h3>
-                             <div class="border1"></div>
-                             <!--for the underline -->
-                             <ul>
-                                 <a href="../homepage/footer/terms.html">
-                                     <li>Term of service</li>
-                                 </a>
-                                 <a href="../homepage/footer/privacy.html">
-                                     <li>Privacy Policy</li>
-                                 </a>
-                                 <a href="../homepage/contact.html">
-                                     <li>Contact</li>
-                                 </a>
-                                 <a href="../homepage/about-us.html">
-                                     <li>About Us</li>
-                                 </a>
-                             </ul>
-                         </div>
+         </div>
+         <div class="carousel">
+             <?php include 'store_inc/featureProductStore1.php'; ?>
 
-                         <!--  for some other links -->
-                         <div class="footer-items">
-                             <h3>Quick Link</h3>
-                             <div class="border1"></div>
-                             <!--for the underline -->
-                             <ul>
-                                 <a href="../index.html">
-                                     <li>Mall</li>
-                                 </a>
-                                 <a href="../homepage/browse/browse-stores-by-categories.html">
-                                     <li>Products</li>
-                                 </a>
-                                 <a href="../homepage/myAccount/login.html">
-                                     <li>My Account</li>
-                                 </a>
-                             </ul>
-                         </div>
+         </div>
 
-                         <!--  for contact us info -->
-                         <div class="footer-items">
-                             <h3>Opening Hours</h3>
-                             <div class="border1"></div>
-                             <ul>
-                                 <li>MON TO SAT: 8.30am to 7 pm</li>
-                                 <li>SUN : CLOSED</li>
-                             </ul>
-                         </div>
+         <br />
+
+         <!--  FOOTER START -->
+         <footer>
+             <div class="footer">
+                 <div class="inner-footer">
+                     <!--  for company name and description -->
+                     <div class="footer-items">
+                         <a href="./store-1.php"><img class="logo-img" src="./images/logo-white.png" alt="Logo"
+                                 style="width: 100%" /></a>
                      </div>
 
-                     <!--   Footer Bottom start  -->
-                     <div class="footer-bottom">
-                         Copyright &copy;<a href="../../src/copyright.php">
-                             Group 26 Semester A 2021</a>
+                     <!--  for quick links  -->
+                     <div class="footer-items">
+                         <h3>Find It Fast</h3>
+                         <div class="border1"></div>
+                         <!--for the underline -->
+                         <ul>
+                             <a href="../homepage/footer/terms.html">
+                                 <li>Term of service</li>
+                             </a>
+                             <a href="../homepage/footer/privacy.html">
+                                 <li>Privacy Policy</li>
+                             </a>
+                             <a href="../homepage/contact.html">
+                                 <li>Contact</li>
+                             </a>
+                             <a href="../homepage/about-us.html">
+                                 <li>About Us</li>
+                             </a>
+                         </ul>
+                     </div>
+
+                     <!--  for some other links -->
+                     <div class="footer-items">
+                         <h3>Quick Link</h3>
+                         <div class="border1"></div>
+                         <!--for the underline -->
+                         <ul>
+                             <a href="../index.html">
+                                 <li>Mall</li>
+                             </a>
+                             <a href="../homepage/browse/browse-stores-by-categories.html">
+                                 <li>Products</li>
+                             </a>
+                             <a href="../homepage/myAccount/login.html">
+                                 <li>My Account</li>
+                             </a>
+                         </ul>
+                     </div>
+
+                     <!--  for contact us info -->
+                     <div class="footer-items">
+                         <h3>Opening Hours</h3>
+                         <div class="border1"></div>
+                         <ul>
+                             <li>MON TO SAT: 8.30am to 7 pm</li>
+                             <li>SUN : CLOSED</li>
+                         </ul>
                      </div>
                  </div>
-             </footer>
+
+                 <!--   Footer Bottom start  -->
+                 <div class="footer-bottom">
+                     Copyright &copy;<a href="../../src/copyright.php">
+                         Group 26 Semester A 2021</a>
+                 </div>
+             </div>
+         </footer>
      </body>
 
      </html>
