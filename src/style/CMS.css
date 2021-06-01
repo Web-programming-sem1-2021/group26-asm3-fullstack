@@ -11,6 +11,10 @@ textarea {
   height: 10%;
 }
 
+textarea:focus {
+  background: lightblue;
+}
+
 input[type="radio"],
 label {
   vertical-align: middle;
@@ -25,7 +29,6 @@ input {
   background-color: lightblue;
   padding: 15px 100px;
   margin: 10px 4px;
-  cursor: pointer;
   text-transform: uppercase;
   text-align: center;
   position: relative;
